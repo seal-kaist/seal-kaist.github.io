@@ -5,7 +5,7 @@ import "./globals.css";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://kaist-seal.github.io/seal-website";
+  "https://seal-kaist.github.io/seal-website";
 
 export const dynamic = "force-static";
 

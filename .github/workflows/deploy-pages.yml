@@ -42,7 +42,7 @@ jobs:
         run: pnpm build
         env:
           NEXT_PUBLIC_BASE_PATH: /seal-website
-          NEXT_PUBLIC_SITE_URL: https://kaist-seal.github.io/seal-website
+          NEXT_PUBLIC_SITE_URL: https://seal-kaist.github.io/seal-website
 
       - name: Prepare GitHub Pages artifact
         run: pnpm prepare:pages
