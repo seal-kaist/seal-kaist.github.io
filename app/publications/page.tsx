@@ -27,7 +27,7 @@ export default function PublicationsPage() {
       <SiteHeader />
       <PageIntro
         title="Publications"
-        description="Research on efficient inference, model compression, long-context systems, and intelligent agents."
+        description="Research spanning scalable AI systems, efficient foundation models, and reasoning and agentic systems."
       />
 
       <PublicationIndex />
