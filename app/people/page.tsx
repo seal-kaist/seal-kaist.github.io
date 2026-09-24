@@ -179,7 +179,7 @@ export default function PeoplePage() {
           {students.map((student) => (
             <article className="student-card" key={student.name}>
               <a
-                className="student-image"
+                className="student-image student-image-rainbow"
                 href={student.website}
                 target="_blank"
                 rel="noreferrer"
