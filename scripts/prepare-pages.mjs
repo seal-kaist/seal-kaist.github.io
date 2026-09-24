@@ -4,15 +4,14 @@ import path from "node:path";
 const outputDirectory = path.resolve("dist/client");
 const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 
-if (!basePath.startsWith("/")) {
+if (basePath && !basePath.startsWith("/")) {
   throw new Error("NEXT_PUBLIC_BASE_PATH must start with a slash.");
 }
 
 const escapedBasePath = basePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const unprefixedAssetPattern = new RegExp(
-  `(?<!${escapedBasePath})/_next/`,
-  "g",
-);
+const unprefixedAssetPattern = basePath
+  ? new RegExp(`(?<!${escapedBasePath})/_next/`, "g")
+  : null;
 
 async function patchGeneratedFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -24,10 +23,9 @@ async function patchGeneratedFiles(directory) {
       if (!/\.(?:html|rsc|css|js|json)$/.test(entry.name)) return;
 
       const source = await readFile(entryPath, "utf8");
-      const patched = source.replace(
-        unprefixedAssetPattern,
-        `${basePath}/_next/`,
-      );
+      const patched = unprefixedAssetPattern
+        ? source.replace(unprefixedAssetPattern, `${basePath}/_next/`)
+        : source;
       if (patched !== source) await writeFile(entryPath, patched);
     }),
   );

@@ -4,8 +4,7 @@ import { sitePath } from "@/lib/site-path";
 import "./globals.css";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://seal-kaist.github.io/seal-website";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://seal-kaist.github.io";
 
 export const dynamic = "force-static";
 

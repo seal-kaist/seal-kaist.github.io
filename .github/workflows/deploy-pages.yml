@@ -41,13 +41,10 @@ jobs:
       - name: Build static site
         run: pnpm build
         env:
-          NEXT_PUBLIC_BASE_PATH: /seal-website
-          NEXT_PUBLIC_SITE_URL: https://seal-kaist.github.io/seal-website
+          NEXT_PUBLIC_SITE_URL: https://seal-kaist.github.io
 
       - name: Prepare GitHub Pages artifact
         run: pnpm prepare:pages
-        env:
-          NEXT_PUBLIC_BASE_PATH: /seal-website
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
