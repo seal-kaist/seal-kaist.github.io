@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LinkArrow } from "@/components/link-arrow";
 import { ResearchGlyph } from "@/components/research-glyph";
 import { PageIntro, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { researchAreas } from "@/lib/site-data";
@@ -46,7 +47,7 @@ export default function JoinPage() {
             target="_blank"
             rel="noreferrer"
           >
-            Open application form <span aria-hidden="true">↗</span>
+            Open application form <LinkArrow />
           </a>
           <p className="form-note">
             Due to the high volume of applications, we may not be able to
@@ -83,7 +84,7 @@ export default function JoinPage() {
         <div className="alignment-heading">
           <p className="eyebrow">Research areas</p>
           <a className="text-link" href={sitePath("/publications")}>
-            See publications <span aria-hidden="true">↗</span>
+            See publications <LinkArrow />
           </a>
         </div>
         <div className="alignment-grid">

@@ -1,4 +1,5 @@
 import { sitePath } from "@/lib/site-path";
+import { LinkArrow } from "@/components/link-arrow";
 
 type PageIntroProps = {
   title: string;
@@ -41,7 +42,7 @@ export function SiteHeader() {
         <nav aria-label="Mobile navigation">
           {links.map(([label, href]) => (
             <a href={sitePath(href)} key={href}>
-              {label} <span aria-hidden="true">↗</span>
+              {label} <LinkArrow />
             </a>
           ))}
         </nav>

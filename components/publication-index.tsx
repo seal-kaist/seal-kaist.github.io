@@ -1,3 +1,4 @@
+import { LinkArrow } from "@/components/link-arrow";
 import { publications } from "@/lib/site-data";
 import { RevealSection } from "@/components/reveal-section";
 
@@ -26,7 +27,7 @@ export function PublicationIndex() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Paper ↗
+                        Paper <LinkArrow />
                       </a>
                       {publication.code ? (
                         <a
@@ -34,7 +35,7 @@ export function PublicationIndex() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Code ↗
+                          Code <LinkArrow />
                         </a>
                       ) : null}
                       {publication.project ? (
@@ -43,7 +44,7 @@ export function PublicationIndex() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          More ↗
+                          More <LinkArrow />
                         </a>
                       ) : null}
                     </div>

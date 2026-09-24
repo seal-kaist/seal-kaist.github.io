@@ -1,3 +1,4 @@
+import { LinkArrow } from "@/components/link-arrow";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ResearchGlyph } from "@/components/research-glyph";
 import { RevealSection } from "@/components/reveal-section";
@@ -25,8 +26,12 @@ export default function Home() {
           environments.
         </p>
         <div className="academic-links">
-          <a href={sitePath("/publications")}>Publications ↗</a>
-          <a href={sitePath("/join")}>Prospective students ↗</a>
+          <a href={sitePath("/publications")}>
+            Publications <LinkArrow />
+          </a>
+          <a href={sitePath("/join")}>
+            Prospective students <LinkArrow />
+          </a>
         </div>
       </section>
 
@@ -56,7 +61,7 @@ export default function Home() {
           <div>
             <h2>Current research directions</h2>
             <a className="text-link" href={sitePath("/publications")}>
-              View all publications <span aria-hidden="true">↗</span>
+              View all publications <LinkArrow />
             </a>
           </div>
         </div>
@@ -87,7 +92,7 @@ export default function Home() {
               <p>{item.text}</p>
               {item.href ? (
                 <a href={item.href} aria-label="Read more">
-                  ↗
+                  <LinkArrow />
                 </a>
               ) : (
                 <span aria-hidden="true">—</span>
@@ -107,7 +112,7 @@ export default function Home() {
             interested in efficient AI, large language models, and AI systems.
           </p>
           <a className="text-link" href={sitePath("/join")}>
-            Application information <span aria-hidden="true">↗</span>
+            Application information <LinkArrow />
           </a>
         </div>
       </RevealSection>

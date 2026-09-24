@@ -27,7 +27,13 @@ export const metadata: Metadata = {
   description:
     "The Scalable & Efficient AI Lab at KAIST studies efficient foundation models, scalable AI systems, and reasoning agents.",
   icons: {
-    icon: sitePath("/seal-logo.png"),
+    icon: [
+      {
+        url: sitePath("/favicon.png"),
+        type: "image/png",
+      },
+    ],
+    shortcut: sitePath("/favicon.png"),
   },
   openGraph: {
     title: "SEAL — Scalable & Efficient AI Lab at KAIST",

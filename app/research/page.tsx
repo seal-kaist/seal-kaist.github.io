@@ -1,3 +1,4 @@
+import { LinkArrow } from "@/components/link-arrow";
 import { PageIntro, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { sitePath } from "@/lib/site-path";
 
@@ -16,7 +17,7 @@ export default function ResearchPage() {
       />
       <section className="publications-page shell">
         <a className="text-link" href={publicationsPath}>
-          Continue to publications <span aria-hidden="true">↗</span>
+          Continue to publications <LinkArrow />
         </a>
       </section>
       <SiteFooter />
