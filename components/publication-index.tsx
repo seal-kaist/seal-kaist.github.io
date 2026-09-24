@@ -1,4 +1,5 @@
 import { publications } from "@/lib/site-data";
+import { RevealSection } from "@/components/reveal-section";
 
 const years = [...new Set(publications.map((publication) => publication.year))];
 
@@ -6,7 +7,7 @@ export function PublicationIndex() {
   return (
     <section className="publications-page shell">
       {years.map((year) => (
-        <div className="year-group" key={year}>
+        <RevealSection className="year-group" key={year}>
           <h2>{year}</h2>
           <div className="publication-list">
             {publications
@@ -50,7 +51,7 @@ export function PublicationIndex() {
                 </article>
               ))}
           </div>
-        </div>
+        </RevealSection>
       ))}
       <p className="publication-note">* indicates equal contribution.</p>
     </section>
