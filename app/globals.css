@@ -661,7 +661,7 @@ a:focus-visible .link-arrow-head {
 .publication-main h3 {
   max-width: 760px;
   margin: 0;
-  font-size: clamp(17px, 1.7vw, 21px);
+  font-size: clamp(20px, 1.8vw, 23px);
   font-weight: 470;
   letter-spacing: -0.025em;
   line-height: 1.3;
