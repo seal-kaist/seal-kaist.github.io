@@ -146,12 +146,143 @@ a:focus-visible .link-arrow-head {
 }
 
 .brand {
+  --brand-aurora: linear-gradient(
+    110deg,
+    #ffffff 0%,
+    #ff4f91 18%,
+    #ffd166 34%,
+    #58e6e6 52%,
+    #5fa8ff 68%,
+    #8b6cff 84%,
+    #ffffff 100%
+  );
   display: inline-flex;
   align-items: center;
   gap: 13px;
   font-size: 20px;
   font-weight: 620;
   letter-spacing: -0.02em;
+}
+
+.brand-lockup {
+  --brand-intro-size: 16px;
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 620;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  background-image: none;
+  background-position: 100% 0;
+  background-size: 280% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.brand-initial,
+.brand-rest {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.brand-rest {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleX(0.35);
+  transform-origin: left center;
+  white-space: pre;
+}
+
+.brand-rest-scalable {
+  --brand-rest-width: 4.75em;
+}
+
+.brand-rest-efficient {
+  --brand-rest-width: 3.55em;
+}
+
+.brand-rest-ai {
+  --brand-rest-width: 0.78em;
+}
+
+.brand-rest-lab {
+  --brand-rest-width: 1.35em;
+}
+
+.brand-lockup {
+  animation:
+    brand-lockup-collapse 1500ms cubic-bezier(0.22, 1, 0.36, 1) both,
+    brand-intro-aurora 520ms 570ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.brand-rest {
+  animation: brand-rest-collapse 1500ms cubic-bezier(0.7, 0, 0.2, 1) both;
+}
+
+@keyframes brand-lockup-collapse {
+  0%,
+  38% {
+    font-size: var(--brand-intro-size);
+    font-weight: 520;
+    letter-spacing: -0.015em;
+  }
+
+  100% {
+    font-size: 20px;
+    font-weight: 620;
+    letter-spacing: -0.02em;
+  }
+}
+
+@keyframes brand-intro-aurora {
+  0% {
+    background-image: var(--brand-aurora);
+    color: #ffffff;
+    background-position: 0% 0;
+    filter: none;
+  }
+
+  8%,
+  86% {
+    background-image: var(--brand-aurora);
+    color: transparent;
+    filter: saturate(1.2) brightness(1.12)
+      drop-shadow(0 0 4px rgb(98 208 255 / 30%));
+  }
+
+  99% {
+    background-image: var(--brand-aurora);
+  }
+
+  100% {
+    background-image: none;
+    color: #ffffff;
+    background-position: 100% 0;
+    filter: none;
+  }
+}
+
+@keyframes brand-rest-collapse {
+  0%,
+  38% {
+    width: var(--brand-rest-width);
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  72% {
+    opacity: 0.72;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0.35);
+  }
 }
 
 .ship-crop {
@@ -169,6 +300,50 @@ a:focus-visible .link-arrow-head {
   width: 165px;
   max-width: none;
   filter: grayscale(1) brightness(0) invert(1);
+}
+
+.brand .ship-crop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--brand-aurora);
+  background-position: 100% 0;
+  background-size: 280% 100%;
+  filter: saturate(1.2) brightness(1.12)
+    drop-shadow(0 0 4px rgb(98 208 255 / 30%));
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask-image: url("/seal-logo.png");
+  -webkit-mask-position: left -21px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 165px auto;
+  mask-image: url("/seal-logo.png");
+  mask-position: left -21px;
+  mask-repeat: no-repeat;
+  mask-size: 165px auto;
+}
+
+.brand .ship-crop::after {
+  animation: brand-mark-aurora 520ms 570ms cubic-bezier(0.4, 0, 0.2, 1)
+    both;
+}
+
+@keyframes brand-mark-aurora {
+  0% {
+    background-position: 0% 0;
+    opacity: 0;
+  }
+
+  8%,
+  86% {
+    opacity: 1;
+  }
+
+  100% {
+    background-position: 100% 0;
+    opacity: 0;
+  }
 }
 
 .desktop-nav {
@@ -1376,6 +1551,10 @@ a:focus-visible .link-arrow-head {
 }
 
 @media (max-width: 760px) {
+  .brand-lockup {
+    --brand-intro-size: 13px;
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -1578,7 +1757,10 @@ a:focus-visible .link-arrow-head {
 
   .academic-hero::before,
   .academic-hero::after,
-  .student-image-rainbow::after {
+  .student-image-rainbow::after,
+  .brand .ship-crop::after,
+  .brand-lockup,
+  .brand-rest {
     animation: none !important;
   }
 }

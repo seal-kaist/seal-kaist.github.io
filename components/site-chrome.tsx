@@ -26,7 +26,18 @@ export function SiteHeader() {
     <header className="site-header">
       <a className="brand" href={sitePath("/")} aria-label="SEAL home">
         <LogoMark />
-        <span>SEAL</span>
+        <span className="brand-lockup" aria-hidden="true">
+          <span className="brand-initial">S</span>
+          <span className="brand-rest brand-rest-scalable">
+            calable &amp;{" "}
+          </span>
+          <span className="brand-initial">E</span>
+          <span className="brand-rest brand-rest-efficient">fficient </span>
+          <span className="brand-initial">A</span>
+          <span className="brand-rest brand-rest-ai">I </span>
+          <span className="brand-initial">L</span>
+          <span className="brand-rest brand-rest-lab">ab.</span>
+        </span>
       </a>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
