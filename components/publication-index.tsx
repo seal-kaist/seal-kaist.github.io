@@ -29,6 +29,15 @@ export function PublicationIndex() {
                       >
                         Paper <LinkArrow />
                       </a>
+                      {publication.project ? (
+                        <a
+                          href={publication.project}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Project <LinkArrow />
+                        </a>
+                      ) : null}
                       {publication.code ? (
                         <a
                           href={publication.code}
@@ -38,9 +47,9 @@ export function PublicationIndex() {
                           Code <LinkArrow />
                         </a>
                       ) : null}
-                      {publication.project ? (
+                      {publication.more ? (
                         <a
-                          href={publication.project}
+                          href={publication.more}
                           target="_blank"
                           rel="noreferrer"
                         >

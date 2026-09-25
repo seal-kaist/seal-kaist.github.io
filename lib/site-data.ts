@@ -6,6 +6,7 @@ export type Publication = {
   paper: string;
   code?: string;
   project?: string;
+  more?: string;
   featured?: boolean;
 };
 
@@ -73,6 +74,16 @@ export const researchDetails = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: 2026,
+    title: "LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers",
+    authors:
+      "SangLyul Cho*, Langqing Cui*, Sehoon Kim, Dongsu Han, Insu Han",
+    venue: "Preprint 2026",
+    paper: "https://arxiv.org/pdf/2609.17184",
+    project: "https://langq1225.github.io/loopspec/",
+    code: "https://github.com/kaist-flexml-lab/loopspec",
+  },
   {
     year: 2025,
     title: "Multipole Attention for Efficient Long Context Reasoning",
@@ -199,7 +210,7 @@ export const publications: Publication[] = [
       "Amir Gholami, Zhewei Yao, Sehoon Kim, Coleman Hooper, Michael W. Mahoney, Kurt Keutzer",
     venue: "IEEE Micro Journal Special Issue, 2024",
     paper: "https://arxiv.org/pdf/2403.14123.pdf",
-    project: "https://medium.com/riselab/ai-and-memory-wall-2cb4265cb0b8",
+    more: "https://medium.com/riselab/ai-and-memory-wall-2cb4265cb0b8",
   },
   {
     year: 2023,

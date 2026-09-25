@@ -215,12 +215,13 @@ a:focus-visible .link-arrow-head {
 
 .brand-lockup {
   animation:
-    brand-lockup-collapse 1500ms cubic-bezier(0.22, 1, 0.36, 1) both,
-    brand-intro-aurora 520ms 570ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    brand-lockup-collapse 1500ms 1000ms cubic-bezier(0.22, 1, 0.36, 1) both,
+    brand-intro-aurora 520ms 1570ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .brand-rest {
-  animation: brand-rest-collapse 1500ms cubic-bezier(0.7, 0, 0.2, 1) both;
+  animation: brand-rest-collapse 1500ms 1000ms cubic-bezier(0.7, 0, 0.2, 1)
+    both;
 }
 
 @keyframes brand-lockup-collapse {
@@ -325,7 +326,7 @@ a:focus-visible .link-arrow-head {
 }
 
 .brand .ship-crop::after {
-  animation: brand-mark-aurora 520ms 570ms cubic-bezier(0.4, 0, 0.2, 1)
+  animation: brand-mark-aurora 520ms 1570ms cubic-bezier(0.4, 0, 0.2, 1)
     both;
 }
 
