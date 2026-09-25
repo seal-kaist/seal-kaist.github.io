@@ -118,7 +118,7 @@ export const publications: Publication[] = [
     authors:
       "Rishabh Tiwari*, Haocheng Xi*, Aditya Tomar*, Coleman Hooper, Sehoon Kim, Maxwell Horton, Mahyar Najibi, Michael W. Mahoney, Kurt Keutzer, Amir Gholami",
     venue: "ICML 2025",
-    paper: "https://arxiv.org/pdf/2409.00608",
+    paper: "https://arxiv.org/pdf/2502.10424",
     code: "https://github.com/SqueezeAILab/QuantSpec",
   },
   {
@@ -314,7 +314,7 @@ export const publications: Publication[] = [
     authors:
       "Sehoon Kim*, Amir Gholami*, Zhewei Yao*, Michael W. Mahoney, Kurt Keutzer",
     venue: "ICML 2021 Oral",
-    paper: "http://proceedings.mlr.press/v139/kim21d/kim21d.pdf",
+    paper: "https://proceedings.mlr.press/v139/kim21d/kim21d.pdf",
     code: "https://github.com/kssteven418/I-BERT",
   },
   {
