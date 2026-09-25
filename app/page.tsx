@@ -10,7 +10,7 @@ export const dynamic = "force-static";
 export default function Home() {
   return (
     <main className="home-page">
-      <SiteHeader />
+      <SiteHeader brandAurora />
 
       <section className="hero academic-hero shell">
         <h1>

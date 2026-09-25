@@ -213,13 +213,13 @@ a:focus-visible .link-arrow-head {
   --brand-rest-width: 1.35em;
 }
 
-.brand-lockup {
+.brand.brand-aurora .brand-lockup {
   animation:
     brand-lockup-collapse 1500ms 1000ms cubic-bezier(0.22, 1, 0.36, 1) both,
     brand-intro-aurora 520ms 1570ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-.brand-rest {
+.brand.brand-aurora .brand-rest {
   animation: brand-rest-collapse 1500ms 1000ms cubic-bezier(0.7, 0, 0.2, 1)
     both;
 }
@@ -325,7 +325,7 @@ a:focus-visible .link-arrow-head {
   mask-size: 165px auto;
 }
 
-.brand .ship-crop::after {
+.brand.brand-aurora .ship-crop::after {
   animation: brand-mark-aurora 520ms 1570ms cubic-bezier(0.4, 0, 0.2, 1)
     both;
 }

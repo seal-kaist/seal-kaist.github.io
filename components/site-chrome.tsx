@@ -6,6 +6,10 @@ type PageIntroProps = {
   description: string;
 };
 
+type SiteHeaderProps = {
+  brandAurora?: boolean;
+};
+
 export function LogoMark() {
   return (
     <span className="ship-crop" aria-hidden="true">
@@ -14,7 +18,7 @@ export function LogoMark() {
   );
 }
 
-export function SiteHeader() {
+export function SiteHeader({ brandAurora = false }: SiteHeaderProps = {}) {
   const links = [
     ["Home", "/"],
     ["People", "/people"],
@@ -24,7 +28,11 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
-      <a className="brand" href={sitePath("/")} aria-label="SEAL home">
+      <a
+        className={`brand${brandAurora ? " brand-aurora" : ""}`}
+        href={sitePath("/")}
+        aria-label="SEAL home"
+      >
         <LogoMark />
         <span className="brand-lockup" aria-hidden="true">
           <span className="brand-initial">S</span>
