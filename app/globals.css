@@ -198,19 +198,19 @@ a:focus-visible .link-arrow-head {
 }
 
 .brand-rest-scalable {
-  --brand-rest-width: 4.75em;
+  --brand-rest-width: 70px;
 }
 
 .brand-rest-efficient {
-  --brand-rest-width: 3.55em;
+  --brand-rest-width: 51px;
 }
 
 .brand-rest-ai {
-  --brand-rest-width: 0.78em;
+  --brand-rest-width: 9px;
 }
 
 .brand-rest-lab {
-  --brand-rest-width: 1.35em;
+  --brand-rest-width: 19px;
 }
 
 .brand.brand-aurora .brand-lockup {
@@ -1554,6 +1554,22 @@ a:focus-visible .link-arrow-head {
 @media (max-width: 760px) {
   .brand-lockup {
     --brand-intro-size: 13px;
+  }
+
+  .brand-rest-scalable {
+    --brand-rest-width: 56px;
+  }
+
+  .brand-rest-efficient {
+    --brand-rest-width: 41px;
+  }
+
+  .brand-rest-ai {
+    --brand-rest-width: 7px;
+  }
+
+  .brand-rest-lab {
+    --brand-rest-width: 16px;
   }
 
   .desktop-nav {
