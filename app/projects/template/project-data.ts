@@ -7,17 +7,13 @@ export const projectData = {
   authors: [
     { name: "First Author", marker: "1,*" },
     { name: "Second Author", marker: "1,*" },
-    { name: "Sehoon Kim", marker: "1" },
   ],
-  affiliations: ["Scalable & Efficient AI Lab, KAIST AI"],
+  affiliations: ["KAIST"],
   authorNote: "* Equal contribution",
   links: [
     { label: "Paper", href: "#citation" },
-    { label: "Project", href: "#overview" },
     { label: "Code", href: "#method" },
   ],
-  highlight:
-    "Lead with one strong sentence that explains what the project enables and why the result matters.",
   abstract: [
     "Use this section to introduce the problem and explain why existing approaches fall short. Keep the opening accessible to readers outside the immediate research area, then narrow to the technical challenge addressed by the work.",
     "Follow with the central idea, the evidence supporting it, and the practical takeaway. A strong project page should make the contribution clear before asking readers to study the paper in detail.",
@@ -53,7 +49,7 @@ export const projectData = {
   ],
   citation: `@article{seal2026project,
   title   = {Project Title: A Concise Statement of the Main Contribution},
-  author  = {Author, First and Author, Second and Kim, Sehoon},
+  author  = {Author, First and Author, Second},
   journal = {Conference or Journal},
   year    = {2026}
 }`,

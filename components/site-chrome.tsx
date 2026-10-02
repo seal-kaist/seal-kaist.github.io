@@ -73,13 +73,17 @@ export function SiteHeader({ brandAurora = false }: SiteHeaderProps = {}) {
 export function SiteFooter() {
   return (
     <footer className="site-footer shell">
-      <div className="footer-brand">
+      <a
+        className="footer-brand"
+        href={sitePath("/")}
+        aria-label="SEAL home"
+      >
         <LogoMark />
         <div>
           <strong>SEAL</strong>
           <p>Scalable &amp; Efficient AI Lab</p>
         </div>
-      </div>
+      </a>
       <div className="footer-meta">
         <p>Kim Jaechul Graduate School of AI, KAIST</p>
         <p>108 Taebong-ro, Seocho-gu, Seoul 06764, Republic of Korea</p>

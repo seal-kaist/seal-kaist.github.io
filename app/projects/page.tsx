@@ -28,35 +28,23 @@ export default function ProjectsPage() {
       </section>
 
       <section className="projects-index-grid shell" aria-label="Projects">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <a
             className="projects-index-card"
             href={sitePath(`/projects/${project.slug}`)}
             key={project.slug}
           >
-            <div className="projects-index-card-visual" aria-hidden="true">
-              <span>SEAL / {String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <i />
-                <i />
-                <i />
-              </div>
-              <strong>{project.year}</strong>
+            <div className="projects-index-card-visual">
+              <img src={sitePath(project.image)} alt="" />
             </div>
             <div className="projects-index-card-meta">
-              <span>{project.area}</span>
-              <span>{project.year}</span>
+              <span>{project.published}</span>
             </div>
             <div className="projects-index-card-title">
               <h2>{project.title}</h2>
               <LinkArrow />
             </div>
             <p>{project.description}</p>
-            <div className="projects-index-tags">
-              {project.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
           </a>
         ))}
       </section>

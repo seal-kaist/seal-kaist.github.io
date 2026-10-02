@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FaFilePdf, FaGithub } from "react-icons/fa6";
 import { LinkArrow } from "@/components/link-arrow";
 import { RevealSection } from "@/components/reveal-section";
 import { SiteFooter } from "@/components/site-chrome";
@@ -24,9 +25,6 @@ export default function ProjectTemplatePage() {
       </nav>
 
       <section className="project-template-hero shell">
-        <p className="project-template-kicker">
-          {projectData.venue} · {projectData.year}
-        </p>
         <h1>{projectData.title}</h1>
         <p className="project-template-tagline">{projectData.tagline}</p>
 
@@ -50,48 +48,26 @@ export default function ProjectTemplatePage() {
         <div className="project-template-links" aria-label="Project resources">
           {projectData.links.map((link) => (
             <a href={link.href} key={link.label}>
+              {link.label === "Paper" ? (
+                <FaFilePdf aria-hidden="true" />
+              ) : (
+                <FaGithub aria-hidden="true" />
+              )}
               {link.label}
-              <LinkArrow />
             </a>
           ))}
         </div>
       </section>
 
-      <section className="project-template-visual shell" id="overview">
-        <div className="project-template-visual-grid">
-          <div className="project-template-visual-node">
-            <span>Input</span>
-            <strong>Real-world workload</strong>
-            <p>Describe the model, data, or system entering the pipeline.</p>
-          </div>
-          <div className="project-template-flow" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="project-template-visual-node project-template-visual-node-main">
-            <span>Core method</span>
-            <strong>Your key technical idea</strong>
-            <p>Show the mechanism that differentiates this work.</p>
-          </div>
-          <div className="project-template-flow" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="project-template-visual-node">
-            <span>Outcome</span>
-            <strong>Better quality and efficiency</strong>
-            <p>State the concrete improvement delivered by the method.</p>
-          </div>
-        </div>
-      </section>
-
-      <p className="project-template-highlight shell">{projectData.highlight}</p>
+      <figure className="project-template-figure shell">
+        <img
+          src={sitePath("/project-template-figure.png")}
+          alt="Abstract visualization of information flowing through an AI system"
+        />
+      </figure>
 
       <RevealSection className="project-template-section shell" id="abstract">
         <div className="project-template-section-heading">
-          <p>Overview</p>
           <h2>Abstract</h2>
         </div>
         <div className="project-template-prose">
@@ -103,7 +79,6 @@ export default function ProjectTemplatePage() {
 
       <RevealSection className="project-template-method shell" id="method">
         <div className="project-template-wide-heading">
-          <p>Method</p>
           <h2>How the project works</h2>
         </div>
         <div className="project-template-method-grid">
@@ -119,7 +94,6 @@ export default function ProjectTemplatePage() {
 
       <RevealSection className="project-template-results shell">
         <div className="project-template-wide-heading">
-          <p>Results</p>
           <h2>Put the headline numbers first</h2>
         </div>
         <div className="project-template-results-grid">
@@ -134,7 +108,6 @@ export default function ProjectTemplatePage() {
 
       <RevealSection className="project-template-section shell">
         <div className="project-template-section-heading">
-          <p>Details</p>
           <h2>Tell the technical story</h2>
         </div>
         <div className="project-template-prose">
@@ -146,7 +119,6 @@ export default function ProjectTemplatePage() {
 
       <RevealSection className="project-template-citation shell" id="citation">
         <div className="project-template-wide-heading">
-          <p>Reference</p>
           <h2>Citation</h2>
         </div>
         <pre>

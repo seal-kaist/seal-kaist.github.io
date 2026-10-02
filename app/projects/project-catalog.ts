@@ -3,10 +3,9 @@ import { projectData } from "./template/project-data";
 export const projects = [
   {
     slug: "template",
-    year: projectData.year,
-    area: "Project page template",
+    published: "October 2, 2026",
+    image: "/project-template-figure.png",
     title: projectData.title,
     description: projectData.tagline,
-    tags: ["Models", "Systems", "Efficiency"],
   },
 ];
