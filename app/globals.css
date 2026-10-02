@@ -163,6 +163,10 @@ a:focus-visible .link-arrow-head {
   text-wrap: balance;
 }
 
+.project-placeholder-hero {
+  padding-bottom: 72px;
+}
+
 .project-template-tagline {
   max-width: 740px;
   margin: 0;

@@ -8,4 +8,11 @@ export const projects = [
     title: projectData.title,
     description: projectData.tagline,
   },
+  {
+    slug: "ResidualQuant-tmp",
+    published: "",
+    image: "/project-template-figure.png",
+    title: "ResidualQuant",
+    description: "Project details will be available soon.",
+  },
 ];

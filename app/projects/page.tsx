@@ -37,9 +37,11 @@ export default function ProjectsPage() {
             <div className="projects-index-card-visual">
               <img src={sitePath(project.image)} alt="" />
             </div>
-            <div className="projects-index-card-meta">
-              <span>{project.published}</span>
-            </div>
+            {project.published ? (
+              <div className="projects-index-card-meta">
+                <span>{project.published}</span>
+              </div>
+            ) : null}
             <div className="projects-index-card-title">
               <h2>{project.title}</h2>
               <LinkArrow />
