@@ -79,7 +79,7 @@ export default function ProjectTemplatePage() {
 
       <RevealSection className="project-template-method shell" id="method">
         <div className="project-template-wide-heading">
-          <h2>How the project works</h2>
+          <h2>Method</h2>
         </div>
         <div className="project-template-method-grid">
           {projectData.method.map((step) => (
