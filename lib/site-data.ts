@@ -77,6 +77,16 @@ export const publications: Publication[] = [
   {
     year: 2026,
     title:
+      "ResidualQuant: KV Cache Quantization for Looped Transformers with 2-Bit Residuals",
+    authors:
+      "Heejun Kim, Junyoung Lee, SangLyul Cho, Dongsu Han, Insu Han, Sehoon Kim",
+    venue: "Preprint 2026",
+    paper: "https://arxiv.org/pdf/2610.10381",
+    project: "/projects/ResidualQuant",
+  },
+  {
+    year: 2026,
+    title:
       "PhaseGate: Phase-Aware CPU Retrieval Scheduling for On-Device LLMs on Unified Memory",
     authors: "Seoyoon Yum, Sehoon Kim",
     venue: "NeurIPS 2026 Workshop",
