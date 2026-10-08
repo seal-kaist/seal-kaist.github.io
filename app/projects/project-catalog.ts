@@ -2,7 +2,7 @@ export const projects = [
   {
     slug: "ResidualQuant",
     published: "October 3, 2026",
-    image: "/project-template-figure.png",
+    image: "/projects/residualquant/teaser-published.png",
     title: "ResidualQuant",
     description:
       "KV Cache Quantization for Looped Transformers with 2-Bit Residuals",
