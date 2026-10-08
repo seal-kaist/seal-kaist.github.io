@@ -1,0 +1,44 @@
+{
+  "model": "ByteDance/Ouro-1.4B",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "vllm": "0.10.2",
+  "context_tokens_per_request": 16384,
+  "output_tokens_per_request": 512,
+  "gpu_memory_utilization": 0.9,
+  "cuda_graph": "FULL_DECODE_ONLY",
+  "capture": "Actual xterm windows captured with ffmpeg x11grab during two separate GPU runs. Videos joined at 1x; completed pane remains on its final screen. Editorial method and measured-throughput subtitles added below the terminal pixels.",
+  "comparison": "BF16 batch 2 versus ResidualQuant batch 4; aggregate decode throughput, not an equal-batch comparison",
+  "timing_scope": "first output to last output; prefill excluded; includes live terminal output overhead",
+  "trials_per_method": 1,
+  "methods": [
+    {
+      "method": "bf16",
+      "batch": 2,
+      "seconds": 29.141729474067688,
+      "tokens_per_second": 35.06998446710055,
+      "prefill_workspace_bytes": 0,
+      "native_prefill_chunk_tokens": 4096,
+      "prefill_policy": "individually prepared, KV retained; simultaneous fixed-batch decode",
+      "prompt_sha256": [
+        "705ff4e917808bc46ec488ef7b1e118c187112af9571261c93073df0fbb560de",
+        "c5621999b3acac52d0f50acbd82de51e0cb7a4a4441b53f55a16e9c8882ff0cb"
+      ]
+    },
+    {
+      "method": "residual",
+      "batch": 4,
+      "seconds": 23.137205271050334,
+      "tokens_per_second": 88.34256238187452,
+      "prefill_workspace_bytes": 8589934592,
+      "native_prefill_chunk_tokens": null,
+      "prefill_policy": "individually prepared, KV retained; simultaneous fixed-batch decode",
+      "prompt_sha256": [
+        "705ff4e917808bc46ec488ef7b1e118c187112af9571261c93073df0fbb560de",
+        "c5621999b3acac52d0f50acbd82de51e0cb7a4a4441b53f55a16e9c8882ff0cb",
+        "5255c7ae29e831e03281e0522c27044153772056fffe10dc65c91d60267df775",
+        "e7e192ef2a0dbb949fb56c5d21f3c2845cf3317717cebeae919a7d0ccf24dd37"
+      ]
+    }
+  ],
+  "throughput_ratio": 2.5190362563390765
+}

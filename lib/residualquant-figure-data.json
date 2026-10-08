@@ -1,0 +1,85 @@
+{
+  "source": "arXiv:2610.10381v1, Figure 1",
+  "scope": "Ouro-1.4B MATH500, g=32; all residual stages use Last-loop; preserved original BF16 baseline and completed MATH500 scores",
+  "steps": [
+    {
+      "label": "BF16",
+      "accuracy": 75.0,
+      "bits_per_value": 16,
+      "normalized_kv": 100.0
+    },
+    {
+      "label": "INT2",
+      "accuracy": 27.8,
+      "bits_per_value": 2.5,
+      "normalized_kv": 15.625
+    },
+    {
+      "label": "+Naive\nResidual",
+      "accuracy": 57.2,
+      "bits_per_value": 2.5,
+      "normalized_kv": 15.625
+    },
+    {
+      "label": "+LS\nscaling",
+      "accuracy": 60.6,
+      "bits_per_value": 2.59375,
+      "normalized_kv": 16.2109375
+    },
+    {
+      "label": "+Rotation",
+      "accuracy": 71.6,
+      "bits_per_value": 2.59375,
+      "normalized_kv": 16.2109375
+    },
+    {
+      "label": "+Mixed\nPrecision",
+      "accuracy": 76.0,
+      "bits_per_value": 3.09375,
+      "normalized_kv": 19.3359375
+    }
+  ],
+  "throughput": [
+    {
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 28.028664133618
+    },
+    {
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 56.015872704355104
+    },
+    {
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 111.4416033021157
+    },
+    {
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 64.04017893435632
+    },
+    {
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 113.73211065265761
+    },
+    {
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 192.46863772394184
+    },
+    {
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 277.1064902495041
+    },
+    {
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 364.8819953456643
+    }
+  ],
+  "throughputScope": "Ouro-1.4B, RTX 5090, 8k context, G32, decode only; 128 outputs, 1 warmup, 3 trials."
+}

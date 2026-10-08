@@ -1,0 +1,245 @@
+{
+  "source": "arXiv:2610.10381v1, main throughput figure",
+  "sourceSha256": "55bd313128e4b3569a27f257d4a97c46dae5242ff465afb51e06b9559805ead8",
+  "protocol": "Ouro-1.4B, RTX5090, BF16 weights; mixed2224 g32; controlled GEMM/norm numerics; throughput128 outputs/127 decode steps,1warmup/3trials; accuracy500 questions2048 outputs,batch32; Table2 without rotation; Next-loop throughput reuses shared Last-loop calibrated matrices.",
+  "rows": [
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 28.028664133618,
+      "sha256": "340fb2154c103121c899a163cfd326dcc5ab97662503953021a0529725f03711"
+    },
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 56.015872704355104,
+      "sha256": "37943f0a105c13a98f1680ff8bfc7842f5cc50ac334286b2d7af7a6c4fe07cfe"
+    },
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 111.4416033021157,
+      "sha256": "33257e1c3a0b1eb0fd3e0fef6c79b03de09f239f7116732786d404704c21db4d"
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 64.04017893435632,
+      "sha256": "8da86a21763806e857843c919dd8e0b54e235f7674a67fec9195988b97d41e21"
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 113.73211065265761,
+      "sha256": "ef92b69a913f40949cf13e5abbbd9d53dd5680727cb4a1077bf4be5272704a4f"
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 192.46863772394184,
+      "sha256": "530d35250338ef6b3db97cddea2a0c4cb40ed3e559f1861d7c463df5da26cd9b"
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 277.1064902495041,
+      "sha256": "0ddd9c07ce61f99c125a6c6e6558f7d208faaaa55abaaa1c7f1961be462921bd"
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 364.8819953456643,
+      "sha256": "75f9a1260d2006b24e95966d66d663322b8bf3e6f05886df0b696f4eb45ed3c3"
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 54.57859913140964,
+      "sha256": "d60026929c6d718ba3b54485116a4dcbd6071299fbdc9ce6e728405fd8be7b7b"
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 108.28489461682533,
+      "sha256": "ed1cb4e5a3b793ec27cfa66957de1aec9f11666e173f6f8fcf8d138f3e8322b5"
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 215.52766097413584,
+      "sha256": "9bd02e0ccd51225634be000ce5f60aa1aa36c387b6a0b8392c5ff63b2bbe1c18"
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 8,
+      "throughput": 385.47834714486487,
+      "sha256": "0d4284877c94cf81a9a6736716a387367e7e1dfae0c13ed428675982b5db9ec8"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 70.28715612582045,
+      "sha256": "54398b657ff08ad5181ad71b569a0dfff87a91fec5631669670331884e481ed1"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 135.53956162079373,
+      "sha256": "225e155d70e502ce244af8693c7f62b49b22fd572d7a8857d1f68735c5b77392"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 248.7506678768828,
+      "sha256": "85993ad1e29f49b1409957f1467cceadbb4d46e6ffe2f40672e71f9da63c00dc"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 443.0634686385635,
+      "sha256": "84f5b769da9d2533111fb69e5231fc824f61c3cded319dc9f9f98c98b5df8500"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 717.9514125250291,
+      "sha256": "b95e199e8918f920832bc91b6bcca5c522ac6d47f1bddb6b74a38983d21ab98c"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 32,
+      "throughput": 1063.4760277880985,
+      "sha256": "c1b0a234c9a327521e43b16c8f2c66504a14800c76046470f30b147530e629db"
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 64,
+      "throughput": 1163.102109868698,
+      "sha256": "d472293228ab99e601d382f935b381228a43d310ce1fdc11be134a53198cc441"
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 41.21840905771533,
+      "sha256": "6e0225a89488e8feeb885403fceb448b1c8bdfb6850e70142a6da150e6222ec0"
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 82.35513218331282,
+      "sha256": "91acc27d9fb67bce4e4cf723efb7666fd874507d30a1df5a50462c62941f18be"
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 164.91651679100875,
+      "sha256": "95690e8f7247627c2bdd52df14dd0943513b8c7f23ddf6eb8aacf32f74503391"
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 8,
+      "throughput": 281.2045449504756,
+      "sha256": "45fd4c0318beaffdc420c1271c727339c73ef4c81a75fdac3d7ed9f10fcaee8e"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 68.31809097447113,
+      "sha256": "8ab00f4e21a65716fb241593a8a198e08cf62012c8227c2f6523af60241e27ac"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 126.81793027162587,
+      "sha256": "751d512a3a8b93d2b9bd5f70f3b47334ccb69d119d348e70caa811162fb31fac"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 221.4359003146765,
+      "sha256": "503ef3f1153660088d461e5fc3955aa5ffcfafce0f5e0cb08c7e4b8aa0a7bd4c"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 366.7449724816775,
+      "sha256": "6d8a672aa6fcb946b161a3b4258665c383749816e4351109f2b7ce162c28ad81"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 546.3642663793937,
+      "sha256": "886e320009ecb08223101fb6c375ff7607cdb7dfb9f74ae49e00549c03c128c2"
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 32,
+      "throughput": 707.8209755566526,
+      "sha256": "d4fb593682b595280116e218e74c0ae5a4cf8e6b53540c07cb59034270fd749f"
+    },
+    {
+      "context": 16384,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 17.038692030730346,
+      "sha256": "8f737a7de177cdf1c15297a9dc1a3c5b2fed62349d26458842d77eb9987de572"
+    },
+    {
+      "context": 16384,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 34.04717097446884,
+      "sha256": "25bd3ca1dbfb0d5ff57424c4247bffc654d6f730aabe06d8687ea14cff70e00b"
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 56.4952356941114,
+      "sha256": "051b58d6aa920ad453e089a1d87f564938f6be144e1c15fcb834c158d8aa38fe"
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 93.05006241658796,
+      "sha256": "2ee21e61dd89b179cce6c545c5c411b2048d4fd83248b6aec2916865ec9c3288"
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 141.34451667520048,
+      "sha256": "38df4dfca8ee99d8990d6e8c5f2a0696b249648f46471489ee9226293143f0bb"
+    }
+  ]
+}

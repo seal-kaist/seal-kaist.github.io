@@ -1,374 +1,293 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { Play, RotateCcw } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useEffect, useRef, useState } from 'react';
+import { Pause, Play, RotateCcw } from 'lucide-react';
 
-const STAGES = [
-  "Original KV",
-  "Direct INT2",
-  "Predict from anchor",
-  "Quantize residual",
-  "Reconstruct",
+const STEPS = [
+  {
+    title: 'Similar loops',
+    text: 'Each loop has its own KV state, but much of the pattern is shared.',
+  },
+  {
+    title: 'Last-loop anchor',
+    text: 'Store the final loop as an INT4 anchor. Earlier loops share this reconstructed reference.',
+  },
+  {
+    title: 'LS prediction',
+    text: 'Scale the reconstructed anchor to predict the earlier loop. LS chooses α to minimize the remaining error.',
+  },
+  {
+    title: 'Small residual',
+    text: 'Subtract the prediction. Only the smaller, loop-specific difference remains.',
+  },
+  {
+    title: 'Rotate + INT2',
+    text: 'Rotate the residual across channels, then encode each group with four INT2 levels.',
+  },
+  {
+    title: 'Reconstruct',
+    text: 'Add the inverse-rotated residual to the scaled anchor. Attention consumes reconstructed tiles directly.',
+  },
 ];
-const STAGE_EXPLANATIONS = [
-  "Start with the KV state from an earlier loop.",
-  "Direct INT2 must map the full KV range to only four levels, producing a coarse quantization scale.",
-  "ResidualQuant uses the final-loop INT4 anchor to predict most of the earlier loop's KV state.",
-  "The remaining residual has a much narrower range, so INT2 represents it with a finer scale.",
-  "Adding the quantized residual back to the prediction reconstructs the KV state with lower error.",
-];
-const PLOT_WIDTH = 320;
-const PLOT_HEIGHT = 148;
-const PLOT_PADDING = 14;
 
+// Deterministic teaching example, independent of model traces and benchmark scores.
+const N = 32;
+const anchor = Array.from(
+  { length: N },
+  (_, i) => 0.65 * Math.sin(i * 0.43) + 0.23 * Math.cos(i * 1.13),
+);
+const target = anchor.map(
+  (v, i) => 0.84 * v + 0.055 * Math.sin(i * 1.71) + (i === 13 ? 0.17 : 0),
+);
 function quantize(values: number[], bits: number) {
-  const bound = Math.max(...values.map((value) => Math.abs(value)), 1e-6);
-  const levels = 2 ** bits - 1;
-  const quantized = values.map((value) => {
-    const index = Math.round(((value + bound) / (2 * bound)) * levels);
-    return (index / levels) * 2 * bound - bound;
-  });
-
-  return { values: quantized, bound, scale: (2 * bound) / levels };
-}
-
-function relativeRmse(reference: number[], estimate: number[]) {
-  const error = Math.sqrt(
-    estimate.reduce(
-      (sum, value, index) => sum + (value - reference[index]) ** 2,
-      0,
-    ) / reference.length,
-  );
-  const magnitude = Math.sqrt(
-    reference.reduce((sum, value) => sum + value ** 2, 0) / reference.length,
-  );
-  return (100 * error) / magnitude;
-}
-
-function createDemoData() {
-  const anchor = Array.from({ length: 96 }, (_, index) => {
-    const spike = index % 29 === 7 ? 0.34 : index % 37 === 12 ? -0.31 : 0;
-    return (
-      0.62 * Math.sin(index * 0.41) +
-      0.24 * Math.cos(index * 1.17) +
-      spike
-    );
-  });
-  const target = anchor.map(
-    (value, index) =>
-      0.84 * value +
-      0.105 * Math.sin(index * 1.73 + 0.8) +
-      (index % 23 === 5 ? 0.055 : 0),
-  );
-
-  const direct = quantize(target, 2);
-  const quantizedAnchor = quantize(anchor, 4);
-  const numerator = target.reduce(
-    (sum, value, index) => sum + value * quantizedAnchor.values[index],
-    0,
-  );
-  const denominator = quantizedAnchor.values.reduce(
-    (sum, value) => sum + value * value,
-    0,
-  );
-  const alpha = numerator / denominator;
-  const prediction = quantizedAnchor.values.map((value) => alpha * value);
-  const residual = target.map((value, index) => value - prediction[index]);
-  const quantizedResidual = quantize(residual, 2);
-  const reconstruction = prediction.map(
-    (value, index) => value + quantizedResidual.values[index],
-  );
-
+  const low = Math.min(...values),
+    high = Math.max(...values);
+  const scale = (high - low) / (2 ** bits - 1) || 1;
   return {
-    target,
-    anchor,
-    residual,
-    direct,
-    quantizedAnchor,
-    quantizedResidual,
-    alpha,
-    directError: relativeRmse(target, direct.values),
-    residualError: relativeRmse(target, reconstruction),
+    values: values.map((v) => low + Math.round((v - low) / scale) * scale),
+    scale,
   };
 }
-
-const DEMO = createDemoData();
-const COMMON_BOUND = Math.max(DEMO.direct.bound, DEMO.quantizedAnchor.bound) * 1.08;
-
-function densityPath(values: number[], bound: number) {
-  const points = 72;
-  const bandwidth = bound * 0.105;
-  const densities = Array.from({ length: points }, (_, index) => {
-    const x = -bound + (index / (points - 1)) * bound * 2;
-    return values.reduce((sum, value) => {
-      const distance = (x - value) / bandwidth;
-      return sum + Math.exp(-0.5 * distance * distance);
-    }, 0);
-  });
-  const peak = Math.max(...densities);
-
-  return densities
-    .map((density, index) => {
-      const x =
-        PLOT_PADDING +
-        (index / (points - 1)) * (PLOT_WIDTH - PLOT_PADDING * 2);
-      const y =
-        PLOT_HEIGHT -
-        PLOT_PADDING -
-        (density / peak) * (PLOT_HEIGHT - PLOT_PADDING * 2 - 8);
-      return `${index === 0 ? "M" : "L"}${x.toFixed(2)},${y.toFixed(2)}`;
-    })
-    .join(" ");
+function rotate(values: number[]) {
+  const out = [...values];
+  for (let span = 1; span < out.length; span *= 2) {
+    for (let i = 0; i < out.length; i += span * 2) {
+      for (let j = 0; j < span; j++) {
+        const a = out[i + j],
+          b = out[i + j + span];
+        out[i + j] = a + b;
+        out[i + j + span] = a - b;
+      }
+    }
+  }
+  return out.map((v) => v / Math.sqrt(out.length));
 }
-
-function levelPositions(range: number, bits: number, commonBound: number) {
-  const count = 2 ** bits;
-  return Array.from({ length: count }, (_, index) => {
-    const value = -range + (index / (count - 1)) * range * 2;
-    return (
-      PLOT_PADDING +
-      ((value + commonBound) / (commonBound * 2)) *
-        (PLOT_WIDTH - PLOT_PADDING * 2)
-    );
-  });
-}
-
-function DistributionPlot({
-  values,
-  range,
-  bits,
-  color,
-  active,
-  showLevels,
-  label,
-}: {
-  values: number[];
-  range: number;
-  bits: number;
-  color: "charcoal" | "blue" | "orange";
-  active: boolean;
-  showLevels: boolean;
-  label: string;
-}) {
-  return (
-    <svg
-      viewBox={`0 0 ${PLOT_WIDTH} ${PLOT_HEIGHT}`}
-      className={`rq-compare-plot is-${color} ${active ? "is-active" : ""}`}
-      role="img"
-      aria-label={label}
-    >
-      <line
-        x1={PLOT_PADDING}
-        x2={PLOT_WIDTH - PLOT_PADDING}
-        y1={PLOT_HEIGHT - PLOT_PADDING}
-        y2={PLOT_HEIGHT - PLOT_PADDING}
-        className="rq-compare-axis"
-      />
-      <line
-        x1={PLOT_WIDTH / 2}
-        x2={PLOT_WIDTH / 2}
-        y1={PLOT_PADDING}
-        y2={PLOT_HEIGHT - PLOT_PADDING}
-        className="rq-compare-center"
-      />
-      {showLevels &&
-        levelPositions(range, bits, COMMON_BOUND).map((x, index) => (
-          <line
-            key={index}
-            x1={x}
-            x2={x}
-            y1={PLOT_PADDING + 5}
-            y2={PLOT_HEIGHT - PLOT_PADDING}
-            className="rq-compare-level"
-          />
-        ))}
-      <path
-        pathLength="1"
-        d={densityPath(values, COMMON_BOUND)}
-        className="rq-compare-density"
-      />
-    </svg>
-  );
+const reference = quantize(anchor, 4).values;
+const alpha =
+  target.reduce((s, v, i) => s + v * reference[i], 0) /
+  reference.reduce((s, v) => s + v * v, 0);
+const prediction = reference.map((v) => alpha * v);
+const residual = target.map((v, i) => v - prediction[i]);
+const rotated = rotate(residual);
+const packed = quantize(rotated, 2);
+const recovered = rotate(packed.values).map((v, i) => v + prediction[i]);
+const direct = quantize(target, 2);
+const rmse = (values: number[]) =>
+  Math.sqrt(values.reduce((s, v, i) => s + (v - target[i]) ** 2, 0) / N);
+const bound = Math.max(...anchor.map(Math.abs), ...target.map(Math.abs)) * 1.15;
+function path(values: number[]) {
+  return values
+    .map(
+      (v, i) =>
+        `${i ? 'L' : 'M'}${(24 + (i / (N - 1)) * 592).toFixed(2)},${(110 - (v / bound) * 80).toFixed(2)}`,
+    )
+    .join(' ');
 }
 
 export function ResidualQuantDemo() {
-  const [stage, setStage] = useState(4);
-  const [isPlaying, setIsPlaying] = useState(false);
-
+  const root = useRef<HTMLDivElement>(null);
+  const [stage, setStage] = useState(0);
+  const [playing, setPlaying] = useState(true);
+  const [visible, setVisible] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   useEffect(() => {
-    if (!isPlaying) return;
-
-    const timer = window.setTimeout(() => {
-      if (stage === STAGES.length - 1) {
-        setIsPlaying(false);
-        return;
-      }
-      setStage((current) => current + 1);
-    }, 900);
-
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => {
+      setReducedMotion(media.matches);
+      if (media.matches) setPlaying(false);
+    };
+    media.addEventListener('change', update);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        update();
+        setVisible(entry.isIntersecting);
+      },
+      { threshold: 0.2 },
+    );
+    if (root.current) observer.observe(root.current);
+    return () => {
+      observer.disconnect();
+      media.removeEventListener('change', update);
+    };
+  }, []);
+  useEffect(() => {
+    if (!playing || !visible) return;
+    const timer = window.setTimeout(
+      () => setStage((s) => (s + 1) % STEPS.length),
+      stage === 5 ? 4200 : 2600,
+    );
     return () => window.clearTimeout(timer);
-  }, [isPlaying, stage]);
+  }, [playing, visible, stage]);
 
+  const shown =
+    stage < 2
+      ? target
+      : stage === 2
+        ? prediction
+        : stage === 3
+          ? residual
+          : stage === 4
+            ? rotated
+            : recovered;
+  const label = [
+    'Earlier-loop KV',
+    'Earlier-loop KV',
+    'Scaled anchor · αR',
+    'Residual · X − αR',
+    'Rotated residual · U(X − αR)',
+    'Reconstructed KV · X̂',
+  ][stage];
   const replay = () => {
     setStage(0);
-    setIsPlaying(true);
+    setPlaying(true);
   };
-
-  const selectStage = (nextStage: number) => {
-    setStage(nextStage);
-    setIsPlaying(false);
-  };
-
-  const scaleRatio = DEMO.direct.scale / DEMO.quantizedResidual.scale;
-
   return (
-    <div className="rq-compare">
-      <div className="rq-compare-intro">
-        <p>
-          Both methods use INT2 for loop-specific information. Direct
-          quantization encodes the entire KV state; ResidualQuant uses a shared
-          anchor to predict it and encodes only the smaller difference.
-        </p>
-        <div>
-          <span aria-live="polite">{STAGES[stage]}</span>
-          <Button type="button" variant="outline" onClick={replay}>
-            {isPlaying ? <RotateCcw /> : <Play />}
-            Replay
-          </Button>
-        </div>
-      </div>
-
-      <div className="rq-compare-flow" aria-label="Choose explanation step">
-        {STAGES.map((item, index) => (
+    <div
+      ref={root}
+      className={`rq-story ${reducedMotion ? 'rq-story-reduced' : ''}`}
+      data-stage={stage}
+    >
+      <div className="rq-story-top">
+        <p className="rq-story-kicker">Store what changes between loops.</p>
+        <div className="rq-story-controls">
           <button
             type="button"
-            key={item}
-            className={`${index <= stage ? "is-complete" : ""} ${index === stage ? "is-active" : ""}`}
-            aria-current={index === stage ? "step" : undefined}
-            onClick={() => selectStage(index)}
+            onClick={() => setPlaying((p) => !p)}
+            aria-label={playing ? 'Pause animation' : 'Play animation'}
           >
-            <span>{String(index + 1).padStart(2, "0")}</span>
-            {item}
+            {playing ? <Pause size={16} /> : <Play size={16} />}{' '}
+            {playing ? 'Pause' : 'Play'}
+          </button>
+          <button type="button" onClick={replay}>
+            <RotateCcw size={16} /> Replay
+          </button>
+        </div>
+      </div>
+      <div className="rq-story-steps" aria-label="Animation steps">
+        {STEPS.map((step, i) => (
+          <button
+            key={step.title}
+            type="button"
+            aria-current={stage === i ? 'step' : undefined}
+            className={stage === i ? 'is-active' : ''}
+            onClick={() => {
+              setStage(i);
+              setPlaying(false);
+            }}
+          >
+            <span>0{i + 1}</span>
+            {step.title}
           </button>
         ))}
       </div>
-
-      <p className="rq-compare-explanation" aria-live="polite">
-        {STAGE_EXPLANATIONS[stage]}
-      </p>
-
-      <div className="rq-compare-branches">
-        <section
-          className={`rq-compare-direct ${stage === 1 ? "is-highlighted" : ""}`}
+      <div
+        className="rq-story-loop-row"
+        aria-label="Four-loop precision schedule"
+      >
+        {[1, 2, 3, 4].map((loop) => (
+          <div
+            key={loop}
+            className={`rq-story-loop ${loop === 4 ? 'is-anchor' : ''} ${stage >= 1 ? 'is-stored' : ''}`}
+          >
+            <span>Loop {loop}</span>
+            <strong>
+              {stage === 0
+                ? 'BF16 KV'
+                : loop === 4
+                  ? 'INT4 anchor'
+                  : 'INT2 residual'}
+            </strong>
+            <div className="rq-story-mini">
+              {Array.from({ length: 16 }, (_, i) => (
+                <i
+                  key={i}
+                  style={{
+                    height: `${12 + Math.abs(anchor[i] * (loop === 4 || stage === 0 ? 1 : 0.2)) * 45}px`,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="rq-story-caption">
+        <span>0{stage + 1} / 06</span>
+        <div>
+          <h3>{STEPS[stage].title}</h3>
+          <p>{STEPS[stage].text}</p>
+        </div>
+      </div>
+      <div className="rq-story-visual">
+        <div className="rq-story-chart-label">
+          <span>{label}</span>
+          <span>Same value scale at every step</span>
+        </div>
+        <svg
+          viewBox="0 0 640 220"
+          role="img"
+          aria-label={`${label}, compared with the original KV on a fixed scale`}
         >
-          <header>
-            <span>Direct quantization</span>
-            <h3>Full KV → INT2</h3>
-          </header>
-          <DistributionPlot
-            values={DEMO.target}
-            range={DEMO.direct.bound}
-            bits={2}
-            color="charcoal"
-            active
-            showLevels={stage >= 1}
-            label="Full KV distribution with four INT2 quantization levels"
+          {[30, 70, 110, 150, 190].map((y) => (
+            <line
+              key={y}
+              x1="24"
+              x2="616"
+              y1={y}
+              y2={y}
+              className="rq-story-grid"
+            />
+          ))}
+          <path d={path(target)} className="rq-story-original" />
+          {stage === 0 && (
+            <path d={path(anchor)} className="rq-story-anchor-line" />
+          )}
+          {stage === 1 && (
+            <path d={path(reference)} className="rq-story-anchor-line" />
+          )}
+          <path
+            key={stage}
+            d={path(shown)}
+            pathLength="1"
+            className={`rq-story-signal ${stage === 3 || stage === 4 ? 'is-residual' : ''}`}
           />
-          <div className="rq-compare-scale">
-            <span>Full range</span>
-            <strong>±{DEMO.direct.bound.toFixed(2)}</strong>
-            <span>Scale Δ</span>
-            <strong>{DEMO.direct.scale.toFixed(2)}</strong>
-          </div>
-          <div
-            className={`rq-compare-error is-direct ${stage >= 1 ? "is-visible" : ""}`}
-          >
-            <span>Relative reconstruction error</span>
-            <strong>{DEMO.directError.toFixed(1)}%</strong>
-          </div>
-        </section>
-
-        <section className="rq-compare-residual">
-          <header>
-            <span>ResidualQuant</span>
-            <h3>Anchor + residual</h3>
-          </header>
-
-          <div className="rq-compare-pair">
-            <div className={stage === 2 ? "is-highlighted" : ""}>
-              <div className="rq-compare-subheading">
-                <span>1</span>
-                <strong>INT4 anchor</strong>
-              </div>
-              <DistributionPlot
-                values={DEMO.anchor}
-                range={DEMO.quantizedAnchor.bound}
-                bits={4}
-                color="blue"
-                active={stage >= 2}
-                showLevels={stage >= 2}
-                label="Anchor distribution with sixteen INT4 quantization levels"
-              />
-              <div className="rq-compare-scale">
-                <span>Full range</span>
-                <strong>±{DEMO.quantizedAnchor.bound.toFixed(2)}</strong>
-                <span>Scale Δ</span>
-                <strong>{DEMO.quantizedAnchor.scale.toFixed(2)}</strong>
-              </div>
-            </div>
-
-            <div className={stage === 3 ? "is-highlighted" : ""}>
-              <div className="rq-compare-subheading">
-                <span>2</span>
-                <strong>INT2 residual</strong>
-              </div>
-              <DistributionPlot
-                values={DEMO.residual}
-                range={DEMO.quantizedResidual.bound}
-                bits={2}
-                color="orange"
-                active={stage >= 3}
-                showLevels={stage >= 3}
-                label="Narrow residual distribution with four INT2 quantization levels"
-              />
-              <div className="rq-compare-scale">
-                <span>Residual range</span>
-                <strong>±{DEMO.quantizedResidual.bound.toFixed(2)}</strong>
-                <span>Scale Δ</span>
-                <strong>{DEMO.quantizedResidual.scale.toFixed(2)}</strong>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className={`rq-compare-reconstruct ${stage === 4 ? "is-highlighted" : ""}`}
-          >
-            <code>
-              K̂ᵢ = {DEMO.alpha.toFixed(2)} · Q₄(K₄) + Q₂(Kᵢ − {DEMO.alpha.toFixed(2)} · Q₄(K₄))
-            </code>
-            <div
-              className={`rq-compare-error is-residual ${stage >= 4 ? "is-visible" : ""}`}
-            >
-              <span>Relative reconstruction error</span>
-              <strong>{DEMO.residualError.toFixed(1)}%</strong>
-            </div>
-          </div>
-        </section>
+          <text x="24" y="213">
+            Channel 1
+          </text>
+          <text x="548" y="213">
+            Channel 32
+          </text>
+        </svg>
+        <div className="rq-story-legend">
+          <span>Original KV</span>
+          <span>{label}</span>
+        </div>
+        <div className="rq-story-equation">
+          {stage < 2
+            ? '[X₁, X₂, X₃, X₄] → [INT2, INT2, INT2, INT4]'
+            : stage === 2
+              ? 'α = ⟨X, R⟩ / ‖R‖²     ·     prediction = αR'
+              : stage === 3
+                ? 'residual = X − αR'
+                : stage === 4
+                  ? 'stored residual = Q₂(U(X − αR))'
+                  : 'X̂ = αR + UᵀQ₂(U(X − αR))'}
+        </div>
       </div>
-
-      <div className={`rq-compare-takeaway ${stage >= 3 ? "is-visible" : ""}`}>
-        <span>Same INT2 precision</span>
-        <strong>{scaleRatio.toFixed(1)}× finer quantization scale</strong>
-        <p>
-          The residual occupies a smaller range, reducing the step size from{" "}
-          {DEMO.direct.scale.toFixed(2)} to {DEMO.quantizedResidual.scale.toFixed(2)}.
-        </p>
+      <div className="rq-story-bottom">
+        <div>
+          <span>direct INT2 · illustrative RMSE</span>
+          <strong>{rmse(direct.values).toFixed(3)}</strong>
+        </div>
+        <div className={stage === 5 ? 'is-active' : ''}>
+          <span>Anchor + rotated INT2 residual · illustrative RMSE</span>
+          <strong>{stage === 5 ? rmse(recovered).toFixed(3) : '—'}</strong>
+        </div>
       </div>
-
-      <p className="rq-compare-note">
-        Illustrative distributions and errors. Quantization ranges and scales
-        are computed from the values shown.
+      <p className="rq-story-note">
+        Synthetic 32-channel teaching example with affine quantization and a
+        fixed Hadamard rotation. The paper uses calibrated OptR-H rotations;
+        these curves and errors are not model measurements. During decode, the
+        current token stays in BF16 until its final-loop anchor is available.
       </p>
     </div>
   );
