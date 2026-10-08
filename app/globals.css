@@ -1046,6 +1046,124 @@ a:focus-visible .link-arrow-head {
   border-top: 1px solid var(--border);
 }
 
+.publication-search-block {
+  margin-bottom: 54px;
+}
+
+.publication-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: min(100%, 420px);
+  border-bottom: 1px solid #343434;
+  transition: border-color 180ms ease;
+}
+
+.publication-search:focus-within {
+  border-color: #858585;
+}
+
+.publication-search > svg {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  color: #767676;
+  pointer-events: none;
+}
+
+.publication-search .publication-search-input {
+  height: 42px;
+  padding: 0 34px 0 27px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #dedede;
+  font-family: inherit;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.publication-search .publication-search-input::placeholder {
+  color: #757575;
+}
+
+.publication-search .publication-search-input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.publication-search .publication-search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.publication-search-clear {
+  position: absolute;
+  right: 0;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  place-items: center;
+  background: transparent;
+  color: #767676;
+  cursor: pointer;
+}
+
+.publication-search-clear:hover,
+.publication-search-clear:focus-visible {
+  color: #fff;
+}
+
+.publication-search-clear svg {
+  width: 15px;
+  height: 15px;
+}
+
+.publication-search-summary {
+  margin: 10px 0 0;
+  color: #777;
+  font-size: 11px;
+}
+
+.publication-search-highlight {
+  padding: 0;
+  background: transparent;
+  color: #f2f2f2;
+  font-weight: 700;
+}
+
+.publication-search-empty {
+  padding: 72px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.publication-search-empty p {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 17px;
+}
+
+.publication-search-empty button {
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #666;
+  background: transparent;
+  color: #d8d8d8;
+  font: inherit;
+  cursor: pointer;
+}
+
+.publication-search-empty button:hover,
+.publication-search-empty button:focus-visible {
+  border-color: #fff;
+  color: #fff;
+}
+
 .publication-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(175px, 0.28fr);
@@ -2039,6 +2157,19 @@ a:focus-visible .link-arrow-head {
 
   .publication-row {
     grid-template-columns: 1fr;
+  }
+
+  .publication-search {
+    width: 100%;
+  }
+
+  .publication-search .publication-search-input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .publication-search-block {
+    margin-bottom: 44px;
   }
 
   .publication-meta {
