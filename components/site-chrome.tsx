@@ -23,6 +23,7 @@ export function SiteHeader({ brandAurora = false }: SiteHeaderProps = {}) {
     ["Home", "/"],
     ["People", "/people"],
     ["Publications", "/publications"],
+    ["Projects", "/projects"],
     ["Join", "/join"],
   ];
 

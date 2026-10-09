@@ -43,6 +43,13 @@ async function createPrettyRoute(route) {
 
 await patchGeneratedFiles(outputDirectory);
 await Promise.all(
-  ["join", "people", "publications", "research", "projects/ResidualQuant"].map(createPrettyRoute),
+  [
+    "join",
+    "people",
+    "publications",
+    "research",
+    "projects",
+    "projects/ResidualQuant",
+  ].map(createPrettyRoute),
 );
 await writeFile(path.join(outputDirectory, ".nojekyll"), "");

@@ -1,7 +1,7 @@
 export const projects = [
   {
     slug: "ResidualQuant",
-    published: "October 3, 2026",
+    published: "October 7, 2026",
     image: "/projects/residualquant/teaser-published.png",
     title: "ResidualQuant",
     description:

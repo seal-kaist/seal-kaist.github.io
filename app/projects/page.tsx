@@ -16,7 +16,9 @@ export default function ProjectsPage() {
   return (
     <main className="projects-index-page">
       <section className="projects-index-hero shell">
-        <p>SEAL · KAIST AI</p>
+        <a className="projects-index-kicker" href={sitePath("/")}>
+          SEAL · KAIST AI
+        </a>
         <h1>Projects</h1>
         <div className="projects-index-intro">
           <p>A closer look at the ideas and systems we build.</p>

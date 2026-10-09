@@ -99,6 +99,8 @@ export const publications: Publication[] = [
       "Omin Kwon, JoongWon Shin, Minseo Kim, Kurt Keutzer, Sehoon Kim, Jae W. Lee",
     venue: "Preprint 2026",
     paper: "https://arxiv.org/pdf/2609.33051",
+    project: "https://omin-kwon.github.io/project/SketchSSM/",
+    code: "https://github.com/SNU-ARC/SketchSSM",
   },
   {
     year: 2026,
