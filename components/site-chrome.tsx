@@ -10,10 +10,28 @@ type SiteHeaderProps = {
   brandAurora?: boolean;
 };
 
-export function LogoMark() {
+export function LogoMark({ animated = false }: { animated?: boolean } = {}) {
   return (
-    <span className="ship-crop" aria-hidden="true">
-      <img src={sitePath("/seal-logo.png")} alt="" />
+    <span
+      className={`ship-crop${animated ? " ship-crop-approach" : ""}`}
+      aria-hidden="true"
+    >
+      {animated ? (
+        <>
+          <img
+            className="ship-approach-gif"
+            src={sitePath("/seal-logo-approach-white.gif")}
+            alt=""
+          />
+          <img
+            className="ship-approach-fallback"
+            src={sitePath("/seal-logo.png")}
+            alt=""
+          />
+        </>
+      ) : (
+        <img src={sitePath("/seal-logo.png")} alt="" />
+      )}
     </span>
   );
 }
@@ -34,7 +52,7 @@ export function SiteHeader({ brandAurora = false }: SiteHeaderProps = {}) {
         href={sitePath("/")}
         aria-label="SEAL home"
       >
-        <LogoMark />
+        <LogoMark animated={brandAurora} />
         <span className="brand-lockup" aria-hidden="true">
           <span className="brand-initial">S</span>
           <span className="brand-rest brand-rest-scalable">
