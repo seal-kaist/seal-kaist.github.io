@@ -3,9 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Play } from 'lucide-react';
 
-const BASE = '/projects/residualquant/terminal-decode';
-
-export function ResidualQuantTerminalVideo() {
+export function ResidualQuantTerminalVideo({ base = '/projects/residualquant/terminal-decode' }: { base?: string }) {
   const video = useRef<HTMLVideoElement>(null);
   const [ready, setReady] = useState(false);
   useEffect(() => {
@@ -61,14 +59,14 @@ export function ResidualQuantTerminalVideo() {
           playsInline
           muted
           preload="auto"
-          poster={`${BASE}-poster.png`}
-          aria-label="Real-time terminal comparison of vLLM BF16 and ResidualQuant decoding"
+          poster={`${base}-poster.png`}
+          aria-label="Actual terminal screen recordings comparing vLLM BF16 and ResidualQuant at 1x speed"
           onPlay={() => { setStarted(true); setError(false); }}
           onEnded={() => setStarted(false)}
           onError={() => setError(true)}
         >
-          <source src={`${BASE}.webm`} type="video/webm" />
-          <source src={`${BASE}.mp4`} type="video/mp4" />
+          <source src={`${base}.webm`} type="video/webm" />
+          <source src={`${base}.mp4`} type="video/mp4" />
         </video>
         {!started && !error && (
           <button type="button" className="rq-terminal-play" disabled={!ready} onClick={play} aria-label="Play decode comparison">
@@ -78,8 +76,8 @@ export function ResidualQuantTerminalVideo() {
       </div>
       <div className="rq-terminal-links">
         {error && <span>Playback unavailable in this browser. Open the video directly:</span>}
-        <a href={`${BASE}.mp4`} target="_blank" rel="noreferrer">Open MP4</a>
-        <a href={`${BASE}.webm`} target="_blank" rel="noreferrer">Open WebM</a>
+        <a href={`${base}.mp4`} target="_blank" rel="noreferrer">Open MP4</a>
+        <a href={`${base}.webm`} target="_blank" rel="noreferrer">Open WebM</a>
       </div>
     </div>
   );

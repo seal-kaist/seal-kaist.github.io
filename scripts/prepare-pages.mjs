@@ -50,6 +50,7 @@ await Promise.all(
     "research",
     "projects",
     "projects/ResidualQuant",
+    "projects/ResidualQuant-tmp",
   ].map(createPrettyRoute),
 );
 await writeFile(path.join(outputDirectory, ".nojekyll"), "");

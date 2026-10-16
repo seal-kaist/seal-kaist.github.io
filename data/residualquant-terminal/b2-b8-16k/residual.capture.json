@@ -1,0 +1,1 @@
+{"decode_video_offset_seconds": 0.5, "screen": "1280x960", "terminal": "xterm", "capture": "ffmpeg x11grab during actual inference", "fps": 24}

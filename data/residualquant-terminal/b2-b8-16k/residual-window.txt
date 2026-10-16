@@ -1,0 +1,10 @@
+
+xwininfo: Window id: 0x42 (the root window) (has no name)
+
+  Root window id: 0x42 (the root window) (has no name)
+  Parent window id: 0x0 (none)
+     1 child:
+     0x20000c "residual batch 8": ("xterm" "XTerm")  1270x940+0+0  +0+0
+        1 child:
+        0x20001c (has no name): ()  1270x940+0+0  +1+1
+

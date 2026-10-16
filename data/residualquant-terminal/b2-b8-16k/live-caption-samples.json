@@ -1,0 +1,4430 @@
+[
+  {
+    "seconds": 0.0,
+    "bf16_tokens_per_second": 0.0,
+    "residual_tokens_per_second": 0.0,
+    "throughput_ratio": 0.0
+  },
+  {
+    "seconds": 0.041666666666666664,
+    "bf16_tokens_per_second": 0.0,
+    "residual_tokens_per_second": 0.0,
+    "throughput_ratio": 0.0
+  },
+  {
+    "seconds": 0.08333333333333333,
+    "bf16_tokens_per_second": 35.33957016391099,
+    "residual_tokens_per_second": 175.4666288116832,
+    "throughput_ratio": 4.9651602438241005
+  },
+  {
+    "seconds": 0.125,
+    "bf16_tokens_per_second": 35.692984336974405,
+    "residual_tokens_per_second": 185.6202778224426,
+    "throughput_ratio": 5.200469539616455
+  },
+  {
+    "seconds": 0.16666666666666666,
+    "bf16_tokens_per_second": 35.692984336974405,
+    "residual_tokens_per_second": 188.8780810308921,
+    "throughput_ratio": 5.291742468147531
+  },
+  {
+    "seconds": 0.20833333333333334,
+    "bf16_tokens_per_second": 35.79338334129133,
+    "residual_tokens_per_second": 190.82374184161515,
+    "throughput_ratio": 5.3312574567791815
+  },
+  {
+    "seconds": 0.25,
+    "bf16_tokens_per_second": 35.84503945766816,
+    "residual_tokens_per_second": 192.441445274335,
+    "throughput_ratio": 5.368705075680058
+  },
+  {
+    "seconds": 0.2916666666666667,
+    "bf16_tokens_per_second": 35.83527546026502,
+    "residual_tokens_per_second": 192.87264157120734,
+    "throughput_ratio": 5.3822006136123886
+  },
+  {
+    "seconds": 0.3333333333333333,
+    "bf16_tokens_per_second": 35.83527546026502,
+    "residual_tokens_per_second": 193.36644330175696,
+    "throughput_ratio": 5.395980380175008
+  },
+  {
+    "seconds": 0.375,
+    "bf16_tokens_per_second": 35.8818187819816,
+    "residual_tokens_per_second": 193.63434304520797,
+    "throughput_ratio": 5.396447271018584
+  },
+  {
+    "seconds": 0.4166666666666667,
+    "bf16_tokens_per_second": 35.89663475867177,
+    "residual_tokens_per_second": 193.96723587464987,
+    "throughput_ratio": 5.403493591493058
+  },
+  {
+    "seconds": 0.4583333333333333,
+    "bf16_tokens_per_second": 35.92111032699262,
+    "residual_tokens_per_second": 194.12588527267366,
+    "throughput_ratio": 5.404228419041918
+  },
+  {
+    "seconds": 0.5,
+    "bf16_tokens_per_second": 35.92111032699262,
+    "residual_tokens_per_second": 194.34330606810465,
+    "throughput_ratio": 5.410281149412773
+  },
+  {
+    "seconds": 0.5416666666666666,
+    "bf16_tokens_per_second": 35.9292849163239,
+    "residual_tokens_per_second": 194.4192420190948,
+    "throughput_ratio": 5.41116369201001
+  },
+  {
+    "seconds": 0.5833333333333334,
+    "bf16_tokens_per_second": 35.94560324626436,
+    "residual_tokens_per_second": 194.56661944248995,
+    "throughput_ratio": 5.412807182828688
+  },
+  {
+    "seconds": 0.625,
+    "bf16_tokens_per_second": 35.94622881465662,
+    "residual_tokens_per_second": 194.55671208811108,
+    "throughput_ratio": 5.412437368361241
+  },
+  {
+    "seconds": 0.6666666666666666,
+    "bf16_tokens_per_second": 35.94622881465662,
+    "residual_tokens_per_second": 194.70227491746192,
+    "throughput_ratio": 5.416486828740002
+  },
+  {
+    "seconds": 0.7083333333333334,
+    "bf16_tokens_per_second": 35.95831241432983,
+    "residual_tokens_per_second": 194.74462749584197,
+    "throughput_ratio": 5.415844471561847
+  },
+  {
+    "seconds": 0.75,
+    "bf16_tokens_per_second": 35.96118538375102,
+    "residual_tokens_per_second": 194.86057585565686,
+    "throughput_ratio": 5.4186360593025436
+  },
+  {
+    "seconds": 0.7916666666666666,
+    "bf16_tokens_per_second": 35.97118526670321,
+    "residual_tokens_per_second": 194.86243147875072,
+    "throughput_ratio": 5.417181280905011
+  },
+  {
+    "seconds": 0.8333333333333334,
+    "bf16_tokens_per_second": 35.97118526670321,
+    "residual_tokens_per_second": 194.6700593374418,
+    "throughput_ratio": 5.41183332976349
+  },
+  {
+    "seconds": 0.875,
+    "bf16_tokens_per_second": 35.973273455072906,
+    "residual_tokens_per_second": 194.61823492320946,
+    "throughput_ratio": 5.410078545291925
+  },
+  {
+    "seconds": 0.9166666666666666,
+    "bf16_tokens_per_second": 35.98121298554377,
+    "residual_tokens_per_second": 194.67710324643323,
+    "throughput_ratio": 5.410520854998662
+  },
+  {
+    "seconds": 0.9583333333333334,
+    "bf16_tokens_per_second": 35.981539163506696,
+    "residual_tokens_per_second": 194.67020960355993,
+    "throughput_ratio": 5.410280219502086
+  },
+  {
+    "seconds": 1.0,
+    "bf16_tokens_per_second": 35.981539163506696,
+    "residual_tokens_per_second": 194.73858496060038,
+    "throughput_ratio": 5.412180509446042
+  },
+  {
+    "seconds": 1.0416666666666667,
+    "bf16_tokens_per_second": 35.98795735009387,
+    "residual_tokens_per_second": 194.7358876073532,
+    "throughput_ratio": 5.411140335444608
+  },
+  {
+    "seconds": 1.0833333333333333,
+    "bf16_tokens_per_second": 35.98432718955155,
+    "residual_tokens_per_second": 194.8194485178638,
+    "throughput_ratio": 5.414008367910566
+  },
+  {
+    "seconds": 1.125,
+    "bf16_tokens_per_second": 35.98983986708749,
+    "residual_tokens_per_second": 194.6609566167207,
+    "throughput_ratio": 5.40877529146044
+  },
+  {
+    "seconds": 1.1666666666666667,
+    "bf16_tokens_per_second": 35.98983986708749,
+    "residual_tokens_per_second": 194.67104085821617,
+    "throughput_ratio": 5.409055488358584
+  },
+  {
+    "seconds": 1.2083333333333333,
+    "bf16_tokens_per_second": 35.98998953907109,
+    "residual_tokens_per_second": 194.6820723976542,
+    "throughput_ratio": 5.409339510540991
+  },
+  {
+    "seconds": 1.25,
+    "bf16_tokens_per_second": 35.99492911960749,
+    "residual_tokens_per_second": 194.76431532256004,
+    "throughput_ratio": 5.410882034949368
+  },
+  {
+    "seconds": 1.2916666666666667,
+    "bf16_tokens_per_second": 35.99470365498645,
+    "residual_tokens_per_second": 194.76883501444883,
+    "throughput_ratio": 5.411041493252214
+  },
+  {
+    "seconds": 1.3333333333333333,
+    "bf16_tokens_per_second": 35.99470365498645,
+    "residual_tokens_per_second": 194.81849334973873,
+    "throughput_ratio": 5.412421094422594
+  },
+  {
+    "seconds": 1.375,
+    "bf16_tokens_per_second": 35.99916481065956,
+    "residual_tokens_per_second": 194.81092801320474,
+    "throughput_ratio": 5.41154021316406
+  },
+  {
+    "seconds": 1.4166666666666667,
+    "bf16_tokens_per_second": 35.99661034319374,
+    "residual_tokens_per_second": 194.86378033444902,
+    "throughput_ratio": 5.413392496588057
+  },
+  {
+    "seconds": 1.4583333333333333,
+    "bf16_tokens_per_second": 35.99828573424307,
+    "residual_tokens_per_second": 194.85560207714772,
+    "throughput_ratio": 5.412913368032772
+  },
+  {
+    "seconds": 1.5,
+    "bf16_tokens_per_second": 35.99828573424307,
+    "residual_tokens_per_second": 194.89811495838433,
+    "throughput_ratio": 5.414094337636448
+  },
+  {
+    "seconds": 1.5416666666666667,
+    "bf16_tokens_per_second": 35.998416381704374,
+    "residual_tokens_per_second": 194.8766939530159,
+    "throughput_ratio": 5.41347963440022
+  },
+  {
+    "seconds": 1.5833333333333333,
+    "bf16_tokens_per_second": 36.0011586281741,
+    "residual_tokens_per_second": 194.92260882076124,
+    "throughput_ratio": 5.4143426558559975
+  },
+  {
+    "seconds": 1.625,
+    "bf16_tokens_per_second": 36.000641355167616,
+    "residual_tokens_per_second": 194.9021731169348,
+    "throughput_ratio": 5.4138528031795214
+  },
+  {
+    "seconds": 1.6666666666666667,
+    "bf16_tokens_per_second": 36.00377222326065,
+    "residual_tokens_per_second": 194.94259559132658,
+    "throughput_ratio": 5.414504746404925
+  },
+  {
+    "seconds": 1.7083333333333333,
+    "bf16_tokens_per_second": 36.00377222326065,
+    "residual_tokens_per_second": 194.9169279465377,
+    "throughput_ratio": 5.4137918309740165
+  },
+  {
+    "seconds": 1.75,
+    "bf16_tokens_per_second": 36.00285373025344,
+    "residual_tokens_per_second": 194.95192370549154,
+    "throughput_ratio": 5.414901973219754
+  },
+  {
+    "seconds": 1.7916666666666667,
+    "bf16_tokens_per_second": 36.00538792978731,
+    "residual_tokens_per_second": 194.92088816718928,
+    "throughput_ratio": 5.413658882034456
+  },
+  {
+    "seconds": 1.8333333333333333,
+    "bf16_tokens_per_second": 36.003677055549616,
+    "residual_tokens_per_second": 194.91569918435772,
+    "throughput_ratio": 5.413772012331539
+  },
+  {
+    "seconds": 1.875,
+    "bf16_tokens_per_second": 36.003677055549616,
+    "residual_tokens_per_second": 194.82194907113345,
+    "throughput_ratio": 5.411168108483618
+  },
+  {
+    "seconds": 1.9166666666666667,
+    "bf16_tokens_per_second": 36.00640049790236,
+    "residual_tokens_per_second": 194.84952028552692,
+    "throughput_ratio": 5.411524550944168
+  },
+  {
+    "seconds": 1.9583333333333333,
+    "bf16_tokens_per_second": 36.00459171090306,
+    "residual_tokens_per_second": 194.8231356986901,
+    "throughput_ratio": 5.411063601637593
+  },
+  {
+    "seconds": 2.0,
+    "bf16_tokens_per_second": 36.007387581718596,
+    "residual_tokens_per_second": 194.8598800267324,
+    "throughput_ratio": 5.411663914370317
+  },
+  {
+    "seconds": 2.0416666666666665,
+    "bf16_tokens_per_second": 36.007387581718596,
+    "residual_tokens_per_second": 194.83617494415773,
+    "throughput_ratio": 5.411005574952583
+  },
+  {
+    "seconds": 2.0833333333333335,
+    "bf16_tokens_per_second": 36.0060853205038,
+    "residual_tokens_per_second": 194.8714075212048,
+    "throughput_ratio": 5.412179796458865
+  },
+  {
+    "seconds": 2.125,
+    "bf16_tokens_per_second": 36.008497218949806,
+    "residual_tokens_per_second": 194.85063005668823,
+    "throughput_ratio": 5.4112402656489165
+  },
+  {
+    "seconds": 2.1666666666666665,
+    "bf16_tokens_per_second": 36.00722822412829,
+    "residual_tokens_per_second": 194.86557922661598,
+    "throughput_ratio": 5.4118461441593935
+  },
+  {
+    "seconds": 2.2083333333333335,
+    "bf16_tokens_per_second": 36.00722822412829,
+    "residual_tokens_per_second": 194.80723336475668,
+    "throughput_ratio": 5.410225751123415
+  },
+  {
+    "seconds": 2.25,
+    "bf16_tokens_per_second": 36.00931180656188,
+    "residual_tokens_per_second": 194.83291895911265,
+    "throughput_ratio": 5.41062600712099
+  },
+  {
+    "seconds": 2.2916666666666665,
+    "bf16_tokens_per_second": 36.007962263364576,
+    "residual_tokens_per_second": 194.80537460239177,
+    "throughput_ratio": 5.4100638402576795
+  },
+  {
+    "seconds": 2.3333333333333335,
+    "bf16_tokens_per_second": 36.01016958056459,
+    "residual_tokens_per_second": 194.8417816357395,
+    "throughput_ratio": 5.410743240179005
+  },
+  {
+    "seconds": 2.375,
+    "bf16_tokens_per_second": 36.01016958056459,
+    "residual_tokens_per_second": 194.8136449959774,
+    "throughput_ratio": 5.409961887575287
+  },
+  {
+    "seconds": 2.4166666666666665,
+    "bf16_tokens_per_second": 36.00900857800811,
+    "residual_tokens_per_second": 194.85001417987885,
+    "throughput_ratio": 5.411146317948898
+  },
+  {
+    "seconds": 2.4583333333333335,
+    "bf16_tokens_per_second": 36.011051827820474,
+    "residual_tokens_per_second": 194.82525635469713,
+    "throughput_ratio": 5.410151785796608
+  },
+  {
+    "seconds": 2.5,
+    "bf16_tokens_per_second": 36.00986598316794,
+    "residual_tokens_per_second": 194.84033280417472,
+    "throughput_ratio": 5.410748623592456
+  },
+  {
+    "seconds": 2.5416666666666665,
+    "bf16_tokens_per_second": 36.00986598316794,
+    "residual_tokens_per_second": 194.817099847156,
+    "throughput_ratio": 5.41010344049098
+  },
+  {
+    "seconds": 2.5833333333333335,
+    "bf16_tokens_per_second": 36.01152881558105,
+    "residual_tokens_per_second": 194.84560542233802,
+    "throughput_ratio": 5.410645196991317
+  },
+  {
+    "seconds": 2.625,
+    "bf16_tokens_per_second": 36.01012362890508,
+    "residual_tokens_per_second": 194.82189834214435,
+    "throughput_ratio": 5.410197986261901
+  },
+  {
+    "seconds": 2.6666666666666665,
+    "bf16_tokens_per_second": 36.01164250116026,
+    "residual_tokens_per_second": 194.84972484197112,
+    "throughput_ratio": 5.410742507390305
+  },
+  {
+    "seconds": 2.7083333333333335,
+    "bf16_tokens_per_second": 36.01164250116026,
+    "residual_tokens_per_second": 194.82801357321839,
+    "throughput_ratio": 5.41013961156982
+  },
+  {
+    "seconds": 2.75,
+    "bf16_tokens_per_second": 36.01049349313234,
+    "residual_tokens_per_second": 194.85221267765846,
+    "throughput_ratio": 5.410984237547849
+  },
+  {
+    "seconds": 2.7916666666666665,
+    "bf16_tokens_per_second": 36.01176008694389,
+    "residual_tokens_per_second": 194.82365471381556,
+    "throughput_ratio": 5.410000906466361
+  },
+  {
+    "seconds": 2.8333333333333335,
+    "bf16_tokens_per_second": 36.01012696292456,
+    "residual_tokens_per_second": 194.84703979757046,
+    "throughput_ratio": 5.410895662716818
+  },
+  {
+    "seconds": 2.875,
+    "bf16_tokens_per_second": 36.01012696292456,
+    "residual_tokens_per_second": 194.81956872965807,
+    "throughput_ratio": 5.410132792095988
+  },
+  {
+    "seconds": 2.9166666666666665,
+    "bf16_tokens_per_second": 36.01106445919563,
+    "residual_tokens_per_second": 194.76975260419576,
+    "throughput_ratio": 5.408608590975994
+  },
+  {
+    "seconds": 2.9583333333333335,
+    "bf16_tokens_per_second": 36.00991252479898,
+    "residual_tokens_per_second": 194.73520670233765,
+    "throughput_ratio": 5.407822264723059
+  },
+  {
+    "seconds": 3.0,
+    "bf16_tokens_per_second": 36.01111834888823,
+    "residual_tokens_per_second": 194.70494182815477,
+    "throughput_ratio": 5.406800753639073
+  },
+  {
+    "seconds": 3.0416666666666665,
+    "bf16_tokens_per_second": 36.01111834888823,
+    "residual_tokens_per_second": 194.72640220757634,
+    "throughput_ratio": 5.407396691238502
+  },
+  {
+    "seconds": 3.0833333333333335,
+    "bf16_tokens_per_second": 36.01006768691301,
+    "residual_tokens_per_second": 194.69192986651944,
+    "throughput_ratio": 5.406597164972159
+  },
+  {
+    "seconds": 3.125,
+    "bf16_tokens_per_second": 36.01091113764418,
+    "residual_tokens_per_second": 194.70976377133033,
+    "throughput_ratio": 5.406965767322381
+  },
+  {
+    "seconds": 3.1666666666666665,
+    "bf16_tokens_per_second": 36.007530637738874,
+    "residual_tokens_per_second": 194.68421618507543,
+    "throughput_ratio": 5.40676388347026
+  },
+  {
+    "seconds": 3.2083333333333335,
+    "bf16_tokens_per_second": 36.007530637738874,
+    "residual_tokens_per_second": 194.70659128306963,
+    "throughput_ratio": 5.407385283982817
+  },
+  {
+    "seconds": 3.25,
+    "bf16_tokens_per_second": 36.00873758737591,
+    "residual_tokens_per_second": 194.67991487475703,
+    "throughput_ratio": 5.40646320639157
+  },
+  {
+    "seconds": 3.2916666666666665,
+    "bf16_tokens_per_second": 36.007322425993195,
+    "residual_tokens_per_second": 194.70182125510405,
+    "throughput_ratio": 5.407284078267132
+  },
+  {
+    "seconds": 3.3333333333333335,
+    "bf16_tokens_per_second": 36.00855710591884,
+    "residual_tokens_per_second": 194.67265914930385,
+    "throughput_ratio": 5.40628880453821
+  },
+  {
+    "seconds": 3.375,
+    "bf16_tokens_per_second": 36.00855710591884,
+    "residual_tokens_per_second": 194.69461449267533,
+    "throughput_ratio": 5.406898530257208
+  },
+  {
+    "seconds": 3.4166666666666665,
+    "bf16_tokens_per_second": 36.006965901798445,
+    "residual_tokens_per_second": 194.6652006452186,
+    "throughput_ratio": 5.406320576305365
+  },
+  {
+    "seconds": 3.4583333333333335,
+    "bf16_tokens_per_second": 36.00831078788556,
+    "residual_tokens_per_second": 194.68623133609717,
+    "throughput_ratio": 5.406702704909899
+  },
+  {
+    "seconds": 3.5,
+    "bf16_tokens_per_second": 36.00675303576504,
+    "residual_tokens_per_second": 194.65820566491672,
+    "throughput_ratio": 5.406158269021516
+  },
+  {
+    "seconds": 3.5416666666666665,
+    "bf16_tokens_per_second": 36.00675303576504,
+    "residual_tokens_per_second": 194.6552557481798,
+    "throughput_ratio": 5.406076342258111
+  },
+  {
+    "seconds": 3.5833333333333335,
+    "bf16_tokens_per_second": 36.00744261923496,
+    "residual_tokens_per_second": 194.61053573659254,
+    "throughput_ratio": 5.404730843968151
+  },
+  {
+    "seconds": 3.625,
+    "bf16_tokens_per_second": 36.005547027971424,
+    "residual_tokens_per_second": 194.62746276690322,
+    "throughput_ratio": 5.405485510765996
+  },
+  {
+    "seconds": 3.6666666666666665,
+    "bf16_tokens_per_second": 36.00629307856158,
+    "residual_tokens_per_second": 194.59805166733105,
+    "throughput_ratio": 5.404556676877026
+  },
+  {
+    "seconds": 3.7083333333333335,
+    "bf16_tokens_per_second": 36.00629307856158,
+    "residual_tokens_per_second": 194.61595695629623,
+    "throughput_ratio": 5.405053959086169
+  },
+  {
+    "seconds": 3.75,
+    "bf16_tokens_per_second": 36.00477472214869,
+    "residual_tokens_per_second": 194.5651897092564,
+    "throughput_ratio": 5.4038718811804625
+  },
+  {
+    "seconds": 3.7916666666666665,
+    "bf16_tokens_per_second": 36.005551221614105,
+    "residual_tokens_per_second": 194.5816212191972,
+    "throughput_ratio": 5.404211701177623
+  },
+  {
+    "seconds": 3.8333333333333335,
+    "bf16_tokens_per_second": 36.00401583471322,
+    "residual_tokens_per_second": 194.5315873395947,
+    "throughput_ratio": 5.40305248816265
+  },
+  {
+    "seconds": 3.875,
+    "bf16_tokens_per_second": 36.00401583471322,
+    "residual_tokens_per_second": 194.55395186505172,
+    "throughput_ratio": 5.403673655689063
+  },
+  {
+    "seconds": 3.9166666666666665,
+    "bf16_tokens_per_second": 36.00488708231438,
+    "residual_tokens_per_second": 194.5254225048992,
+    "throughput_ratio": 5.402750522732515
+  },
+  {
+    "seconds": 3.9583333333333335,
+    "bf16_tokens_per_second": 36.003332136787016,
+    "residual_tokens_per_second": 194.54462506805265,
+    "throughput_ratio": 5.403517216932079
+  },
+  {
+    "seconds": 4.0,
+    "bf16_tokens_per_second": 36.00442028080131,
+    "residual_tokens_per_second": 194.513969854641,
+    "throughput_ratio": 5.402502479906945
+  },
+  {
+    "seconds": 4.041666666666667,
+    "bf16_tokens_per_second": 36.00442028080131,
+    "residual_tokens_per_second": 194.53110723208485,
+    "throughput_ratio": 5.4029784597258175
+  },
+  {
+    "seconds": 4.083333333333333,
+    "bf16_tokens_per_second": 36.002032780419405,
+    "residual_tokens_per_second": 194.50127063846435,
+    "throughput_ratio": 5.4025080146099045
+  },
+  {
+    "seconds": 4.125,
+    "bf16_tokens_per_second": 36.00316915764362,
+    "residual_tokens_per_second": 194.51715184845523,
+    "throughput_ratio": 5.402778599759973
+  },
+  {
+    "seconds": 4.166666666666667,
+    "bf16_tokens_per_second": 36.00155894529884,
+    "residual_tokens_per_second": 194.48065335487664,
+    "throughput_ratio": 5.40200644228692
+  },
+  {
+    "seconds": 4.208333333333333,
+    "bf16_tokens_per_second": 36.00155894529884,
+    "residual_tokens_per_second": 194.4983969393032,
+    "throughput_ratio": 5.402499298289449
+  },
+  {
+    "seconds": 4.25,
+    "bf16_tokens_per_second": 36.00214344076073,
+    "residual_tokens_per_second": 194.47023320726393,
+    "throughput_ratio": 5.401629309300778
+  },
+  {
+    "seconds": 4.291666666666667,
+    "bf16_tokens_per_second": 36.00093006215114,
+    "residual_tokens_per_second": 194.48675051351626,
+    "throughput_ratio": 5.402270168513952
+  },
+  {
+    "seconds": 4.333333333333333,
+    "bf16_tokens_per_second": 36.00157382274197,
+    "residual_tokens_per_second": 194.45323265018723,
+    "throughput_ratio": 5.401242556994893
+  },
+  {
+    "seconds": 4.375,
+    "bf16_tokens_per_second": 36.00157382274197,
+    "residual_tokens_per_second": 194.46956507282601,
+    "throughput_ratio": 5.401696215568799
+  },
+  {
+    "seconds": 4.416666666666667,
+    "bf16_tokens_per_second": 35.99973769232047,
+    "residual_tokens_per_second": 194.44154546921192,
+    "throughput_ratio": 5.401193395658839
+  },
+  {
+    "seconds": 4.458333333333333,
+    "bf16_tokens_per_second": 35.99987250197344,
+    "residual_tokens_per_second": 194.4570733692847,
+    "throughput_ratio": 5.401604501755526
+  },
+  {
+    "seconds": 4.5,
+    "bf16_tokens_per_second": 35.99987250197344,
+    "residual_tokens_per_second": 194.42080384795852,
+    "throughput_ratio": 5.400597011483881
+  },
+  {
+    "seconds": 4.541666666666667,
+    "bf16_tokens_per_second": 35.99841644572717,
+    "residual_tokens_per_second": 194.43155597649246,
+    "throughput_ratio": 5.401114137051728
+  },
+  {
+    "seconds": 4.583333333333333,
+    "bf16_tokens_per_second": 35.99929540519992,
+    "residual_tokens_per_second": 194.39887029002253,
+    "throughput_ratio": 5.400074309841702
+  },
+  {
+    "seconds": 4.625,
+    "bf16_tokens_per_second": 35.998040766404586,
+    "residual_tokens_per_second": 194.4146774390534,
+    "throughput_ratio": 5.400701629864596
+  },
+  {
+    "seconds": 4.666666666666667,
+    "bf16_tokens_per_second": 35.998040766404586,
+    "residual_tokens_per_second": 194.38641914862254,
+    "throughput_ratio": 5.39991663463071
+  },
+  {
+    "seconds": 4.708333333333333,
+    "bf16_tokens_per_second": 35.998896618494726,
+    "residual_tokens_per_second": 194.4026338566655,
+    "throughput_ratio": 5.400238677226278
+  },
+  {
+    "seconds": 4.75,
+    "bf16_tokens_per_second": 35.99747291813837,
+    "residual_tokens_per_second": 194.37392787207682,
+    "throughput_ratio": 5.399654812272555
+  },
+  {
+    "seconds": 4.791666666666667,
+    "bf16_tokens_per_second": 35.997891349068794,
+    "residual_tokens_per_second": 194.3863866336717,
+    "throughput_ratio": 5.39993814495193
+  },
+  {
+    "seconds": 4.833333333333333,
+    "bf16_tokens_per_second": 35.997891349068794,
+    "residual_tokens_per_second": 194.3272220320893,
+    "throughput_ratio": 5.398294587527729
+  },
+  {
+    "seconds": 4.875,
+    "bf16_tokens_per_second": 35.9964409649286,
+    "residual_tokens_per_second": 194.33967261779898,
+    "throughput_ratio": 5.398857981741708
+  },
+  {
+    "seconds": 4.916666666666667,
+    "bf16_tokens_per_second": 35.99701825328834,
+    "residual_tokens_per_second": 194.30872622835273,
+    "throughput_ratio": 5.397911706495372
+  },
+  {
+    "seconds": 4.958333333333333,
+    "bf16_tokens_per_second": 35.99538323134438,
+    "residual_tokens_per_second": 194.3227892690988,
+    "throughput_ratio": 5.398547586510613
+  },
+  {
+    "seconds": 5.0,
+    "bf16_tokens_per_second": 35.99538323134438,
+    "residual_tokens_per_second": 194.2911135025548,
+    "throughput_ratio": 5.397667591252877
+  },
+  {
+    "seconds": 5.041666666666667,
+    "bf16_tokens_per_second": 35.99614737561074,
+    "residual_tokens_per_second": 194.30120803914028,
+    "throughput_ratio": 5.3978334406639705
+  },
+  {
+    "seconds": 5.083333333333333,
+    "bf16_tokens_per_second": 35.9945014033153,
+    "residual_tokens_per_second": 194.27244263003215,
+    "throughput_ratio": 5.397281113946436
+  },
+  {
+    "seconds": 5.125,
+    "bf16_tokens_per_second": 35.99538628282078,
+    "residual_tokens_per_second": 194.28658535858509,
+    "throughput_ratio": 5.39754133577143
+  },
+  {
+    "seconds": 5.166666666666667,
+    "bf16_tokens_per_second": 35.99538628282078,
+    "residual_tokens_per_second": 194.25699792386214,
+    "throughput_ratio": 5.396719357240891
+  },
+  {
+    "seconds": 5.208333333333333,
+    "bf16_tokens_per_second": 35.9942437518155,
+    "residual_tokens_per_second": 194.27114397830817,
+    "throughput_ratio": 5.397283668961912
+  },
+  {
+    "seconds": 5.25,
+    "bf16_tokens_per_second": 35.99478793408836,
+    "residual_tokens_per_second": 194.24362400390737,
+    "throughput_ratio": 5.396437516442531
+  },
+  {
+    "seconds": 5.291666666666667,
+    "bf16_tokens_per_second": 35.993708111144755,
+    "residual_tokens_per_second": 194.25910358518573,
+    "throughput_ratio": 5.397029474855278
+  },
+  {
+    "seconds": 5.333333333333333,
+    "bf16_tokens_per_second": 35.993708111144755,
+    "residual_tokens_per_second": 194.22795450124167,
+    "throughput_ratio": 5.396164071272855
+  },
+  {
+    "seconds": 5.375,
+    "bf16_tokens_per_second": 35.99432668454296,
+    "residual_tokens_per_second": 194.24102912167348,
+    "throughput_ratio": 5.39643457770489
+  },
+  {
+    "seconds": 5.416666666666667,
+    "bf16_tokens_per_second": 35.99295150707501,
+    "residual_tokens_per_second": 194.21141297615588,
+    "throughput_ratio": 5.395817926684351
+  },
+  {
+    "seconds": 5.458333333333333,
+    "bf16_tokens_per_second": 35.9937865836321,
+    "residual_tokens_per_second": 194.22447794781823,
+    "throughput_ratio": 5.396055719131821
+  },
+  {
+    "seconds": 5.5,
+    "bf16_tokens_per_second": 35.9937865836321,
+    "residual_tokens_per_second": 194.19379331262397,
+    "throughput_ratio": 5.395203221017377
+  },
+  {
+    "seconds": 5.541666666666667,
+    "bf16_tokens_per_second": 35.99250394593696,
+    "residual_tokens_per_second": 194.1991632067898,
+    "throughput_ratio": 5.395544680594863
+  },
+  {
+    "seconds": 5.583333333333333,
+    "bf16_tokens_per_second": 35.99316290008642,
+    "residual_tokens_per_second": 194.1644415709498,
+    "throughput_ratio": 5.394481227168942
+  },
+  {
+    "seconds": 5.625,
+    "bf16_tokens_per_second": 35.991520371502325,
+    "residual_tokens_per_second": 194.17508725963674,
+    "throughput_ratio": 5.395023195890951
+  },
+  {
+    "seconds": 5.666666666666667,
+    "bf16_tokens_per_second": 35.991520371502325,
+    "residual_tokens_per_second": 194.14458018839795,
+    "throughput_ratio": 5.394175577592977
+  },
+  {
+    "seconds": 5.708333333333333,
+    "bf16_tokens_per_second": 35.99193564696909,
+    "residual_tokens_per_second": 194.1548743005336,
+    "throughput_ratio": 5.394399351146971
+  },
+  {
+    "seconds": 5.75,
+    "bf16_tokens_per_second": 35.98981546159872,
+    "residual_tokens_per_second": 194.1269877304144,
+    "throughput_ratio": 5.393942292856398
+  },
+  {
+    "seconds": 5.791666666666667,
+    "bf16_tokens_per_second": 35.99059931364208,
+    "residual_tokens_per_second": 194.13873855421178,
+    "throughput_ratio": 5.394151313302092
+  },
+  {
+    "seconds": 5.833333333333333,
+    "bf16_tokens_per_second": 35.99059931364208,
+    "residual_tokens_per_second": 194.10871657858365,
+    "throughput_ratio": 5.39331715170988
+  },
+  {
+    "seconds": 5.875,
+    "bf16_tokens_per_second": 35.98910141221801,
+    "residual_tokens_per_second": 194.12050537154298,
+    "throughput_ratio": 5.393869192456154
+  },
+  {
+    "seconds": 5.916666666666667,
+    "bf16_tokens_per_second": 35.989559774418595,
+    "residual_tokens_per_second": 194.0917962159984,
+    "throughput_ratio": 5.393002788379729
+  },
+  {
+    "seconds": 5.958333333333333,
+    "bf16_tokens_per_second": 35.98783555869773,
+    "residual_tokens_per_second": 194.10385663389388,
+    "throughput_ratio": 5.393596297762949
+  },
+  {
+    "seconds": 6.0,
+    "bf16_tokens_per_second": 35.98783555869773,
+    "residual_tokens_per_second": 194.07437297776457,
+    "throughput_ratio": 5.3927770304835585
+  },
+  {
+    "seconds": 6.041666666666667,
+    "bf16_tokens_per_second": 35.98809738669485,
+    "residual_tokens_per_second": 194.08366498803105,
+    "throughput_ratio": 5.392995992607981
+  },
+  {
+    "seconds": 6.083333333333333,
+    "bf16_tokens_per_second": 35.98660477745775,
+    "residual_tokens_per_second": 194.05419584123234,
+    "throughput_ratio": 5.392400784716128
+  },
+  {
+    "seconds": 6.125,
+    "bf16_tokens_per_second": 35.98693941718145,
+    "residual_tokens_per_second": 194.06571660692583,
+    "throughput_ratio": 5.392670778617864
+  },
+  {
+    "seconds": 6.166666666666667,
+    "bf16_tokens_per_second": 35.98693941718145,
+    "residual_tokens_per_second": 194.0343208486077,
+    "throughput_ratio": 5.391798357711097
+  },
+  {
+    "seconds": 6.208333333333333,
+    "bf16_tokens_per_second": 35.9857492854259,
+    "residual_tokens_per_second": 194.02759281489367,
+    "throughput_ratio": 5.39178971308718
+  },
+  {
+    "seconds": 6.25,
+    "bf16_tokens_per_second": 35.9854274416279,
+    "residual_tokens_per_second": 193.9801168240209,
+    "throughput_ratio": 5.390518624203556
+  },
+  {
+    "seconds": 6.291666666666667,
+    "bf16_tokens_per_second": 35.984237708454266,
+    "residual_tokens_per_second": 193.9838414228497,
+    "throughput_ratio": 5.3908003552698425
+  },
+  {
+    "seconds": 6.333333333333333,
+    "bf16_tokens_per_second": 35.984237708454266,
+    "residual_tokens_per_second": 193.9508958072071,
+    "throughput_ratio": 5.389884798411043
+  },
+  {
+    "seconds": 6.375,
+    "bf16_tokens_per_second": 35.98477368701892,
+    "residual_tokens_per_second": 193.9600433176523,
+    "throughput_ratio": 5.390058723298878
+  },
+  {
+    "seconds": 6.416666666666667,
+    "bf16_tokens_per_second": 35.98354759493139,
+    "residual_tokens_per_second": 193.93008417302477,
+    "throughput_ratio": 5.389409803505355
+  },
+  {
+    "seconds": 6.458333333333333,
+    "bf16_tokens_per_second": 35.98398872886343,
+    "residual_tokens_per_second": 193.94076032480422,
+    "throughput_ratio": 5.3896404255273875
+  },
+  {
+    "seconds": 6.5,
+    "bf16_tokens_per_second": 35.98398872886343,
+    "residual_tokens_per_second": 193.90974866034503,
+    "throughput_ratio": 5.388778607103286
+  },
+  {
+    "seconds": 6.541666666666667,
+    "bf16_tokens_per_second": 35.982615176677285,
+    "residual_tokens_per_second": 193.90581986431386,
+    "throughput_ratio": 5.3888751251742555
+  },
+  {
+    "seconds": 6.583333333333333,
+    "bf16_tokens_per_second": 35.982989675301575,
+    "residual_tokens_per_second": 193.87883935871534,
+    "throughput_ratio": 5.388069226826701
+  },
+  {
+    "seconds": 6.625,
+    "bf16_tokens_per_second": 35.98104924041648,
+    "residual_tokens_per_second": 193.89163481591396,
+    "throughput_ratio": 5.388715418507614
+  },
+  {
+    "seconds": 6.666666666666667,
+    "bf16_tokens_per_second": 35.98104924041648,
+    "residual_tokens_per_second": 193.8641861655818,
+    "throughput_ratio": 5.387952554419111
+  },
+  {
+    "seconds": 6.708333333333333,
+    "bf16_tokens_per_second": 35.9813943664276,
+    "residual_tokens_per_second": 193.87594867698627,
+    "throughput_ratio": 5.388227779684992
+  },
+  {
+    "seconds": 6.75,
+    "bf16_tokens_per_second": 35.980173327738214,
+    "residual_tokens_per_second": 193.8498842903555,
+    "throughput_ratio": 5.387686227206435
+  },
+  {
+    "seconds": 6.791666666666667,
+    "bf16_tokens_per_second": 35.980632822777615,
+    "residual_tokens_per_second": 193.86094321550544,
+    "throughput_ratio": 5.387924780822125
+  },
+  {
+    "seconds": 6.833333333333333,
+    "bf16_tokens_per_second": 35.980632822777615,
+    "residual_tokens_per_second": 193.83341757398125,
+    "throughput_ratio": 5.387159768109321
+  },
+  {
+    "seconds": 6.875,
+    "bf16_tokens_per_second": 35.97932279380995,
+    "residual_tokens_per_second": 193.84513351220863,
+    "throughput_ratio": 5.387681547623755
+  },
+  {
+    "seconds": 6.916666666666667,
+    "bf16_tokens_per_second": 35.97985087439732,
+    "residual_tokens_per_second": 193.81658117446332,
+    "throughput_ratio": 5.386808907325963
+  },
+  {
+    "seconds": 6.958333333333333,
+    "bf16_tokens_per_second": 35.97879501013137,
+    "residual_tokens_per_second": 193.82794105493844,
+    "throughput_ratio": 5.387282731407705
+  },
+  {
+    "seconds": 7.0,
+    "bf16_tokens_per_second": 35.97879501013137,
+    "residual_tokens_per_second": 193.79835118980134,
+    "throughput_ratio": 5.386460306278438
+  },
+  {
+    "seconds": 7.041666666666667,
+    "bf16_tokens_per_second": 35.979161589246964,
+    "residual_tokens_per_second": 193.80836845483847,
+    "throughput_ratio": 5.386683844038258
+  },
+  {
+    "seconds": 7.083333333333333,
+    "bf16_tokens_per_second": 35.97806886159965,
+    "residual_tokens_per_second": 193.779345427587,
+    "throughput_ratio": 5.386040762026915
+  },
+  {
+    "seconds": 7.125,
+    "bf16_tokens_per_second": 35.97861916874225,
+    "residual_tokens_per_second": 193.78888530889898,
+    "throughput_ratio": 5.386223534594685
+  },
+  {
+    "seconds": 7.166666666666667,
+    "bf16_tokens_per_second": 35.97861916874225,
+    "residual_tokens_per_second": 193.75956250240742,
+    "throughput_ratio": 5.385408528150052
+  },
+  {
+    "seconds": 7.208333333333333,
+    "bf16_tokens_per_second": 35.976153285464754,
+    "residual_tokens_per_second": 193.7663710850732,
+    "throughput_ratio": 5.385966908345355
+  },
+  {
+    "seconds": 7.25,
+    "bf16_tokens_per_second": 35.97548570850775,
+    "residual_tokens_per_second": 193.73277119932854,
+    "throughput_ratio": 5.385132886573181
+  },
+  {
+    "seconds": 7.291666666666667,
+    "bf16_tokens_per_second": 35.97300036029041,
+    "residual_tokens_per_second": 193.7438147888193,
+    "throughput_ratio": 5.385811938074747
+  },
+  {
+    "seconds": 7.333333333333333,
+    "bf16_tokens_per_second": 35.97300036029041,
+    "residual_tokens_per_second": 193.71690141848262,
+    "throughput_ratio": 5.385063783345725
+  },
+  {
+    "seconds": 7.375,
+    "bf16_tokens_per_second": 35.972282790366286,
+    "residual_tokens_per_second": 193.72743731061166,
+    "throughput_ratio": 5.385464092995891
+  },
+  {
+    "seconds": 7.416666666666667,
+    "bf16_tokens_per_second": 35.97003428561221,
+    "residual_tokens_per_second": 193.70106443797562,
+    "throughput_ratio": 5.385067550949064
+  },
+  {
+    "seconds": 7.458333333333333,
+    "bf16_tokens_per_second": 35.9693359108727,
+    "residual_tokens_per_second": 193.70728661585719,
+    "throughput_ratio": 5.385345092159567
+  },
+  {
+    "seconds": 7.5,
+    "bf16_tokens_per_second": 35.9693359108727,
+    "residual_tokens_per_second": 193.67093356214346,
+    "throughput_ratio": 5.384334424244991
+  },
+  {
+    "seconds": 7.541666666666667,
+    "bf16_tokens_per_second": 35.96701540788726,
+    "residual_tokens_per_second": 193.6757348739957,
+    "throughput_ratio": 5.384815300285502
+  },
+  {
+    "seconds": 7.583333333333333,
+    "bf16_tokens_per_second": 35.96636468951435,
+    "residual_tokens_per_second": 193.64525398740423,
+    "throughput_ratio": 5.384065241485461
+  },
+  {
+    "seconds": 7.625,
+    "bf16_tokens_per_second": 35.963847057170476,
+    "residual_tokens_per_second": 193.65427544827804,
+    "throughput_ratio": 5.384692998511326
+  },
+  {
+    "seconds": 7.666666666666667,
+    "bf16_tokens_per_second": 35.963847057170476,
+    "residual_tokens_per_second": 193.62540588097602,
+    "throughput_ratio": 5.383890259937332
+  },
+  {
+    "seconds": 7.708333333333333,
+    "bf16_tokens_per_second": 35.96298834658096,
+    "residual_tokens_per_second": 193.63618647379977,
+    "throughput_ratio": 5.384318583530865
+  },
+  {
+    "seconds": 7.75,
+    "bf16_tokens_per_second": 35.96069621689813,
+    "residual_tokens_per_second": 193.60781460129078,
+    "throughput_ratio": 5.383872810290959
+  },
+  {
+    "seconds": 7.791666666666667,
+    "bf16_tokens_per_second": 35.960014348925036,
+    "residual_tokens_per_second": 193.61902431170742,
+    "throughput_ratio": 5.384286625500063
+  },
+  {
+    "seconds": 7.833333333333333,
+    "bf16_tokens_per_second": 35.960014348925036,
+    "residual_tokens_per_second": 193.59097547568055,
+    "throughput_ratio": 5.383506624809443
+  },
+  {
+    "seconds": 7.875,
+    "bf16_tokens_per_second": 35.957733317154144,
+    "residual_tokens_per_second": 193.60203971107802,
+    "throughput_ratio": 5.384155836617138
+  },
+  {
+    "seconds": 7.916666666666667,
+    "bf16_tokens_per_second": 35.95714539747707,
+    "residual_tokens_per_second": 193.57428584704635,
+    "throughput_ratio": 5.383472011118783
+  },
+  {
+    "seconds": 7.958333333333333,
+    "bf16_tokens_per_second": 35.954893635538134,
+    "residual_tokens_per_second": 193.58593835334509,
+    "throughput_ratio": 5.384133250835236
+  },
+  {
+    "seconds": 8.0,
+    "bf16_tokens_per_second": 35.954893635538134,
+    "residual_tokens_per_second": 193.5565918917797,
+    "throughput_ratio": 5.383317048683094
+  },
+  {
+    "seconds": 8.041666666666666,
+    "bf16_tokens_per_second": 35.95411118813563,
+    "residual_tokens_per_second": 193.5652989634149,
+    "throughput_ratio": 5.38367637432486
+  },
+  {
+    "seconds": 8.083333333333334,
+    "bf16_tokens_per_second": 35.95190678717464,
+    "residual_tokens_per_second": 193.537584721905,
+    "throughput_ratio": 5.3832356060443205
+  },
+  {
+    "seconds": 8.125,
+    "bf16_tokens_per_second": 35.95138789649698,
+    "residual_tokens_per_second": 193.5475899871488,
+    "throughput_ratio": 5.383591602760004
+  },
+  {
+    "seconds": 8.166666666666666,
+    "bf16_tokens_per_second": 35.95138789649698,
+    "residual_tokens_per_second": 193.52096029323417,
+    "throughput_ratio": 5.38285088882731
+  },
+  {
+    "seconds": 8.208333333333334,
+    "bf16_tokens_per_second": 35.94917128042526,
+    "residual_tokens_per_second": 193.5298926480635,
+    "throughput_ratio": 5.3834312657283085
+  },
+  {
+    "seconds": 8.25,
+    "bf16_tokens_per_second": 35.94859055124184,
+    "residual_tokens_per_second": 193.50239115632792,
+    "throughput_ratio": 5.382753209211519
+  },
+  {
+    "seconds": 8.291666666666666,
+    "bf16_tokens_per_second": 35.9465119901793,
+    "residual_tokens_per_second": 193.5117891795928,
+    "throughput_ratio": 5.383325904679174
+  },
+  {
+    "seconds": 8.333333333333334,
+    "bf16_tokens_per_second": 35.9465119901793,
+    "residual_tokens_per_second": 193.47977441299648,
+    "throughput_ratio": 5.382435282339932
+  },
+  {
+    "seconds": 8.375,
+    "bf16_tokens_per_second": 35.94606440994974,
+    "residual_tokens_per_second": 193.48367622297135,
+    "throughput_ratio": 5.3826108476402705
+  },
+  {
+    "seconds": 8.416666666666666,
+    "bf16_tokens_per_second": 35.94391466711622,
+    "residual_tokens_per_second": 193.43823684641143,
+    "throughput_ratio": 5.381668597810829
+  },
+  {
+    "seconds": 8.458333333333334,
+    "bf16_tokens_per_second": 35.94318308150372,
+    "residual_tokens_per_second": 193.4484545892418,
+    "throughput_ratio": 5.38206241084947
+  },
+  {
+    "seconds": 8.5,
+    "bf16_tokens_per_second": 35.94318308150372,
+    "residual_tokens_per_second": 193.41726688360995,
+    "throughput_ratio": 5.381194716256003
+  },
+  {
+    "seconds": 8.541666666666666,
+    "bf16_tokens_per_second": 35.93879271405649,
+    "residual_tokens_per_second": 193.42574736595526,
+    "throughput_ratio": 5.382088065810346
+  },
+  {
+    "seconds": 8.583333333333334,
+    "bf16_tokens_per_second": 35.937505197959105,
+    "residual_tokens_per_second": 193.39882332825562,
+    "throughput_ratio": 5.381531696842405
+  },
+  {
+    "seconds": 8.625,
+    "bf16_tokens_per_second": 35.937505197959105,
+    "residual_tokens_per_second": 193.40878943626387,
+    "throughput_ratio": 5.38180901459035
+  },
+  {
+    "seconds": 8.666666666666666,
+    "bf16_tokens_per_second": 35.93445243640898,
+    "residual_tokens_per_second": 193.38223809342284,
+    "throughput_ratio": 5.381527336075028
+  },
+  {
+    "seconds": 8.708333333333334,
+    "bf16_tokens_per_second": 35.933656843404826,
+    "residual_tokens_per_second": 193.38959323065652,
+    "throughput_ratio": 5.381851172938742
+  },
+  {
+    "seconds": 8.75,
+    "bf16_tokens_per_second": 35.931119735461245,
+    "residual_tokens_per_second": 193.34721735723693,
+    "throughput_ratio": 5.381051823064065
+  },
+  {
+    "seconds": 8.791666666666666,
+    "bf16_tokens_per_second": 35.931119735461245,
+    "residual_tokens_per_second": 193.34724444535718,
+    "throughput_ratio": 5.381052576954298
+  },
+  {
+    "seconds": 8.833333333333334,
+    "bf16_tokens_per_second": 35.93056478668091,
+    "residual_tokens_per_second": 193.31455882129896,
+    "throughput_ratio": 5.380225998923309
+  },
+  {
+    "seconds": 8.875,
+    "bf16_tokens_per_second": 35.92844589554514,
+    "residual_tokens_per_second": 193.32336163958857,
+    "throughput_ratio": 5.38078830911969
+  },
+  {
+    "seconds": 8.916666666666666,
+    "bf16_tokens_per_second": 35.92801261569576,
+    "residual_tokens_per_second": 193.29158822314648,
+    "throughput_ratio": 5.3799688363141955
+  },
+  {
+    "seconds": 8.958333333333334,
+    "bf16_tokens_per_second": 35.92801261569576,
+    "residual_tokens_per_second": 193.30146880614683,
+    "throughput_ratio": 5.380243846877848
+  },
+  {
+    "seconds": 9.0,
+    "bf16_tokens_per_second": 35.92550089077876,
+    "residual_tokens_per_second": 193.27516487498838,
+    "throughput_ratio": 5.379887825714286
+  },
+  {
+    "seconds": 9.041666666666666,
+    "bf16_tokens_per_second": 35.92500421063135,
+    "residual_tokens_per_second": 193.28535965724745,
+    "throughput_ratio": 5.380245984774253
+  },
+  {
+    "seconds": 9.083333333333334,
+    "bf16_tokens_per_second": 35.922998774021,
+    "residual_tokens_per_second": 193.25921665276584,
+    "throughput_ratio": 5.379818591106267
+  },
+  {
+    "seconds": 9.125,
+    "bf16_tokens_per_second": 35.922998774021,
+    "residual_tokens_per_second": 193.26845322915833,
+    "throughput_ratio": 5.380075712635864
+  },
+  {
+    "seconds": 9.166666666666666,
+    "bf16_tokens_per_second": 35.92263100138018,
+    "residual_tokens_per_second": 193.24380149003977,
+    "throughput_ratio": 5.379444547995806
+  },
+  {
+    "seconds": 9.208333333333334,
+    "bf16_tokens_per_second": 35.920728364159466,
+    "residual_tokens_per_second": 193.254337332995,
+    "throughput_ratio": 5.380022792795535
+  },
+  {
+    "seconds": 9.25,
+    "bf16_tokens_per_second": 35.92040758125951,
+    "residual_tokens_per_second": 193.22869519590174,
+    "throughput_ratio": 5.379356978585998
+  },
+  {
+    "seconds": 9.291666666666666,
+    "bf16_tokens_per_second": 35.92040758125951,
+    "residual_tokens_per_second": 193.23699311224124,
+    "throughput_ratio": 5.3795879869987155
+  },
+  {
+    "seconds": 9.333333333333334,
+    "bf16_tokens_per_second": 35.91843613093223,
+    "residual_tokens_per_second": 193.18745431109687,
+    "throughput_ratio": 5.378504053096225
+  },
+  {
+    "seconds": 9.375,
+    "bf16_tokens_per_second": 35.91809775634346,
+    "residual_tokens_per_second": 193.19576403597765,
+    "throughput_ratio": 5.378786074545319
+  },
+  {
+    "seconds": 9.416666666666666,
+    "bf16_tokens_per_second": 35.916103899758454,
+    "residual_tokens_per_second": 193.16911606237454,
+    "throughput_ratio": 5.378342723406412
+  },
+  {
+    "seconds": 9.458333333333334,
+    "bf16_tokens_per_second": 35.916103899758454,
+    "residual_tokens_per_second": 193.1774282803146,
+    "throughput_ratio": 5.378574157694587
+  },
+  {
+    "seconds": 9.5,
+    "bf16_tokens_per_second": 35.915533130075104,
+    "residual_tokens_per_second": 193.14708023307526,
+    "throughput_ratio": 5.377814650100152
+  },
+  {
+    "seconds": 9.541666666666666,
+    "bf16_tokens_per_second": 35.91317053505282,
+    "residual_tokens_per_second": 193.15623836213842,
+    "throughput_ratio": 5.378423444223882
+  },
+  {
+    "seconds": 9.583333333333334,
+    "bf16_tokens_per_second": 35.9124142652005,
+    "residual_tokens_per_second": 193.12791766358478,
+    "throughput_ratio": 5.377748102296974
+  },
+  {
+    "seconds": 9.625,
+    "bf16_tokens_per_second": 35.9124142652005,
+    "residual_tokens_per_second": 193.1359691950224,
+    "throughput_ratio": 5.377972301410354
+  },
+  {
+    "seconds": 9.666666666666666,
+    "bf16_tokens_per_second": 35.910353158581195,
+    "residual_tokens_per_second": 193.10911093672135,
+    "throughput_ratio": 5.377533049701453
+  },
+  {
+    "seconds": 9.708333333333334,
+    "bf16_tokens_per_second": 35.909816318868096,
+    "residual_tokens_per_second": 193.11768446405372,
+    "throughput_ratio": 5.377852193651681
+  },
+  {
+    "seconds": 9.75,
+    "bf16_tokens_per_second": 35.90800304454375,
+    "residual_tokens_per_second": 193.09216767543805,
+    "throughput_ratio": 5.377413147590188
+  },
+  {
+    "seconds": 9.791666666666666,
+    "bf16_tokens_per_second": 35.90800304454375,
+    "residual_tokens_per_second": 193.09931845859853,
+    "throughput_ratio": 5.3776122893567635
+  },
+  {
+    "seconds": 9.833333333333334,
+    "bf16_tokens_per_second": 35.90778418344614,
+    "residual_tokens_per_second": 193.0476569467248,
+    "throughput_ratio": 5.376206339006621
+  },
+  {
+    "seconds": 9.875,
+    "bf16_tokens_per_second": 35.90606586605915,
+    "residual_tokens_per_second": 193.0561264011238,
+    "throughput_ratio": 5.37669950033745
+  },
+  {
+    "seconds": 9.916666666666666,
+    "bf16_tokens_per_second": 35.90572532688332,
+    "residual_tokens_per_second": 193.03007913001105,
+    "throughput_ratio": 5.37602505930957
+  },
+  {
+    "seconds": 9.958333333333334,
+    "bf16_tokens_per_second": 35.90572532688332,
+    "residual_tokens_per_second": 193.03884454534312,
+    "throughput_ratio": 5.376269182363826
+  },
+  {
+    "seconds": 10.0,
+    "bf16_tokens_per_second": 35.903795096297536,
+    "residual_tokens_per_second": 193.01253842015151,
+    "throughput_ratio": 5.375825533275042
+  },
+  {
+    "seconds": 10.041666666666666,
+    "bf16_tokens_per_second": 35.90346569838309,
+    "residual_tokens_per_second": 193.02122627740124,
+    "throughput_ratio": 5.376116832255945
+  },
+  {
+    "seconds": 10.083333333333334,
+    "bf16_tokens_per_second": 35.90167729589773,
+    "residual_tokens_per_second": 192.99043966897722,
+    "throughput_ratio": 5.37552711196112
+  },
+  {
+    "seconds": 10.125,
+    "bf16_tokens_per_second": 35.90167729589773,
+    "residual_tokens_per_second": 192.99617436887743,
+    "throughput_ratio": 5.375686845442455
+  },
+  {
+    "seconds": 10.166666666666666,
+    "bf16_tokens_per_second": 35.9013953115297,
+    "residual_tokens_per_second": 192.96862854742267,
+    "throughput_ratio": 5.37496180504859
+  },
+  {
+    "seconds": 10.208333333333334,
+    "bf16_tokens_per_second": 35.899620468579876,
+    "residual_tokens_per_second": 192.97710407728127,
+    "throughput_ratio": 5.375463627705452
+  },
+  {
+    "seconds": 10.25,
+    "bf16_tokens_per_second": 35.899620468579876,
+    "residual_tokens_per_second": 192.9508534126388,
+    "throughput_ratio": 5.374732403689714
+  },
+  {
+    "seconds": 10.291666666666666,
+    "bf16_tokens_per_second": 35.89936497757325,
+    "residual_tokens_per_second": 192.95845991941238,
+    "throughput_ratio": 5.374982539104961
+  },
+  {
+    "seconds": 10.333333333333334,
+    "bf16_tokens_per_second": 35.897684475593,
+    "residual_tokens_per_second": 192.91513419023747,
+    "throughput_ratio": 5.374027239038254
+  },
+  {
+    "seconds": 10.375,
+    "bf16_tokens_per_second": 35.89742107083328,
+    "residual_tokens_per_second": 192.924248804265,
+    "throughput_ratio": 5.374320579285744
+  },
+  {
+    "seconds": 10.416666666666666,
+    "bf16_tokens_per_second": 35.89742107083328,
+    "residual_tokens_per_second": 192.89779858920102,
+    "throughput_ratio": 5.373583751561775
+  },
+  {
+    "seconds": 10.458333333333334,
+    "bf16_tokens_per_second": 35.89565535136971,
+    "residual_tokens_per_second": 192.9065868266169,
+    "throughput_ratio": 5.374092907298206
+  },
+  {
+    "seconds": 10.5,
+    "bf16_tokens_per_second": 35.89535540227364,
+    "residual_tokens_per_second": 192.87932624204183,
+    "throughput_ratio": 5.373378368328531
+  },
+  {
+    "seconds": 10.541666666666666,
+    "bf16_tokens_per_second": 35.893682826055496,
+    "residual_tokens_per_second": 192.88703184113663,
+    "throughput_ratio": 5.37384343579028
+  },
+  {
+    "seconds": 10.583333333333334,
+    "bf16_tokens_per_second": 35.893682826055496,
+    "residual_tokens_per_second": 192.86041906921443,
+    "throughput_ratio": 5.373102002484281
+  },
+  {
+    "seconds": 10.625,
+    "bf16_tokens_per_second": 35.893540572518035,
+    "residual_tokens_per_second": 192.86800911679282,
+    "throughput_ratio": 5.37333475718644
+  },
+  {
+    "seconds": 10.666666666666666,
+    "bf16_tokens_per_second": 35.89188542771171,
+    "residual_tokens_per_second": 192.8412485192792,
+    "throughput_ratio": 5.372836958026972
+  },
+  {
+    "seconds": 10.708333333333334,
+    "bf16_tokens_per_second": 35.89163359980241,
+    "residual_tokens_per_second": 192.84990485085797,
+    "throughput_ratio": 5.373115835327139
+  },
+  {
+    "seconds": 10.75,
+    "bf16_tokens_per_second": 35.89163359980241,
+    "residual_tokens_per_second": 192.8239642440834,
+    "throughput_ratio": 5.372393087316731
+  },
+  {
+    "seconds": 10.791666666666666,
+    "bf16_tokens_per_second": 35.88994445826321,
+    "residual_tokens_per_second": 192.83264718735268,
+    "throughput_ratio": 5.372887868678643
+  },
+  {
+    "seconds": 10.833333333333334,
+    "bf16_tokens_per_second": 35.88969327008935,
+    "residual_tokens_per_second": 192.80807578981734,
+    "throughput_ratio": 5.372240836354669
+  },
+  {
+    "seconds": 10.875,
+    "bf16_tokens_per_second": 35.888068140013516,
+    "residual_tokens_per_second": 192.81633676906026,
+    "throughput_ratio": 5.372714296484493
+  },
+  {
+    "seconds": 10.916666666666666,
+    "bf16_tokens_per_second": 35.888068140013516,
+    "residual_tokens_per_second": 192.7898975541041,
+    "throughput_ratio": 5.37197758324451
+  },
+  {
+    "seconds": 10.958333333333334,
+    "bf16_tokens_per_second": 35.88783197181652,
+    "residual_tokens_per_second": 192.79721902431626,
+    "throughput_ratio": 5.372216944610197
+  },
+  {
+    "seconds": 11.0,
+    "bf16_tokens_per_second": 35.88614862428805,
+    "residual_tokens_per_second": 192.77193940497347,
+    "throughput_ratio": 5.371764505107795
+  },
+  {
+    "seconds": 11.041666666666666,
+    "bf16_tokens_per_second": 35.8860564010801,
+    "residual_tokens_per_second": 192.7802934686943,
+    "throughput_ratio": 5.3720111040925635
+  },
+  {
+    "seconds": 11.083333333333334,
+    "bf16_tokens_per_second": 35.8860564010801,
+    "residual_tokens_per_second": 192.75518729209088,
+    "throughput_ratio": 5.371311495968372
+  },
+  {
+    "seconds": 11.125,
+    "bf16_tokens_per_second": 35.88462773657655,
+    "residual_tokens_per_second": 192.76328964281907,
+    "throughput_ratio": 5.371751131372027
+  },
+  {
+    "seconds": 11.166666666666666,
+    "bf16_tokens_per_second": 35.88452099761325,
+    "residual_tokens_per_second": 192.7394036836491,
+    "throughput_ratio": 5.3711014756604545
+  },
+  {
+    "seconds": 11.208333333333334,
+    "bf16_tokens_per_second": 35.8829938113801,
+    "residual_tokens_per_second": 192.7471366279801,
+    "throughput_ratio": 5.371545575075493
+  },
+  {
+    "seconds": 11.25,
+    "bf16_tokens_per_second": 35.8829938113801,
+    "residual_tokens_per_second": 192.72176016181075,
+    "throughput_ratio": 5.370838374714711
+  },
+  {
+    "seconds": 11.291666666666666,
+    "bf16_tokens_per_second": 35.882173914443804,
+    "residual_tokens_per_second": 192.73003502520947,
+    "throughput_ratio": 5.371191708862128
+  },
+  {
+    "seconds": 11.333333333333334,
+    "bf16_tokens_per_second": 35.87967858770562,
+    "residual_tokens_per_second": 192.73003502520947,
+    "throughput_ratio": 5.371565259540802
+  },
+  {
+    "seconds": 11.375,
+    "bf16_tokens_per_second": 35.879551498236495,
+    "residual_tokens_per_second": 192.70949224145087,
+    "throughput_ratio": 5.371011737728178
+  },
+  {
+    "seconds": 11.416666666666666,
+    "bf16_tokens_per_second": 35.879551498236495,
+    "residual_tokens_per_second": 192.70949224145087,
+    "throughput_ratio": 5.371011737728178
+  },
+  {
+    "seconds": 11.458333333333334,
+    "bf16_tokens_per_second": 35.87800271616247,
+    "residual_tokens_per_second": 192.6338480847131,
+    "throughput_ratio": 5.3691352221770865
+  },
+  {
+    "seconds": 11.5,
+    "bf16_tokens_per_second": 35.87794212315295,
+    "residual_tokens_per_second": 192.64232020226802,
+    "throughput_ratio": 5.369380427144149
+  },
+  {
+    "seconds": 11.541666666666666,
+    "bf16_tokens_per_second": 35.87649729816536,
+    "residual_tokens_per_second": 192.6176825960738,
+    "throughput_ratio": 5.368909929953608
+  },
+  {
+    "seconds": 11.583333333333334,
+    "bf16_tokens_per_second": 35.87649729816536,
+    "residual_tokens_per_second": 192.62612513875334,
+    "throughput_ratio": 5.369145252332194
+  },
+  {
+    "seconds": 11.625,
+    "bf16_tokens_per_second": 35.87638651388324,
+    "residual_tokens_per_second": 192.60076979778964,
+    "throughput_ratio": 5.368455090181897
+  },
+  {
+    "seconds": 11.666666666666666,
+    "bf16_tokens_per_second": 35.874842754632795,
+    "residual_tokens_per_second": 192.6057216009165,
+    "throughput_ratio": 5.368824134456836
+  },
+  {
+    "seconds": 11.708333333333334,
+    "bf16_tokens_per_second": 35.87422697737898,
+    "residual_tokens_per_second": 192.5692142520894,
+    "throughput_ratio": 5.367898641370496
+  },
+  {
+    "seconds": 11.75,
+    "bf16_tokens_per_second": 35.87422697737898,
+    "residual_tokens_per_second": 192.57228523537904,
+    "throughput_ratio": 5.367984245536728
+  },
+  {
+    "seconds": 11.791666666666666,
+    "bf16_tokens_per_second": 35.8722462544578,
+    "residual_tokens_per_second": 192.5223492486761,
+    "throughput_ratio": 5.366888593567
+  },
+  {
+    "seconds": 11.833333333333334,
+    "bf16_tokens_per_second": 35.87195238135982,
+    "residual_tokens_per_second": 192.5258983258367,
+    "throughput_ratio": 5.367031498008989
+  },
+  {
+    "seconds": 11.875,
+    "bf16_tokens_per_second": 35.87195238135982,
+    "residual_tokens_per_second": 192.48182510795385,
+    "throughput_ratio": 5.365802871883087
+  },
+  {
+    "seconds": 11.916666666666666,
+    "bf16_tokens_per_second": 35.87022012901362,
+    "residual_tokens_per_second": 192.48868054328426,
+    "throughput_ratio": 5.366253116121522
+  },
+  {
+    "seconds": 11.958333333333334,
+    "bf16_tokens_per_second": 35.870173982426536,
+    "residual_tokens_per_second": 192.46259816520882,
+    "throughput_ratio": 5.365532887002439
+  },
+  {
+    "seconds": 12.0,
+    "bf16_tokens_per_second": 35.86869281027779,
+    "residual_tokens_per_second": 192.471362093078,
+    "throughput_ratio": 5.365998786494036
+  },
+  {
+    "seconds": 12.041666666666666,
+    "bf16_tokens_per_second": 35.86869281027779,
+    "residual_tokens_per_second": 192.44529745035732,
+    "throughput_ratio": 5.365272118174715
+  },
+  {
+    "seconds": 12.083333333333334,
+    "bf16_tokens_per_second": 35.868234513491586,
+    "residual_tokens_per_second": 192.45409448542304,
+    "throughput_ratio": 5.365585931279466
+  },
+  {
+    "seconds": 12.125,
+    "bf16_tokens_per_second": 35.86673275195063,
+    "residual_tokens_per_second": 192.42788607533043,
+    "throughput_ratio": 5.365079875162734
+  },
+  {
+    "seconds": 12.166666666666666,
+    "bf16_tokens_per_second": 35.86633399502748,
+    "residual_tokens_per_second": 192.43460499841746,
+    "throughput_ratio": 5.36532685568301
+  },
+  {
+    "seconds": 12.208333333333334,
+    "bf16_tokens_per_second": 35.86633399502748,
+    "residual_tokens_per_second": 192.4078267309838,
+    "throughput_ratio": 5.364580242788663
+  },
+  {
+    "seconds": 12.25,
+    "bf16_tokens_per_second": 35.864865351628616,
+    "residual_tokens_per_second": 192.41504071925485,
+    "throughput_ratio": 5.365001062537583
+  },
+  {
+    "seconds": 12.291666666666666,
+    "bf16_tokens_per_second": 35.86483966806774,
+    "residual_tokens_per_second": 192.38964932621343,
+    "throughput_ratio": 5.3642969299959695
+  },
+  {
+    "seconds": 12.333333333333334,
+    "bf16_tokens_per_second": 35.86335651388209,
+    "residual_tokens_per_second": 192.39844457387534,
+    "throughput_ratio": 5.364764017539775
+  },
+  {
+    "seconds": 12.375,
+    "bf16_tokens_per_second": 35.86335651388209,
+    "residual_tokens_per_second": 192.37347311449713,
+    "throughput_ratio": 5.364067722998339
+  },
+  {
+    "seconds": 12.416666666666666,
+    "bf16_tokens_per_second": 35.86331610226943,
+    "residual_tokens_per_second": 192.3818447015648,
+    "throughput_ratio": 5.364307197721487
+  },
+  {
+    "seconds": 12.458333333333334,
+    "bf16_tokens_per_second": 35.861853349668046,
+    "residual_tokens_per_second": 192.35607910012348,
+    "throughput_ratio": 5.363807531768406
+  },
+  {
+    "seconds": 12.5,
+    "bf16_tokens_per_second": 35.8613877173122,
+    "residual_tokens_per_second": 192.3628755906573,
+    "throughput_ratio": 5.364066697781288
+  },
+  {
+    "seconds": 12.541666666666666,
+    "bf16_tokens_per_second": 35.8613877173122,
+    "residual_tokens_per_second": 192.32245244448285,
+    "throughput_ratio": 5.362939492484798
+  },
+  {
+    "seconds": 12.583333333333334,
+    "bf16_tokens_per_second": 35.85963560659617,
+    "residual_tokens_per_second": 192.33083648977492,
+    "throughput_ratio": 5.363435328785013
+  },
+  {
+    "seconds": 12.625,
+    "bf16_tokens_per_second": 35.85961212776703,
+    "residual_tokens_per_second": 192.30585177186717,
+    "throughput_ratio": 5.362742103475228
+  },
+  {
+    "seconds": 12.666666666666666,
+    "bf16_tokens_per_second": 35.858072976290565,
+    "residual_tokens_per_second": 192.31386396399316,
+    "throughput_ratio": 5.363195732552374
+  },
+  {
+    "seconds": 12.708333333333334,
+    "bf16_tokens_per_second": 35.858072976290565,
+    "residual_tokens_per_second": 192.2829739888213,
+    "throughput_ratio": 5.362334281486884
+  },
+  {
+    "seconds": 12.75,
+    "bf16_tokens_per_second": 35.85780955149813,
+    "residual_tokens_per_second": 192.28534925637965,
+    "throughput_ratio": 5.362439916476884
+  },
+  {
+    "seconds": 12.791666666666666,
+    "bf16_tokens_per_second": 35.85608741662794,
+    "residual_tokens_per_second": 192.2527414153835,
+    "throughput_ratio": 5.361788060741619
+  },
+  {
+    "seconds": 12.833333333333334,
+    "bf16_tokens_per_second": 35.85604897617131,
+    "residual_tokens_per_second": 192.25895090926502,
+    "throughput_ratio": 5.361966987412185
+  },
+  {
+    "seconds": 12.875,
+    "bf16_tokens_per_second": 35.85604897617131,
+    "residual_tokens_per_second": 192.2326325262626,
+    "throughput_ratio": 5.361232986211441
+  },
+  {
+    "seconds": 12.916666666666666,
+    "bf16_tokens_per_second": 35.854638319072905,
+    "residual_tokens_per_second": 192.2400591808587,
+    "throughput_ratio": 5.361651049721967
+  },
+  {
+    "seconds": 12.958333333333334,
+    "bf16_tokens_per_second": 35.85457739545323,
+    "residual_tokens_per_second": 192.21480495188126,
+    "throughput_ratio": 5.360955808567313
+  },
+  {
+    "seconds": 13.0,
+    "bf16_tokens_per_second": 35.85305220784782,
+    "residual_tokens_per_second": 192.22267041605966,
+    "throughput_ratio": 5.361403244044711
+  },
+  {
+    "seconds": 13.041666666666666,
+    "bf16_tokens_per_second": 35.85305220784782,
+    "residual_tokens_per_second": 192.18976407618894,
+    "throughput_ratio": 5.360485432649464
+  },
+  {
+    "seconds": 13.083333333333334,
+    "bf16_tokens_per_second": 35.853017427582046,
+    "residual_tokens_per_second": 192.19813772121267,
+    "throughput_ratio": 5.360724187564557
+  },
+  {
+    "seconds": 13.125,
+    "bf16_tokens_per_second": 35.851602429685144,
+    "residual_tokens_per_second": 192.17303881219644,
+    "throughput_ratio": 5.360235687905461
+  },
+  {
+    "seconds": 13.166666666666666,
+    "bf16_tokens_per_second": 35.85152019842567,
+    "residual_tokens_per_second": 192.1812267069553,
+    "throughput_ratio": 5.360476365947642
+  },
+  {
+    "seconds": 13.208333333333334,
+    "bf16_tokens_per_second": 35.85152019842567,
+    "residual_tokens_per_second": 192.15562501001824,
+    "throughput_ratio": 5.359762262423011
+  },
+  {
+    "seconds": 13.25,
+    "bf16_tokens_per_second": 35.85010434786678,
+    "residual_tokens_per_second": 192.16385561055574,
+    "throughput_ratio": 5.360203522587242
+  },
+  {
+    "seconds": 13.291666666666666,
+    "bf16_tokens_per_second": 35.85008511044249,
+    "residual_tokens_per_second": 192.13917708133337,
+    "throughput_ratio": 5.359518017583915
+  },
+  {
+    "seconds": 13.333333333333334,
+    "bf16_tokens_per_second": 35.85008511044249,
+    "residual_tokens_per_second": 192.14632746949732,
+    "throughput_ratio": 5.359717470057791
+  },
+  {
+    "seconds": 13.375,
+    "bf16_tokens_per_second": 35.84865205753087,
+    "residual_tokens_per_second": 192.12058667309833,
+    "throughput_ratio": 5.359213684374467
+  },
+  {
+    "seconds": 13.416666666666666,
+    "bf16_tokens_per_second": 35.848667814414135,
+    "residual_tokens_per_second": 192.1275657296266,
+    "throughput_ratio": 5.359406009848305
+  },
+  {
+    "seconds": 13.458333333333334,
+    "bf16_tokens_per_second": 35.84721590833496,
+    "residual_tokens_per_second": 192.10261034714446,
+    "throughput_ratio": 5.358926920248722
+  },
+  {
+    "seconds": 13.5,
+    "bf16_tokens_per_second": 35.84721590833496,
+    "residual_tokens_per_second": 192.10946949707684,
+    "throughput_ratio": 5.359118264255741
+  },
+  {
+    "seconds": 13.541666666666666,
+    "bf16_tokens_per_second": 35.84722437615774,
+    "residual_tokens_per_second": 192.08465646233154,
+    "throughput_ratio": 5.3584248098742195
+  },
+  {
+    "seconds": 13.583333333333334,
+    "bf16_tokens_per_second": 35.84587555731264,
+    "residual_tokens_per_second": 192.09188601983752,
+    "throughput_ratio": 5.358828122714116
+  },
+  {
+    "seconds": 13.625,
+    "bf16_tokens_per_second": 35.84591338260467,
+    "residual_tokens_per_second": 192.0471359783847,
+    "throughput_ratio": 5.357574067887511
+  },
+  {
+    "seconds": 13.666666666666666,
+    "bf16_tokens_per_second": 35.84591338260467,
+    "residual_tokens_per_second": 192.05178317975356,
+    "throughput_ratio": 5.357703711713832
+  },
+  {
+    "seconds": 13.708333333333334,
+    "bf16_tokens_per_second": 35.844490504727965,
+    "residual_tokens_per_second": 192.0263486484473,
+    "throughput_ratio": 5.3572068104334924
+  },
+  {
+    "seconds": 13.75,
+    "bf16_tokens_per_second": 35.84450270667621,
+    "residual_tokens_per_second": 192.03359107434295,
+    "throughput_ratio": 5.357407037999603
+  },
+  {
+    "seconds": 13.791666666666666,
+    "bf16_tokens_per_second": 35.843105259350175,
+    "residual_tokens_per_second": 192.009526512532,
+    "throughput_ratio": 5.356944525961339
+  },
+  {
+    "seconds": 13.833333333333334,
+    "bf16_tokens_per_second": 35.843105259350175,
+    "residual_tokens_per_second": 192.0175192063377,
+    "throughput_ratio": 5.357167517070727
+  },
+  {
+    "seconds": 13.875,
+    "bf16_tokens_per_second": 35.84310165354871,
+    "residual_tokens_per_second": 192.0175192063377,
+    "throughput_ratio": 5.357168055999604
+  },
+  {
+    "seconds": 13.916666666666666,
+    "bf16_tokens_per_second": 35.84177495148747,
+    "residual_tokens_per_second": 191.99134244261262,
+    "throughput_ratio": 5.356636012096962
+  },
+  {
+    "seconds": 13.958333333333334,
+    "bf16_tokens_per_second": 35.84178967065319,
+    "residual_tokens_per_second": 191.9950948771111,
+    "throughput_ratio": 5.3567385066799345
+  },
+  {
+    "seconds": 14.0,
+    "bf16_tokens_per_second": 35.84178967065319,
+    "residual_tokens_per_second": 191.96745518767023,
+    "throughput_ratio": 5.355967348495736
+  },
+  {
+    "seconds": 14.041666666666666,
+    "bf16_tokens_per_second": 35.840139094516395,
+    "residual_tokens_per_second": 191.97226602717836,
+    "throughput_ratio": 5.356348241866909
+  },
+  {
+    "seconds": 14.083333333333334,
+    "bf16_tokens_per_second": 35.84015045345205,
+    "residual_tokens_per_second": 191.94584021071643,
+    "throughput_ratio": 5.355609219888992
+  },
+  {
+    "seconds": 14.125,
+    "bf16_tokens_per_second": 35.83892950429925,
+    "residual_tokens_per_second": 191.95288939524374,
+    "throughput_ratio": 5.355988363776798
+  },
+  {
+    "seconds": 14.166666666666666,
+    "bf16_tokens_per_second": 35.83892950429925,
+    "residual_tokens_per_second": 191.92447730366996,
+    "throughput_ratio": 5.355195592006916
+  },
+  {
+    "seconds": 14.208333333333334,
+    "bf16_tokens_per_second": 35.83893966911303,
+    "residual_tokens_per_second": 191.93161808373378,
+    "throughput_ratio": 5.35539331955029
+  },
+  {
+    "seconds": 14.25,
+    "bf16_tokens_per_second": 35.837379755561855,
+    "residual_tokens_per_second": 191.89943987177008,
+    "throughput_ratio": 5.354728531512906
+  },
+  {
+    "seconds": 14.291666666666666,
+    "bf16_tokens_per_second": 35.83708176244349,
+    "residual_tokens_per_second": 191.90683110540343,
+    "throughput_ratio": 5.354979302653984
+  },
+  {
+    "seconds": 14.333333333333334,
+    "bf16_tokens_per_second": 35.83708176244349,
+    "residual_tokens_per_second": 191.88273939933634,
+    "throughput_ratio": 5.354307046295981
+  },
+  {
+    "seconds": 14.375,
+    "bf16_tokens_per_second": 35.83482503981904,
+    "residual_tokens_per_second": 191.8894571112523,
+    "throughput_ratio": 5.354831700671848
+  },
+  {
+    "seconds": 14.416666666666666,
+    "bf16_tokens_per_second": 35.833926489349956,
+    "residual_tokens_per_second": 191.8653413756085,
+    "throughput_ratio": 5.354292989149038
+  },
+  {
+    "seconds": 14.458333333333334,
+    "bf16_tokens_per_second": 35.831834624509774,
+    "residual_tokens_per_second": 191.87257513355584,
+    "throughput_ratio": 5.354807453880989
+  },
+  {
+    "seconds": 14.5,
+    "bf16_tokens_per_second": 35.831834624509774,
+    "residual_tokens_per_second": 191.84815496060787,
+    "throughput_ratio": 5.3541259321781824
+  },
+  {
+    "seconds": 14.541666666666666,
+    "bf16_tokens_per_second": 35.8306086113226,
+    "residual_tokens_per_second": 191.8547988235143,
+    "throughput_ratio": 5.35449455812167
+  },
+  {
+    "seconds": 14.583333333333334,
+    "bf16_tokens_per_second": 35.828660493615295,
+    "residual_tokens_per_second": 191.80902049571625,
+    "throughput_ratio": 5.353507997595858
+  },
+  {
+    "seconds": 14.625,
+    "bf16_tokens_per_second": 35.828660493615295,
+    "residual_tokens_per_second": 191.81584692639342,
+    "throughput_ratio": 5.353698527484029
+  },
+  {
+    "seconds": 14.666666666666666,
+    "bf16_tokens_per_second": 35.828083041624076,
+    "residual_tokens_per_second": 191.78967220683495,
+    "throughput_ratio": 5.353054250321431
+  },
+  {
+    "seconds": 14.708333333333334,
+    "bf16_tokens_per_second": 35.826082115195234,
+    "residual_tokens_per_second": 191.79670337116036,
+    "throughput_ratio": 5.35354948259363
+  },
+  {
+    "seconds": 14.75,
+    "bf16_tokens_per_second": 35.825455757783885,
+    "residual_tokens_per_second": 191.77108716664887,
+    "throughput_ratio": 5.352928053817775
+  },
+  {
+    "seconds": 14.791666666666666,
+    "bf16_tokens_per_second": 35.825455757783885,
+    "residual_tokens_per_second": 191.7781376842283,
+    "throughput_ratio": 5.353124855712693
+  },
+  {
+    "seconds": 14.833333333333334,
+    "bf16_tokens_per_second": 35.82358088869484,
+    "residual_tokens_per_second": 191.7509083579373,
+    "throughput_ratio": 5.352644922731602
+  },
+  {
+    "seconds": 14.875,
+    "bf16_tokens_per_second": 35.8227669486085,
+    "residual_tokens_per_second": 191.7568987006499,
+    "throughput_ratio": 5.352933763484691
+  },
+  {
+    "seconds": 14.916666666666666,
+    "bf16_tokens_per_second": 35.8209410786121,
+    "residual_tokens_per_second": 191.7323247120291,
+    "throughput_ratio": 5.3525205909933025
+  },
+  {
+    "seconds": 14.958333333333334,
+    "bf16_tokens_per_second": 35.8209410786121,
+    "residual_tokens_per_second": 191.7397698031971,
+    "throughput_ratio": 5.352728432857414
+  },
+  {
+    "seconds": 15.0,
+    "bf16_tokens_per_second": 35.820315538103486,
+    "residual_tokens_per_second": 191.71408808867372,
+    "throughput_ratio": 5.352104949626696
+  },
+  {
+    "seconds": 15.041666666666666,
+    "bf16_tokens_per_second": 35.818488583579864,
+    "residual_tokens_per_second": 191.72059966494805,
+    "throughput_ratio": 5.352559732317623
+  },
+  {
+    "seconds": 15.083333333333334,
+    "bf16_tokens_per_second": 35.81752233151353,
+    "residual_tokens_per_second": 191.69604984437336,
+    "throughput_ratio": 5.352018715033015
+  },
+  {
+    "seconds": 15.125,
+    "bf16_tokens_per_second": 35.81752233151353,
+    "residual_tokens_per_second": 191.70282757232414,
+    "throughput_ratio": 5.352207944424374
+  },
+  {
+    "seconds": 15.166666666666666,
+    "bf16_tokens_per_second": 35.815183555094066,
+    "residual_tokens_per_second": 191.67517615780952,
+    "throughput_ratio": 5.351785391884364
+  },
+  {
+    "seconds": 15.208333333333334,
+    "bf16_tokens_per_second": 35.81434455997002,
+    "residual_tokens_per_second": 191.68251925970557,
+    "throughput_ratio": 5.352115796471972
+  },
+  {
+    "seconds": 15.25,
+    "bf16_tokens_per_second": 35.812295461313596,
+    "residual_tokens_per_second": 191.65683045742907,
+    "throughput_ratio": 5.3517047145014
+  },
+  {
+    "seconds": 15.291666666666666,
+    "bf16_tokens_per_second": 35.812295461313596,
+    "residual_tokens_per_second": 191.66211178725402,
+    "throughput_ratio": 5.3518521870316285
+  },
+  {
+    "seconds": 15.333333333333334,
+    "bf16_tokens_per_second": 35.81171337568061,
+    "residual_tokens_per_second": 191.6220457169855,
+    "throughput_ratio": 5.350820378427193
+  },
+  {
+    "seconds": 15.375,
+    "bf16_tokens_per_second": 35.80986859938074,
+    "residual_tokens_per_second": 191.6275569668393,
+    "throughput_ratio": 5.351249933660832
+  },
+  {
+    "seconds": 15.416666666666666,
+    "bf16_tokens_per_second": 35.809185934865866,
+    "residual_tokens_per_second": 191.60061537743562,
+    "throughput_ratio": 5.350599584306169
+  },
+  {
+    "seconds": 15.458333333333334,
+    "bf16_tokens_per_second": 35.809185934865866,
+    "residual_tokens_per_second": 191.60527302823078,
+    "throughput_ratio": 5.350729652909338
+  },
+  {
+    "seconds": 15.5,
+    "bf16_tokens_per_second": 35.80735712396753,
+    "residual_tokens_per_second": 191.58065841864902,
+    "throughput_ratio": 5.350315516316483
+  },
+  {
+    "seconds": 15.541666666666666,
+    "bf16_tokens_per_second": 35.80671617276651,
+    "residual_tokens_per_second": 191.58745072507017,
+    "throughput_ratio": 5.35060098224773
+  },
+  {
+    "seconds": 15.583333333333334,
+    "bf16_tokens_per_second": 35.80671617276651,
+    "residual_tokens_per_second": 191.56167931734157,
+    "throughput_ratio": 5.349881245547938
+  },
+  {
+    "seconds": 15.625,
+    "bf16_tokens_per_second": 35.80505516144816,
+    "residual_tokens_per_second": 191.5669326258716,
+    "throughput_ratio": 5.350276148495774
+  },
+  {
+    "seconds": 15.666666666666666,
+    "bf16_tokens_per_second": 35.80457085354266,
+    "residual_tokens_per_second": 191.54182880712824,
+    "throughput_ratio": 5.349647384146102
+  },
+  {
+    "seconds": 15.708333333333334,
+    "bf16_tokens_per_second": 35.8027901820532,
+    "residual_tokens_per_second": 191.54589685224445,
+    "throughput_ratio": 5.350027075494812
+  },
+  {
+    "seconds": 15.75,
+    "bf16_tokens_per_second": 35.8027901820532,
+    "residual_tokens_per_second": 191.50218734323698,
+    "throughput_ratio": 5.3488062346389675
+  },
+  {
+    "seconds": 15.791666666666666,
+    "bf16_tokens_per_second": 35.802271674117215,
+    "residual_tokens_per_second": 191.50695944781313,
+    "throughput_ratio": 5.349016989507417
+  },
+  {
+    "seconds": 15.833333333333334,
+    "bf16_tokens_per_second": 35.80047642756068,
+    "residual_tokens_per_second": 191.50695944781313,
+    "throughput_ratio": 5.349285220695644
+  },
+  {
+    "seconds": 15.875,
+    "bf16_tokens_per_second": 35.79989715029068,
+    "residual_tokens_per_second": 191.4798806516922,
+    "throughput_ratio": 5.348615384224294
+  },
+  {
+    "seconds": 15.916666666666666,
+    "bf16_tokens_per_second": 35.79989715029068,
+    "residual_tokens_per_second": 191.486178927868,
+    "throughput_ratio": 5.34879131423184
+  },
+  {
+    "seconds": 15.958333333333334,
+    "bf16_tokens_per_second": 35.798183346141506,
+    "residual_tokens_per_second": 191.4455730053902,
+    "throughput_ratio": 5.347913081349842
+  },
+  {
+    "seconds": 16.0,
+    "bf16_tokens_per_second": 35.79767103137622,
+    "residual_tokens_per_second": 191.45258625570102,
+    "throughput_ratio": 5.348185531061369
+  },
+  {
+    "seconds": 16.041666666666668,
+    "bf16_tokens_per_second": 35.795983407068036,
+    "residual_tokens_per_second": 191.42147922028502,
+    "throughput_ratio": 5.347568665552801
+  },
+  {
+    "seconds": 16.083333333333332,
+    "bf16_tokens_per_second": 35.795983407068036,
+    "residual_tokens_per_second": 191.426689221238,
+    "throughput_ratio": 5.347714212635381
+  },
+  {
+    "seconds": 16.125,
+    "bf16_tokens_per_second": 35.79556136744898,
+    "residual_tokens_per_second": 191.40077880762001,
+    "throughput_ratio": 5.3470534193569605
+  },
+  {
+    "seconds": 16.166666666666668,
+    "bf16_tokens_per_second": 35.79381513934328,
+    "residual_tokens_per_second": 191.40752782940575,
+    "throughput_ratio": 5.347502832102897
+  },
+  {
+    "seconds": 16.208333333333332,
+    "bf16_tokens_per_second": 35.79329461180268,
+    "residual_tokens_per_second": 191.3818970499602,
+    "throughput_ratio": 5.34686452101151
+  },
+  {
+    "seconds": 16.25,
+    "bf16_tokens_per_second": 35.79329461180268,
+    "residual_tokens_per_second": 191.38780449523674,
+    "throughput_ratio": 5.347029564362244
+  },
+  {
+    "seconds": 16.291666666666668,
+    "bf16_tokens_per_second": 35.79161122372157,
+    "residual_tokens_per_second": 191.36219467316465,
+    "throughput_ratio": 5.346565525564709
+  },
+  {
+    "seconds": 16.333333333333332,
+    "bf16_tokens_per_second": 35.79106675634504,
+    "residual_tokens_per_second": 191.3690196463718,
+    "throughput_ratio": 5.346837548854168
+  },
+  {
+    "seconds": 16.375,
+    "bf16_tokens_per_second": 35.78943545825033,
+    "residual_tokens_per_second": 191.34453876869577,
+    "throughput_ratio": 5.346397234790308
+  },
+  {
+    "seconds": 16.416666666666668,
+    "bf16_tokens_per_second": 35.78943545825033,
+    "residual_tokens_per_second": 191.35142643815564,
+    "throughput_ratio": 5.346589684583709
+  },
+  {
+    "seconds": 16.458333333333332,
+    "bf16_tokens_per_second": 35.788936272658404,
+    "residual_tokens_per_second": 191.32543748463232,
+    "throughput_ratio": 5.345938086201204
+  },
+  {
+    "seconds": 16.5,
+    "bf16_tokens_per_second": 35.78735487758264,
+    "residual_tokens_per_second": 191.3308078231563,
+    "throughput_ratio": 5.346324378475002
+  },
+  {
+    "seconds": 16.541666666666668,
+    "bf16_tokens_per_second": 35.78735487758264,
+    "residual_tokens_per_second": 191.28956674335592,
+    "throughput_ratio": 5.345171985962578
+  },
+  {
+    "seconds": 16.583333333333332,
+    "bf16_tokens_per_second": 35.78691039345851,
+    "residual_tokens_per_second": 191.29538340790043,
+    "throughput_ratio": 5.345400910687928
+  },
+  {
+    "seconds": 16.625,
+    "bf16_tokens_per_second": 35.78522943032807,
+    "residual_tokens_per_second": 191.26498655161498,
+    "throughput_ratio": 5.344802579064015
+  },
+  {
+    "seconds": 16.666666666666668,
+    "bf16_tokens_per_second": 35.784730482273325,
+    "residual_tokens_per_second": 191.26636465672382,
+    "throughput_ratio": 5.344915612860949
+  },
+  {
+    "seconds": 16.708333333333332,
+    "bf16_tokens_per_second": 35.784730482273325,
+    "residual_tokens_per_second": 191.23730466671938,
+    "throughput_ratio": 5.344103534926791
+  },
+  {
+    "seconds": 16.75,
+    "bf16_tokens_per_second": 35.78311067241504,
+    "residual_tokens_per_second": 191.23903817287012,
+    "throughput_ratio": 5.344393893633597
+  },
+  {
+    "seconds": 16.791666666666668,
+    "bf16_tokens_per_second": 35.78258576535347,
+    "residual_tokens_per_second": 191.20898830868538,
+    "throughput_ratio": 5.343632502205129
+  },
+  {
+    "seconds": 16.833333333333332,
+    "bf16_tokens_per_second": 35.7807529482413,
+    "residual_tokens_per_second": 191.21200150600134,
+    "throughput_ratio": 5.343990434818388
+  },
+  {
+    "seconds": 16.875,
+    "bf16_tokens_per_second": 35.7807529482413,
+    "residual_tokens_per_second": 191.18616192618938,
+    "throughput_ratio": 5.343268270590896
+  },
+  {
+    "seconds": 16.916666666666668,
+    "bf16_tokens_per_second": 35.78007141227602,
+    "residual_tokens_per_second": 191.19251605479192,
+    "throughput_ratio": 5.343547637224514
+  },
+  {
+    "seconds": 16.958333333333332,
+    "bf16_tokens_per_second": 35.77846281538724,
+    "residual_tokens_per_second": 191.1578157223558,
+    "throughput_ratio": 5.342818016210147
+  },
+  {
+    "seconds": 17.0,
+    "bf16_tokens_per_second": 35.77801148071148,
+    "residual_tokens_per_second": 191.16253964225066,
+    "throughput_ratio": 5.343017449287521
+  },
+  {
+    "seconds": 17.041666666666668,
+    "bf16_tokens_per_second": 35.77801148071148,
+    "residual_tokens_per_second": 191.12942878925298,
+    "throughput_ratio": 5.342091996708483
+  },
+  {
+    "seconds": 17.083333333333332,
+    "bf16_tokens_per_second": 35.7764305849434,
+    "residual_tokens_per_second": 191.13268828451004,
+    "throughput_ratio": 5.34241916142827
+  },
+  {
+    "seconds": 17.125,
+    "bf16_tokens_per_second": 35.776002318429185,
+    "residual_tokens_per_second": 191.09245098223022,
+    "throughput_ratio": 5.341358413424334
+  },
+  {
+    "seconds": 17.166666666666668,
+    "bf16_tokens_per_second": 35.77439664933327,
+    "residual_tokens_per_second": 191.0993902797694,
+    "throughput_ratio": 5.3417921244894275
+  },
+  {
+    "seconds": 17.208333333333332,
+    "bf16_tokens_per_second": 35.77439664933327,
+    "residual_tokens_per_second": 191.0735082793636,
+    "throughput_ratio": 5.341068646168898
+  },
+  {
+    "seconds": 17.25,
+    "bf16_tokens_per_second": 35.77396618093537,
+    "residual_tokens_per_second": 191.08091134992344,
+    "throughput_ratio": 5.341339855454834
+  },
+  {
+    "seconds": 17.291666666666668,
+    "bf16_tokens_per_second": 35.772298741042334,
+    "residual_tokens_per_second": 191.08091134992344,
+    "throughput_ratio": 5.341588829199063
+  },
+  {
+    "seconds": 17.333333333333332,
+    "bf16_tokens_per_second": 35.77154398842666,
+    "residual_tokens_per_second": 191.0544026375623,
+    "throughput_ratio": 5.3409604768353045
+  },
+  {
+    "seconds": 17.375,
+    "bf16_tokens_per_second": 35.77154398842666,
+    "residual_tokens_per_second": 191.06107503826345,
+    "throughput_ratio": 5.3411470050070635
+  },
+  {
+    "seconds": 17.416666666666668,
+    "bf16_tokens_per_second": 35.76951386425522,
+    "residual_tokens_per_second": 191.03548172404254,
+    "throughput_ratio": 5.340734639252281
+  },
+  {
+    "seconds": 17.458333333333332,
+    "bf16_tokens_per_second": 35.76883364009502,
+    "residual_tokens_per_second": 191.04191814533945,
+    "throughput_ratio": 5.341016150193707
+  },
+  {
+    "seconds": 17.5,
+    "bf16_tokens_per_second": 35.76883364009502,
+    "residual_tokens_per_second": 191.01599644693002,
+    "throughput_ratio": 5.3402914495039875
+  },
+  {
+    "seconds": 17.541666666666668,
+    "bf16_tokens_per_second": 35.76703363075271,
+    "residual_tokens_per_second": 191.02266900023642,
+    "throughput_ratio": 5.340746760614612
+  },
+  {
+    "seconds": 17.583333333333332,
+    "bf16_tokens_per_second": 35.76661628507208,
+    "residual_tokens_per_second": 190.99727311562137,
+    "throughput_ratio": 5.340099035181528
+  },
+  {
+    "seconds": 17.625,
+    "bf16_tokens_per_second": 35.76498188270647,
+    "residual_tokens_per_second": 191.0036079808316,
+    "throughput_ratio": 5.340520193949491
+  },
+  {
+    "seconds": 17.666666666666668,
+    "bf16_tokens_per_second": 35.76498188270647,
+    "residual_tokens_per_second": 190.97781189820765,
+    "throughput_ratio": 5.339798927468536
+  },
+  {
+    "seconds": 17.708333333333332,
+    "bf16_tokens_per_second": 35.76460450188884,
+    "residual_tokens_per_second": 190.9840300826514,
+    "throughput_ratio": 5.340029136141151
+  },
+  {
+    "seconds": 17.75,
+    "bf16_tokens_per_second": 35.76303505237216,
+    "residual_tokens_per_second": 190.94235661460226,
+    "throughput_ratio": 5.339098215097856
+  },
+  {
+    "seconds": 17.791666666666668,
+    "bf16_tokens_per_second": 35.762622750747305,
+    "residual_tokens_per_second": 190.94931687232622,
+    "throughput_ratio": 5.339354392522458
+  },
+  {
+    "seconds": 17.833333333333332,
+    "bf16_tokens_per_second": 35.762622750747305,
+    "residual_tokens_per_second": 190.92415823513628,
+    "throughput_ratio": 5.33865090281016
+  },
+  {
+    "seconds": 17.875,
+    "bf16_tokens_per_second": 35.76101738666679,
+    "residual_tokens_per_second": 190.93053878306952,
+    "throughput_ratio": 5.339068984493054
+  },
+  {
+    "seconds": 17.916666666666668,
+    "bf16_tokens_per_second": 35.76049256515947,
+    "residual_tokens_per_second": 190.9050245075888,
+    "throughput_ratio": 5.338433864123635
+  },
+  {
+    "seconds": 17.958333333333332,
+    "bf16_tokens_per_second": 35.75885696319649,
+    "residual_tokens_per_second": 190.90542876920242,
+    "throughput_ratio": 5.338689348087522
+  },
+  {
+    "seconds": 18.0,
+    "bf16_tokens_per_second": 35.75885696319649,
+    "residual_tokens_per_second": 190.87437036653873,
+    "throughput_ratio": 5.337820796760625
+  },
+  {
+    "seconds": 18.041666666666668,
+    "bf16_tokens_per_second": 35.75844978539924,
+    "residual_tokens_per_second": 190.8801595221016,
+    "throughput_ratio": 5.338043474134079
+  },
+  {
+    "seconds": 18.083333333333332,
+    "bf16_tokens_per_second": 35.75695341458618,
+    "residual_tokens_per_second": 190.85249290891812,
+    "throughput_ratio": 5.33749312185709
+  },
+  {
+    "seconds": 18.125,
+    "bf16_tokens_per_second": 35.75667232281176,
+    "residual_tokens_per_second": 190.85819338152265,
+    "throughput_ratio": 5.337694505194781
+  },
+  {
+    "seconds": 18.166666666666668,
+    "bf16_tokens_per_second": 35.75667232281176,
+    "residual_tokens_per_second": 190.83054233139907,
+    "throughput_ratio": 5.336921193576912
+  },
+  {
+    "seconds": 18.208333333333332,
+    "bf16_tokens_per_second": 35.755098983003656,
+    "residual_tokens_per_second": 190.83614896415412,
+    "throughput_ratio": 5.337312841865406
+  },
+  {
+    "seconds": 18.25,
+    "bf16_tokens_per_second": 35.754738920863794,
+    "residual_tokens_per_second": 190.81095673825348,
+    "throughput_ratio": 5.336662006135094
+  },
+  {
+    "seconds": 18.291666666666668,
+    "bf16_tokens_per_second": 35.754738920863794,
+    "residual_tokens_per_second": 190.81630592170984,
+    "throughput_ratio": 5.336811613812784
+  },
+  {
+    "seconds": 18.333333333333332,
+    "bf16_tokens_per_second": 35.75316754563789,
+    "residual_tokens_per_second": 190.77593363380674,
+    "throughput_ratio": 5.335916975475998
+  },
+  {
+    "seconds": 18.375,
+    "bf16_tokens_per_second": 35.75284087872311,
+    "residual_tokens_per_second": 190.7824227206031,
+    "throughput_ratio": 5.336147227230263
+  },
+  {
+    "seconds": 18.416666666666668,
+    "bf16_tokens_per_second": 35.75130924932157,
+    "residual_tokens_per_second": 190.75538241480064,
+    "throughput_ratio": 5.3356194897511475
+  },
+  {
+    "seconds": 18.458333333333332,
+    "bf16_tokens_per_second": 35.75130924932157,
+    "residual_tokens_per_second": 190.76220956790928,
+    "throughput_ratio": 5.335810452075381
+  },
+  {
+    "seconds": 18.5,
+    "bf16_tokens_per_second": 35.750959592252066,
+    "residual_tokens_per_second": 190.73773268739706,
+    "throughput_ratio": 5.335177988585618
+  },
+  {
+    "seconds": 18.541666666666668,
+    "bf16_tokens_per_second": 35.7493185961758,
+    "residual_tokens_per_second": 190.7447368820297,
+    "throughput_ratio": 5.335618813792837
+  },
+  {
+    "seconds": 18.583333333333332,
+    "bf16_tokens_per_second": 35.74889985962261,
+    "residual_tokens_per_second": 190.7201742150623,
+    "throughput_ratio": 5.334994222590761
+  },
+  {
+    "seconds": 18.625,
+    "bf16_tokens_per_second": 35.74889985962261,
+    "residual_tokens_per_second": 190.72680751600174,
+    "throughput_ratio": 5.335179775180225
+  },
+  {
+    "seconds": 18.666666666666668,
+    "bf16_tokens_per_second": 35.74740746816664,
+    "residual_tokens_per_second": 190.72680751600174,
+    "throughput_ratio": 5.3354025095622815
+  },
+  {
+    "seconds": 18.708333333333332,
+    "bf16_tokens_per_second": 35.74704974498606,
+    "residual_tokens_per_second": 190.70301427391001,
+    "throughput_ratio": 5.334790301139701
+  },
+  {
+    "seconds": 18.75,
+    "bf16_tokens_per_second": 35.74544776489101,
+    "residual_tokens_per_second": 190.7099107658174,
+    "throughput_ratio": 5.335222320340652
+  },
+  {
+    "seconds": 18.791666666666668,
+    "bf16_tokens_per_second": 35.74544776489101,
+    "residual_tokens_per_second": 190.683609543287,
+    "throughput_ratio": 5.334486528116048
+  },
+  {
+    "seconds": 18.833333333333332,
+    "bf16_tokens_per_second": 35.745048798833984,
+    "residual_tokens_per_second": 190.69068365612603,
+    "throughput_ratio": 5.334743973334467
+  },
+  {
+    "seconds": 18.875,
+    "bf16_tokens_per_second": 35.743533864707175,
+    "residual_tokens_per_second": 190.66574603755197,
+    "throughput_ratio": 5.334272396211319
+  },
+  {
+    "seconds": 18.916666666666668,
+    "bf16_tokens_per_second": 35.743078478662476,
+    "residual_tokens_per_second": 190.67140163266362,
+    "throughput_ratio": 5.334498586809992
+  },
+  {
+    "seconds": 18.958333333333332,
+    "bf16_tokens_per_second": 35.743078478662476,
+    "residual_tokens_per_second": 190.63298595603965,
+    "throughput_ratio": 5.333423814343292
+  },
+  {
+    "seconds": 19.0,
+    "bf16_tokens_per_second": 35.74165158734149,
+    "residual_tokens_per_second": 190.63960037683455,
+    "throughput_ratio": 5.333821799224096
+  },
+  {
+    "seconds": 19.041666666666668,
+    "bf16_tokens_per_second": 35.741372955793025,
+    "residual_tokens_per_second": 190.6152791772364,
+    "throughput_ratio": 5.333182902990332
+  },
+  {
+    "seconds": 19.083333333333332,
+    "bf16_tokens_per_second": 35.73984235736471,
+    "residual_tokens_per_second": 190.62216124548237,
+    "throughput_ratio": 5.333603862586762
+  },
+  {
+    "seconds": 19.125,
+    "bf16_tokens_per_second": 35.73984235736471,
+    "residual_tokens_per_second": 190.59738269466325,
+    "throughput_ratio": 5.332910559281969
+  },
+  {
+    "seconds": 19.166666666666668,
+    "bf16_tokens_per_second": 35.739570206208555,
+    "residual_tokens_per_second": 190.6040520472661,
+    "throughput_ratio": 5.333137778309237
+  },
+  {
+    "seconds": 19.208333333333332,
+    "bf16_tokens_per_second": 35.738128434220364,
+    "residual_tokens_per_second": 190.57892829578836,
+    "throughput_ratio": 5.332649935672153
+  },
+  {
+    "seconds": 19.25,
+    "bf16_tokens_per_second": 35.738128434220364,
+    "residual_tokens_per_second": 190.58568140521083,
+    "throughput_ratio": 5.332838896586401
+  },
+  {
+    "seconds": 19.291666666666668,
+    "bf16_tokens_per_second": 35.73790118731968,
+    "residual_tokens_per_second": 190.55974140365714,
+    "throughput_ratio": 5.332146966461211
+  },
+  {
+    "seconds": 19.333333333333332,
+    "bf16_tokens_per_second": 35.73641346104242,
+    "residual_tokens_per_second": 190.56571680972104,
+    "throughput_ratio": 5.332536154403512
+  },
+  {
+    "seconds": 19.375,
+    "bf16_tokens_per_second": 35.73606432058999,
+    "residual_tokens_per_second": 190.5399776159216,
+    "throughput_ratio": 5.331867994935819
+  },
+  {
+    "seconds": 19.416666666666668,
+    "bf16_tokens_per_second": 35.73606432058999,
+    "residual_tokens_per_second": 190.54676656700988,
+    "throughput_ratio": 5.332057969719482
+  },
+  {
+    "seconds": 19.458333333333332,
+    "bf16_tokens_per_second": 35.73448784619188,
+    "residual_tokens_per_second": 190.52253987003246,
+    "throughput_ratio": 5.331615236521037
+  },
+  {
+    "seconds": 19.5,
+    "bf16_tokens_per_second": 35.73422033002227,
+    "residual_tokens_per_second": 190.52913024839313,
+    "throughput_ratio": 5.331839578106569
+  },
+  {
+    "seconds": 19.541666666666668,
+    "bf16_tokens_per_second": 35.732643795188466,
+    "residual_tokens_per_second": 190.5034332669587,
+    "throughput_ratio": 5.331355674628551
+  },
+  {
+    "seconds": 19.583333333333332,
+    "bf16_tokens_per_second": 35.732643795188466,
+    "residual_tokens_per_second": 190.50733100773465,
+    "throughput_ratio": 5.3314647552999475
+  },
+  {
+    "seconds": 19.625,
+    "bf16_tokens_per_second": 35.73218028992628,
+    "residual_tokens_per_second": 190.4769918507439,
+    "throughput_ratio": 5.330684842213328
+  },
+  {
+    "seconds": 19.666666666666668,
+    "bf16_tokens_per_second": 35.73031567071697,
+    "residual_tokens_per_second": 190.48349710168074,
+    "throughput_ratio": 5.331145094186582
+  },
+  {
+    "seconds": 19.708333333333332,
+    "bf16_tokens_per_second": 35.72988303538158,
+    "residual_tokens_per_second": 190.45861520114437,
+    "throughput_ratio": 5.3305132572794145
+  },
+  {
+    "seconds": 19.75,
+    "bf16_tokens_per_second": 35.72988303538158,
+    "residual_tokens_per_second": 190.4652830484506,
+    "throughput_ratio": 5.3306998755031465
+  },
+  {
+    "seconds": 19.791666666666668,
+    "bf16_tokens_per_second": 35.728291985556396,
+    "residual_tokens_per_second": 190.4391445366732,
+    "throughput_ratio": 5.330205670443485
+  },
+  {
+    "seconds": 19.833333333333332,
+    "bf16_tokens_per_second": 35.728008479389956,
+    "residual_tokens_per_second": 190.44569348615042,
+    "throughput_ratio": 5.33043126643935
+  },
+  {
+    "seconds": 19.875,
+    "bf16_tokens_per_second": 35.72650795215997,
+    "residual_tokens_per_second": 190.42106097180462,
+    "throughput_ratio": 5.329965672177934
+  },
+  {
+    "seconds": 19.916666666666668,
+    "bf16_tokens_per_second": 35.72650795215997,
+    "residual_tokens_per_second": 190.42786582772683,
+    "throughput_ratio": 5.330156142960338
+  },
+  {
+    "seconds": 19.958333333333332,
+    "bf16_tokens_per_second": 35.72615243466743,
+    "residual_tokens_per_second": 190.40329870104728,
+    "throughput_ratio": 5.329521533258824
+  },
+  {
+    "seconds": 20.0,
+    "bf16_tokens_per_second": 35.72458727037701,
+    "residual_tokens_per_second": 190.40977539975628,
+    "throughput_ratio": 5.329936325328661
+  },
+  {
+    "seconds": 20.041666666666668,
+    "bf16_tokens_per_second": 35.72458727037701,
+    "residual_tokens_per_second": 190.40977539975628,
+    "throughput_ratio": 5.329936325328661
+  },
+  {
+    "seconds": 20.083333333333332,
+    "bf16_tokens_per_second": 35.7243082270538,
+    "residual_tokens_per_second": 190.38520289410533,
+    "throughput_ratio": 5.329290120443194
+  },
+  {
+    "seconds": 20.125,
+    "bf16_tokens_per_second": 35.72225287479874,
+    "residual_tokens_per_second": 190.3921341886563,
+    "throughput_ratio": 5.329790784919217
+  },
+  {
+    "seconds": 20.166666666666668,
+    "bf16_tokens_per_second": 35.72194920287846,
+    "residual_tokens_per_second": 190.36689881270163,
+    "throughput_ratio": 5.329129654474788
+  },
+  {
+    "seconds": 20.208333333333332,
+    "bf16_tokens_per_second": 35.72194920287846,
+    "residual_tokens_per_second": 190.3739161786043,
+    "throughput_ratio": 5.329326098567545
+  },
+  {
+    "seconds": 20.25,
+    "bf16_tokens_per_second": 35.72014025871725,
+    "residual_tokens_per_second": 190.34529537196872,
+    "throughput_ratio": 5.328794735779804
+  },
+  {
+    "seconds": 20.291666666666668,
+    "bf16_tokens_per_second": 35.71980774424825,
+    "residual_tokens_per_second": 190.3512043088727,
+    "throughput_ratio": 5.329009766003677
+  },
+  {
+    "seconds": 20.333333333333332,
+    "bf16_tokens_per_second": 35.71835201708796,
+    "residual_tokens_per_second": 190.32623173829992,
+    "throughput_ratio": 5.328527801261555
+  },
+  {
+    "seconds": 20.375,
+    "bf16_tokens_per_second": 35.71835201708796,
+    "residual_tokens_per_second": 190.33219103717477,
+    "throughput_ratio": 5.328694642634079
+  },
+  {
+    "seconds": 20.416666666666668,
+    "bf16_tokens_per_second": 35.71804451806075,
+    "residual_tokens_per_second": 190.30725683558657,
+    "throughput_ratio": 5.328042433548067
+  },
+  {
+    "seconds": 20.458333333333332,
+    "bf16_tokens_per_second": 35.7166643008492,
+    "residual_tokens_per_second": 190.31278391264797,
+    "throughput_ratio": 5.328403075651247
+  },
+  {
+    "seconds": 20.5,
+    "bf16_tokens_per_second": 35.71631136378755,
+    "residual_tokens_per_second": 190.2871214100426,
+    "throughput_ratio": 5.327737219890323
+  },
+  {
+    "seconds": 20.541666666666668,
+    "bf16_tokens_per_second": 35.71631136378755,
+    "residual_tokens_per_second": 190.2922290475052,
+    "throughput_ratio": 5.32788022562825
+  },
+  {
+    "seconds": 20.583333333333332,
+    "bf16_tokens_per_second": 35.714802710037915,
+    "residual_tokens_per_second": 190.26720328867393,
+    "throughput_ratio": 5.327404573207901
+  },
+  {
+    "seconds": 20.625,
+    "bf16_tokens_per_second": 35.714459246927,
+    "residual_tokens_per_second": 190.27338779837183,
+    "throughput_ratio": 5.327628971863647
+  },
+  {
+    "seconds": 20.666666666666668,
+    "bf16_tokens_per_second": 35.71290749748477,
+    "residual_tokens_per_second": 190.24851066790677,
+    "throughput_ratio": 5.3271638743304734
+  },
+  {
+    "seconds": 20.708333333333332,
+    "bf16_tokens_per_second": 35.71290749748477,
+    "residual_tokens_per_second": 190.2545250983499,
+    "throughput_ratio": 5.327332284881855
+  },
+  {
+    "seconds": 20.75,
+    "bf16_tokens_per_second": 35.712611380554485,
+    "residual_tokens_per_second": 190.22957476437293,
+    "throughput_ratio": 5.326677815220002
+  },
+  {
+    "seconds": 20.791666666666668,
+    "bf16_tokens_per_second": 35.71114045765364,
+    "residual_tokens_per_second": 190.23432362489933,
+    "throughput_ratio": 5.327030198054852
+  },
+  {
+    "seconds": 20.833333333333332,
+    "bf16_tokens_per_second": 35.71114045765364,
+    "residual_tokens_per_second": 190.19491499457706,
+    "throughput_ratio": 5.325926659220269
+  },
+  {
+    "seconds": 20.875,
+    "bf16_tokens_per_second": 35.710821313778325,
+    "residual_tokens_per_second": 190.20101467474322,
+    "throughput_ratio": 5.3261450640833585
+  },
+  {
+    "seconds": 20.916666666666668,
+    "bf16_tokens_per_second": 35.7093268140483,
+    "residual_tokens_per_second": 190.1768090940567,
+    "throughput_ratio": 5.325690122481944
+  },
+  {
+    "seconds": 20.958333333333332,
+    "bf16_tokens_per_second": 35.70901627129624,
+    "residual_tokens_per_second": 190.18308769556094,
+    "throughput_ratio": 5.325912264024888
+  },
+  {
+    "seconds": 21.0,
+    "bf16_tokens_per_second": 35.70901627129624,
+    "residual_tokens_per_second": 190.15817833330377,
+    "throughput_ratio": 5.325214698959866
+  },
+  {
+    "seconds": 21.041666666666668,
+    "bf16_tokens_per_second": 35.70739446943081,
+    "residual_tokens_per_second": 190.1641413166663,
+    "throughput_ratio": 5.325623561793799
+  },
+  {
+    "seconds": 21.083333333333332,
+    "bf16_tokens_per_second": 35.70694054597512,
+    "residual_tokens_per_second": 190.13823206674581,
+    "throughput_ratio": 5.32496565540052
+  },
+  {
+    "seconds": 21.125,
+    "bf16_tokens_per_second": 35.7043329623633,
+    "residual_tokens_per_second": 190.14372615498806,
+    "throughput_ratio": 5.325508429338887
+  },
+  {
+    "seconds": 21.166666666666668,
+    "bf16_tokens_per_second": 35.7043329623633,
+    "residual_tokens_per_second": 190.1190438248918,
+    "throughput_ratio": 5.3248171314473325
+  },
+  {
+    "seconds": 21.208333333333332,
+    "bf16_tokens_per_second": 35.70367086687857,
+    "residual_tokens_per_second": 190.1252311104768,
+    "throughput_ratio": 5.325089171344882
+  },
+  {
+    "seconds": 21.25,
+    "bf16_tokens_per_second": 35.70114309473377,
+    "residual_tokens_per_second": 190.1252311104768,
+    "throughput_ratio": 5.325466207229703
+  },
+  {
+    "seconds": 21.291666666666668,
+    "bf16_tokens_per_second": 35.7005398505572,
+    "residual_tokens_per_second": 190.10052537980903,
+    "throughput_ratio": 5.324864166636461
+  },
+  {
+    "seconds": 21.333333333333332,
+    "bf16_tokens_per_second": 35.7005398505572,
+    "residual_tokens_per_second": 190.10635005789464,
+    "throughput_ratio": 5.325027320418169
+  },
+  {
+    "seconds": 21.375,
+    "bf16_tokens_per_second": 35.69832511963311,
+    "residual_tokens_per_second": 190.07999746458344,
+    "throughput_ratio": 5.324619483619544
+  },
+  {
+    "seconds": 21.416666666666668,
+    "bf16_tokens_per_second": 35.698120865237115,
+    "residual_tokens_per_second": 190.0858493093527,
+    "throughput_ratio": 5.324813875412098
+  },
+  {
+    "seconds": 21.458333333333332,
+    "bf16_tokens_per_second": 35.698120865237115,
+    "residual_tokens_per_second": 190.06067654984938,
+    "throughput_ratio": 5.324108718981081
+  },
+  {
+    "seconds": 21.5,
+    "bf16_tokens_per_second": 35.69684583951691,
+    "residual_tokens_per_second": 190.06682299104793,
+    "throughput_ratio": 5.324471070792515
+  },
+  {
+    "seconds": 21.541666666666668,
+    "bf16_tokens_per_second": 35.69671016413992,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.323440419363158
+  },
+  {
+    "seconds": 21.583333333333332,
+    "bf16_tokens_per_second": 35.694959809102826,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.323701462121086
+  },
+  {
+    "seconds": 21.625,
+    "bf16_tokens_per_second": 35.694959809102826,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.323701462121086
+  },
+  {
+    "seconds": 21.666666666666668,
+    "bf16_tokens_per_second": 35.694301113157444,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.323799704710468
+  },
+  {
+    "seconds": 21.708333333333332,
+    "bf16_tokens_per_second": 35.69253908622117,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324062523739968
+  },
+  {
+    "seconds": 21.75,
+    "bf16_tokens_per_second": 35.691976233294604,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324146482783119
+  },
+  {
+    "seconds": 21.791666666666668,
+    "bf16_tokens_per_second": 35.691976233294604,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324146482783119
+  },
+  {
+    "seconds": 21.833333333333332,
+    "bf16_tokens_per_second": 35.69027131929773,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324400815729447
+  },
+  {
+    "seconds": 21.875,
+    "bf16_tokens_per_second": 35.6895962791047,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324501522515995
+  },
+  {
+    "seconds": 21.916666666666668,
+    "bf16_tokens_per_second": 35.687793773120646,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324770450483844
+  },
+  {
+    "seconds": 21.958333333333332,
+    "bf16_tokens_per_second": 35.687793773120646,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324770450483844
+  },
+  {
+    "seconds": 22.0,
+    "bf16_tokens_per_second": 35.6871541603046,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.324865885143815
+  },
+  {
+    "seconds": 22.041666666666668,
+    "bf16_tokens_per_second": 35.68540163273984,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3251273919173245
+  },
+  {
+    "seconds": 22.083333333333332,
+    "bf16_tokens_per_second": 35.68481318005395,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325215204777677
+  },
+  {
+    "seconds": 22.125,
+    "bf16_tokens_per_second": 35.68481318005395,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325215204777677
+  },
+  {
+    "seconds": 22.166666666666668,
+    "bf16_tokens_per_second": 35.68308817098544,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325472638900979
+  },
+  {
+    "seconds": 22.208333333333332,
+    "bf16_tokens_per_second": 35.6825240392951,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325556833277989
+  },
+  {
+    "seconds": 22.25,
+    "bf16_tokens_per_second": 35.6825240392951,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325556833277989
+  },
+  {
+    "seconds": 22.291666666666668,
+    "bf16_tokens_per_second": 35.68075120553674,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325821438887936
+  },
+  {
+    "seconds": 22.333333333333332,
+    "bf16_tokens_per_second": 35.680156349650424,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.325910230433616
+  },
+  {
+    "seconds": 22.375,
+    "bf16_tokens_per_second": 35.6784785990049,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326160676912221
+  },
+  {
+    "seconds": 22.416666666666668,
+    "bf16_tokens_per_second": 35.6784785990049,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326160676912221
+  },
+  {
+    "seconds": 22.458333333333332,
+    "bf16_tokens_per_second": 35.67787328456893,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326251041097337
+  },
+  {
+    "seconds": 22.5,
+    "bf16_tokens_per_second": 35.67614884850781,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326508489831641
+  },
+  {
+    "seconds": 22.541666666666668,
+    "bf16_tokens_per_second": 35.675603662927934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326589888191347
+  },
+  {
+    "seconds": 22.583333333333332,
+    "bf16_tokens_per_second": 35.675603662927934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326589888191347
+  },
+  {
+    "seconds": 22.625,
+    "bf16_tokens_per_second": 35.673855044380204,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326850980631821
+  },
+  {
+    "seconds": 22.666666666666668,
+    "bf16_tokens_per_second": 35.67321413402957,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.326946683640721
+  },
+  {
+    "seconds": 22.708333333333332,
+    "bf16_tokens_per_second": 35.67150241683972,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327202300185863
+  },
+  {
+    "seconds": 22.75,
+    "bf16_tokens_per_second": 35.67150241683972,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327202300185863
+  },
+  {
+    "seconds": 22.791666666666668,
+    "bf16_tokens_per_second": 35.67096736911256,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.32728220571389
+  },
+  {
+    "seconds": 22.833333333333332,
+    "bf16_tokens_per_second": 35.66926990628666,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327535725439161
+  },
+  {
+    "seconds": 22.875,
+    "bf16_tokens_per_second": 35.66926990628666,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327535725439161
+  },
+  {
+    "seconds": 22.916666666666668,
+    "bf16_tokens_per_second": 35.668628031406755,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327631597120879
+  },
+  {
+    "seconds": 22.958333333333332,
+    "bf16_tokens_per_second": 35.66693446713614,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327884567740718
+  },
+  {
+    "seconds": 23.0,
+    "bf16_tokens_per_second": 35.66630770785012,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327978193948258
+  },
+  {
+    "seconds": 23.041666666666668,
+    "bf16_tokens_per_second": 35.66630770785012,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.327978193948258
+  },
+  {
+    "seconds": 23.083333333333332,
+    "bf16_tokens_per_second": 35.664414505174705,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3282610232813985
+  },
+  {
+    "seconds": 23.125,
+    "bf16_tokens_per_second": 35.663843561981736,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.328346323519897
+  },
+  {
+    "seconds": 23.166666666666668,
+    "bf16_tokens_per_second": 35.6620881421934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3286086044199426
+  },
+  {
+    "seconds": 23.208333333333332,
+    "bf16_tokens_per_second": 35.6620881421934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3286086044199426
+  },
+  {
+    "seconds": 23.25,
+    "bf16_tokens_per_second": 35.66148362869995,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.328698932007998
+  },
+  {
+    "seconds": 23.291666666666668,
+    "bf16_tokens_per_second": 35.65985248237283,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.328942676361556
+  },
+  {
+    "seconds": 23.333333333333332,
+    "bf16_tokens_per_second": 35.659283817630936,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.329027657928407
+  },
+  {
+    "seconds": 23.375,
+    "bf16_tokens_per_second": 35.659283817630936,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.329027657928407
+  },
+  {
+    "seconds": 23.416666666666668,
+    "bf16_tokens_per_second": 35.65760004782427,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.329279297294413
+  },
+  {
+    "seconds": 23.458333333333332,
+    "bf16_tokens_per_second": 35.65711215500787,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.32935221730752
+  },
+  {
+    "seconds": 23.5,
+    "bf16_tokens_per_second": 35.65711215500787,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.32935221730752
+  },
+  {
+    "seconds": 23.541666666666668,
+    "bf16_tokens_per_second": 35.65549660508577,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.32959369016246
+  },
+  {
+    "seconds": 23.583333333333332,
+    "bf16_tokens_per_second": 35.654924975748045,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.329679135640568
+  },
+  {
+    "seconds": 23.625,
+    "bf16_tokens_per_second": 35.65328792007761,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3299238530834625
+  },
+  {
+    "seconds": 23.666666666666668,
+    "bf16_tokens_per_second": 35.65328792007761,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3299238530834625
+  },
+  {
+    "seconds": 23.708333333333332,
+    "bf16_tokens_per_second": 35.652811943200426,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.329995009336587
+  },
+  {
+    "seconds": 23.75,
+    "bf16_tokens_per_second": 35.65112675726142,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330246951798486
+  },
+  {
+    "seconds": 23.791666666666668,
+    "bf16_tokens_per_second": 35.650666826072836,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330315717603848
+  },
+  {
+    "seconds": 23.833333333333332,
+    "bf16_tokens_per_second": 35.650666826072836,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330315717603848
+  },
+  {
+    "seconds": 23.875,
+    "bf16_tokens_per_second": 35.64895080519679,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330572301117268
+  },
+  {
+    "seconds": 23.916666666666668,
+    "bf16_tokens_per_second": 35.6483884458993,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330656391787987
+  },
+  {
+    "seconds": 23.958333333333332,
+    "bf16_tokens_per_second": 35.64678258040539,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330896534559361
+  },
+  {
+    "seconds": 24.0,
+    "bf16_tokens_per_second": 35.64678258040539,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.330896534559361
+  },
+  {
+    "seconds": 24.041666666666668,
+    "bf16_tokens_per_second": 35.64625390175619,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3309755984404275
+  },
+  {
+    "seconds": 24.083333333333332,
+    "bf16_tokens_per_second": 35.644454395727024,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331244732107736
+  },
+  {
+    "seconds": 24.125,
+    "bf16_tokens_per_second": 35.644454395727024,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331244732107736
+  },
+  {
+    "seconds": 24.166666666666668,
+    "bf16_tokens_per_second": 35.643992086495025,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33131387934724
+  },
+  {
+    "seconds": 24.208333333333332,
+    "bf16_tokens_per_second": 35.64242602476176,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331548127337225
+  },
+  {
+    "seconds": 24.25,
+    "bf16_tokens_per_second": 35.64190610205553,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331625900757166
+  },
+  {
+    "seconds": 24.291666666666668,
+    "bf16_tokens_per_second": 35.64190610205553,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331625900757166
+  },
+  {
+    "seconds": 24.333333333333332,
+    "bf16_tokens_per_second": 35.6403401425096,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33186016088042
+  },
+  {
+    "seconds": 24.375,
+    "bf16_tokens_per_second": 35.63989985713413,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.331926029192685
+  },
+  {
+    "seconds": 24.416666666666668,
+    "bf16_tokens_per_second": 35.638230774603194,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33217574486033
+  },
+  {
+    "seconds": 24.458333333333332,
+    "bf16_tokens_per_second": 35.638230774603194,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33217574486033
+  },
+  {
+    "seconds": 24.5,
+    "bf16_tokens_per_second": 35.637791921942195,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.332241406602777
+  },
+  {
+    "seconds": 24.541666666666668,
+    "bf16_tokens_per_second": 35.636202218393684,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.332479273787211
+  },
+  {
+    "seconds": 24.583333333333332,
+    "bf16_tokens_per_second": 35.63567572223534,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33255805803348
+  },
+  {
+    "seconds": 24.625,
+    "bf16_tokens_per_second": 35.63567572223534,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33255805803348
+  },
+  {
+    "seconds": 24.666666666666668,
+    "bf16_tokens_per_second": 35.63407693515363,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.332797312861133
+  },
+  {
+    "seconds": 24.708333333333332,
+    "bf16_tokens_per_second": 35.63365825284784,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.332859971257288
+  },
+  {
+    "seconds": 24.75,
+    "bf16_tokens_per_second": 35.63365825284784,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.332859971257288
+  },
+  {
+    "seconds": 24.791666666666668,
+    "bf16_tokens_per_second": 35.63206827621428,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333097934506533
+  },
+  {
+    "seconds": 24.833333333333332,
+    "bf16_tokens_per_second": 35.63165689667694,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333159506927014
+  },
+  {
+    "seconds": 24.875,
+    "bf16_tokens_per_second": 35.6301284696865,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333388283675368
+  },
+  {
+    "seconds": 24.916666666666668,
+    "bf16_tokens_per_second": 35.6301284696865,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333388283675368
+  },
+  {
+    "seconds": 24.958333333333332,
+    "bf16_tokens_per_second": 35.629659768266045,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333458443387267
+  },
+  {
+    "seconds": 25.0,
+    "bf16_tokens_per_second": 35.62816226519163,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3336826163422675
+  },
+  {
+    "seconds": 25.041666666666668,
+    "bf16_tokens_per_second": 35.62773025056485,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333747291495263
+  },
+  {
+    "seconds": 25.083333333333332,
+    "bf16_tokens_per_second": 35.62773025056485,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.333747291495263
+  },
+  {
+    "seconds": 25.125,
+    "bf16_tokens_per_second": 35.62609772138058,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33399170496381
+  },
+  {
+    "seconds": 25.166666666666668,
+    "bf16_tokens_per_second": 35.625558661504215,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334072415021899
+  },
+  {
+    "seconds": 25.208333333333332,
+    "bf16_tokens_per_second": 35.623801496519086,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334335521284625
+  },
+  {
+    "seconds": 25.25,
+    "bf16_tokens_per_second": 35.623801496519086,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334335521284625
+  },
+  {
+    "seconds": 25.291666666666668,
+    "bf16_tokens_per_second": 35.623220639135724,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334422500735592
+  },
+  {
+    "seconds": 25.333333333333332,
+    "bf16_tokens_per_second": 35.621583565605995,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334667656649457
+  },
+  {
+    "seconds": 25.375,
+    "bf16_tokens_per_second": 35.621583565605995,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334667656649457
+  },
+  {
+    "seconds": 25.416666666666668,
+    "bf16_tokens_per_second": 35.621119666526695,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334737130810781
+  },
+  {
+    "seconds": 25.458333333333332,
+    "bf16_tokens_per_second": 35.6196473651968,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.334957636659473
+  },
+  {
+    "seconds": 25.5,
+    "bf16_tokens_per_second": 35.61923650740356,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.335019173883078
+  },
+  {
+    "seconds": 25.541666666666668,
+    "bf16_tokens_per_second": 35.61923650740356,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.335019173883078
+  },
+  {
+    "seconds": 25.583333333333332,
+    "bf16_tokens_per_second": 35.617695185442855,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.335250041775307
+  },
+  {
+    "seconds": 25.625,
+    "bf16_tokens_per_second": 35.61733768111789,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33530359364327
+  },
+  {
+    "seconds": 25.666666666666668,
+    "bf16_tokens_per_second": 35.615850042879735,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33552644390877
+  },
+  {
+    "seconds": 25.708333333333332,
+    "bf16_tokens_per_second": 35.615850042879735,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33552644390877
+  },
+  {
+    "seconds": 25.75,
+    "bf16_tokens_per_second": 35.61540397209902,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33559326955669
+  },
+  {
+    "seconds": 25.791666666666668,
+    "bf16_tokens_per_second": 35.61396562625019,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.335808758854086
+  },
+  {
+    "seconds": 25.833333333333332,
+    "bf16_tokens_per_second": 35.613569741360294,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33586807237077
+  },
+  {
+    "seconds": 25.875,
+    "bf16_tokens_per_second": 35.613569741360294,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33586807237077
+  },
+  {
+    "seconds": 25.916666666666668,
+    "bf16_tokens_per_second": 35.61204115492157,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336097105453675
+  },
+  {
+    "seconds": 25.958333333333332,
+    "bf16_tokens_per_second": 35.61169999636934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336148225034129
+  },
+  {
+    "seconds": 26.0,
+    "bf16_tokens_per_second": 35.61169999636934,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336148225034129
+  },
+  {
+    "seconds": 26.041666666666668,
+    "bf16_tokens_per_second": 35.61024341116226,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336366492415164
+  },
+  {
+    "seconds": 26.083333333333332,
+    "bf16_tokens_per_second": 35.60983300854736,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336427993932512
+  },
+  {
+    "seconds": 26.125,
+    "bf16_tokens_per_second": 35.60835958661567,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336648807531746
+  },
+  {
+    "seconds": 26.166666666666668,
+    "bf16_tokens_per_second": 35.60835958661567,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336648807531746
+  },
+  {
+    "seconds": 26.208333333333332,
+    "bf16_tokens_per_second": 35.607954052687255,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336709585866617
+  },
+  {
+    "seconds": 26.25,
+    "bf16_tokens_per_second": 35.606501977705435,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336927223153193
+  },
+  {
+    "seconds": 26.291666666666668,
+    "bf16_tokens_per_second": 35.606165401626974,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336977671776782
+  },
+  {
+    "seconds": 26.333333333333332,
+    "bf16_tokens_per_second": 35.606165401626974,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.336977671776782
+  },
+  {
+    "seconds": 26.375,
+    "bf16_tokens_per_second": 35.604639616098716,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33720638026489
+  },
+  {
+    "seconds": 26.416666666666668,
+    "bf16_tokens_per_second": 35.604293892676246,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.337258205397605
+  },
+  {
+    "seconds": 26.458333333333332,
+    "bf16_tokens_per_second": 35.604293892676246,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.337258205397605
+  },
+  {
+    "seconds": 26.5,
+    "bf16_tokens_per_second": 35.60283900152665,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3374763096259175
+  },
+  {
+    "seconds": 26.541666666666668,
+    "bf16_tokens_per_second": 35.602427426518496,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.337538012493234
+  },
+  {
+    "seconds": 26.583333333333332,
+    "bf16_tokens_per_second": 35.601012448304374,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.337750155336522
+  },
+  {
+    "seconds": 26.625,
+    "bf16_tokens_per_second": 35.601012448304374,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.337750155336522
+  },
+  {
+    "seconds": 26.666666666666668,
+    "bf16_tokens_per_second": 35.60068042242929,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33779993728297
+  },
+  {
+    "seconds": 26.708333333333332,
+    "bf16_tokens_per_second": 35.59916808222578,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338026700150709
+  },
+  {
+    "seconds": 26.75,
+    "bf16_tokens_per_second": 35.5988316585063,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338077146716326
+  },
+  {
+    "seconds": 26.791666666666668,
+    "bf16_tokens_per_second": 35.5988316585063,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338077146716326
+  },
+  {
+    "seconds": 26.833333333333332,
+    "bf16_tokens_per_second": 35.59740544219969,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338291017715576
+  },
+  {
+    "seconds": 26.875,
+    "bf16_tokens_per_second": 35.597036012756455,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33834641901016
+  },
+  {
+    "seconds": 26.916666666666668,
+    "bf16_tokens_per_second": 35.59555909430529,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338567915807109
+  },
+  {
+    "seconds": 26.958333333333332,
+    "bf16_tokens_per_second": 35.59555909430529,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338567915807109
+  },
+  {
+    "seconds": 27.0,
+    "bf16_tokens_per_second": 35.595199205064866,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33862189199477
+  },
+  {
+    "seconds": 27.041666666666668,
+    "bf16_tokens_per_second": 35.593765584766224,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338836917198915
+  },
+  {
+    "seconds": 27.083333333333332,
+    "bf16_tokens_per_second": 35.593765584766224,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338836917198915
+  },
+  {
+    "seconds": 27.125,
+    "bf16_tokens_per_second": 35.593464906883085,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.338882017337013
+  },
+  {
+    "seconds": 27.166666666666668,
+    "bf16_tokens_per_second": 35.59190090892407,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339116621288061
+  },
+  {
+    "seconds": 27.208333333333332,
+    "bf16_tokens_per_second": 35.59155496294894,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339168516910711
+  },
+  {
+    "seconds": 27.25,
+    "bf16_tokens_per_second": 35.59155496294894,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339168516910711
+  },
+  {
+    "seconds": 27.291666666666668,
+    "bf16_tokens_per_second": 35.59011480062026,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33938456761489
+  },
+  {
+    "seconds": 27.333333333333332,
+    "bf16_tokens_per_second": 35.589745930260776,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339439907731922
+  },
+  {
+    "seconds": 27.375,
+    "bf16_tokens_per_second": 35.58832806430736,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339652635063247
+  },
+  {
+    "seconds": 27.416666666666668,
+    "bf16_tokens_per_second": 35.58832806430736,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339652635063247
+  },
+  {
+    "seconds": 27.458333333333332,
+    "bf16_tokens_per_second": 35.58794630151646,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.33970991515115
+  },
+  {
+    "seconds": 27.5,
+    "bf16_tokens_per_second": 35.58652342467802,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.339923415904555
+  },
+  {
+    "seconds": 27.541666666666668,
+    "bf16_tokens_per_second": 35.58570453909635,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.34004629632379
+  },
+  {
+    "seconds": 27.583333333333332,
+    "bf16_tokens_per_second": 35.58570453909635,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.34004629632379
+  },
+  {
+    "seconds": 27.625,
+    "bf16_tokens_per_second": 35.58399046967063,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340303524643819
+  },
+  {
+    "seconds": 27.666666666666668,
+    "bf16_tokens_per_second": 35.58362003588885,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340359118448736
+  },
+  {
+    "seconds": 27.708333333333332,
+    "bf16_tokens_per_second": 35.58362003588885,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340359118448736
+  },
+  {
+    "seconds": 27.75,
+    "bf16_tokens_per_second": 35.58219782699646,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340572570868503
+  },
+  {
+    "seconds": 27.791666666666668,
+    "bf16_tokens_per_second": 35.581828815588814,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340627956785068
+  },
+  {
+    "seconds": 27.833333333333332,
+    "bf16_tokens_per_second": 35.58041012894023,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340840901985809
+  },
+  {
+    "seconds": 27.875,
+    "bf16_tokens_per_second": 35.58041012894023,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.340840901985809
+  },
+  {
+    "seconds": 27.916666666666668,
+    "bf16_tokens_per_second": 35.58009840393222,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.34088769425867
+  },
+  {
+    "seconds": 27.958333333333332,
+    "bf16_tokens_per_second": 35.578612979719765,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341110678889959
+  },
+  {
+    "seconds": 28.0,
+    "bf16_tokens_per_second": 35.57832538789034,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341153852922872
+  },
+  {
+    "seconds": 28.041666666666668,
+    "bf16_tokens_per_second": 35.57832538789034,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341153852922872
+  },
+  {
+    "seconds": 28.083333333333332,
+    "bf16_tokens_per_second": 35.576840649347695,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341376756835723
+  },
+  {
+    "seconds": 28.125,
+    "bf16_tokens_per_second": 35.57654037758812,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341421838920162
+  },
+  {
+    "seconds": 28.166666666666668,
+    "bf16_tokens_per_second": 35.57503524120032,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341647827968883
+  },
+  {
+    "seconds": 28.208333333333332,
+    "bf16_tokens_per_second": 35.57503524120032,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341647827968883
+  },
+  {
+    "seconds": 28.25,
+    "bf16_tokens_per_second": 35.57472542233353,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341694348167063
+  },
+  {
+    "seconds": 28.291666666666668,
+    "bf16_tokens_per_second": 35.57324329066252,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.34191690573106
+  },
+  {
+    "seconds": 28.333333333333332,
+    "bf16_tokens_per_second": 35.57324329066252,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.34191690573106
+  },
+  {
+    "seconds": 28.375,
+    "bf16_tokens_per_second": 35.57290614956432,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.341967533580371
+  },
+  {
+    "seconds": 28.416666666666668,
+    "bf16_tokens_per_second": 35.571493523129824,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342179675489601
+  },
+  {
+    "seconds": 28.458333333333332,
+    "bf16_tokens_per_second": 35.57115265335813,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342230868308233
+  },
+  {
+    "seconds": 28.5,
+    "bf16_tokens_per_second": 35.57115265335813,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342230868308233
+  },
+  {
+    "seconds": 28.541666666666668,
+    "bf16_tokens_per_second": 35.569748461110294,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342441764350403
+  },
+  {
+    "seconds": 28.583333333333332,
+    "bf16_tokens_per_second": 35.5694550878565,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.3424858282675975
+  },
+  {
+    "seconds": 28.625,
+    "bf16_tokens_per_second": 35.568061869362936,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342695096067594
+  },
+  {
+    "seconds": 28.666666666666668,
+    "bf16_tokens_per_second": 35.568061869362936,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342695096067594
+  },
+  {
+    "seconds": 28.708333333333332,
+    "bf16_tokens_per_second": 35.56781021628628,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.342732897260593
+  },
+  {
+    "seconds": 28.75,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 28.791666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 28.833333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 28.875,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 28.916666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 28.958333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.0,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.041666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.083333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.125,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.166666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.208333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.25,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.291666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.333333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.375,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.416666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.458333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.5,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.541666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.583333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.625,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.666666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.708333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.75,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.791666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.833333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.875,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.916666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 29.958333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.0,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.041666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.083333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.125,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.166666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.208333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.25,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.291666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.333333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.375,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.416666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.458333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.5,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.541666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.583333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.625,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.666666666666668,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  },
+  {
+    "seconds": 30.708333333333332,
+    "bf16_tokens_per_second": 35.56581393838867,
+    "residual_tokens_per_second": 190.02930972607413,
+    "throughput_ratio": 5.343032780165399
+  }
+]

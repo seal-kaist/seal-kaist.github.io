@@ -1,0 +1,91 @@
+{
+  "model": "ByteDance/Ouro-1.4B",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_uuid": "GPU-7f0c7275-d37e-a728-7474-7847fa8c4a97",
+  "context_tokens_per_request": 16384,
+  "output_tokens_per_request": 512,
+  "capture": "Actual xterm windows captured with ffmpeg x11grab during fresh inference. No token-event replay or synthetic terminal rendering.",
+  "layout": "Left 1/3 BF16 batch 2 vertically; right 2/3 ResidualQuant batch 8 in 2 columns x 4 rows",
+  "playback": "Separate runs on same GPU joined at 1x; aligned at decode start; completed take freezes at end",
+  "captions": "Original 1240px style: 40px method, 42px batch, 26/50px throughput, 24px live tokens/s; BATCH 2 to BATCH 8 horizontal arrow; 64px Geist Medium 4x with multiplication-sign ink center aligned to 26px BATCH ink center; caption centered over arrow x520..1108; arrow aligned at y1058; references: Linear UI redesign and Vercel Geist; live values computed from measured token timestamps",
+  "duration_seconds": 30.735459330986487,
+  "throughput_ratio": 5.343032780165399,
+  "trials_per_method": 1,
+  "methods": [
+    {
+      "method": "bf16",
+      "batch": 2,
+      "seconds": 28.735459330986487,
+      "tokens_per_second": 35.56581393838867,
+      "config": {
+        "packed_groups": []
+      },
+      "captured_cuda_graph_count": 1,
+      "cuda_graph": "FULL_DECODE_ONLY",
+      "prompt_sha256": [
+        "705ff4e917808bc46ec488ef7b1e118c187112af9571261c93073df0fbb560de",
+        "c5621999b3acac52d0f50acbd82de51e0cb7a4a4441b53f55a16e9c8882ff0cb"
+      ],
+      "runtime_git": "65f48af8d1d31f1cc57bc3dc431c0331104345b9",
+      "script_sha256": "220dc1a175fd2131fdd76dd96b3c786ab2252c6ec1bbd35ada3614c2d80359ec",
+      "timing_scope": "First output to last output; staged prefill excluded; includes live terminal drawing and event collection overhead",
+      "vllm": "0.10.2",
+      "torch": "2.8.0+cu128"
+    },
+    {
+      "method": "residual",
+      "batch": 8,
+      "seconds": 21.512470923000365,
+      "tokens_per_second": 190.02930972607413,
+      "config": {
+        "coefficient_method": "ls",
+        "reference_mode": "anchor",
+        "anchor_index": 3,
+        "packed_groups": [
+          [
+            [
+              2,
+              32
+            ],
+            [
+              2,
+              32
+            ],
+            [
+              2,
+              32
+            ],
+            [
+              4,
+              32
+            ]
+          ]
+        ],
+        "calibration_domain": "gsm8k",
+        "rotation_artifact": {
+          "artifact": "/root/projects/benchmark-5090/fresh-calibration/rotations.pt",
+          "sha256": "201a626bfa3f9e721833f55201ce35fe11bd962895a4dc1aedca1e3ddfe3053e"
+        },
+        "prefill_cpu_offload": true,
+        "prefill_offload_chunk_tokens": 512
+      },
+      "captured_cuda_graph_count": 1,
+      "cuda_graph": "FULL_DECODE_ONLY",
+      "prompt_sha256": [
+        "705ff4e917808bc46ec488ef7b1e118c187112af9571261c93073df0fbb560de",
+        "c5621999b3acac52d0f50acbd82de51e0cb7a4a4441b53f55a16e9c8882ff0cb",
+        "5255c7ae29e831e03281e0522c27044153772056fffe10dc65c91d60267df775",
+        "e7e192ef2a0dbb949fb56c5d21f3c2845cf3317717cebeae919a7d0ccf24dd37",
+        "af5ed210c2b88a4281278d1bb6cf9d1a5567afda44bd51ad1e0568447ef78d03",
+        "894aa6c58375f47e3bdad183ccdfcb044eb4d8d47d7a83e625eda1994cd8bd74",
+        "5bfd27cda0d8300dc74e48da42f0aa8db6acc5491f50e1ca1ed03420e6de0519",
+        "d2cd51200b81628795c3412ec1b1d377cb9cc7847a944e32da1a172f62d059ef"
+      ],
+      "runtime_git": "65f48af8d1d31f1cc57bc3dc431c0331104345b9",
+      "script_sha256": "68fb98baafe0ee66c5fba99715d709827016b8a7a97443ef42070c9d18cb3d22",
+      "timing_scope": "First output to last output; staged prefill excluded; includes live terminal drawing and event collection overhead",
+      "vllm": "0.10.2",
+      "torch": "2.8.0+cu128"
+    }
+  ]
+}
