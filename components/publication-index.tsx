@@ -31,6 +31,19 @@ function HighlightedText({ text, terms }: { text: string; terms: string[] }) {
   );
 }
 
+function HighlightedAuthors({ text, terms }: { text: string; terms: string[] }) {
+  const parts = text.split("†");
+
+  return parts.map((part, index) => (
+    <span key={`${part}-${index}`}>
+      <HighlightedText text={part} terms={terms} />
+      {index < parts.length - 1 ? (
+        <sup className="publication-author-marker">†</sup>
+      ) : null}
+    </span>
+  ));
+}
+
 export function PublicationIndex() {
   const [query, setQuery] = useState("");
   const normalizedQuery = query.trim().toLocaleLowerCase();
@@ -109,7 +122,7 @@ export function PublicationIndex() {
                       />
                     </h3>
                     <p>
-                      <HighlightedText
+                      <HighlightedAuthors
                         text={publication.authors}
                         terms={searchTerms}
                       />
@@ -172,7 +185,10 @@ export function PublicationIndex() {
           </button>
         </div>
       ) : null}
-      <p className="publication-note">* indicates equal contribution.</p>
+      <p className="publication-note">
+        * indicates equal contribution. For Squeezeformer, *¹ and *² denote
+        separate equal-contribution groups. † indicates equal advising.
+      </p>
     </section>
   );
 }

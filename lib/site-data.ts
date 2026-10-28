@@ -76,6 +76,14 @@ export const researchDetails = [
 export const publications: Publication[] = [
   {
     year: 2026,
+    title: "GEPA-Curator: Curated Learning for Self Improving Agents",
+    authors:
+      "Zack Yu*, Nicholas Lee*, Minjae Lee, Lakshya Agarwal, Luca Manolache, Wonjun Kang, Matei Zaharia, Michael W. Mahoney, Kurt Keutzer, Sehoon Kim†, Amir Gholami†",
+    venue: "Preprint 2026",
+    paper: "https://arxiv.org/html/2610.37651v1",
+  },
+  {
+    year: 2026,
     title:
       "ResidualQuant: KV Cache Quantization for Looped Transformers with 2-Bit Residuals",
     authors:
@@ -96,7 +104,7 @@ export const publications: Publication[] = [
     year: 2026,
     title: "SketchSSM: Write to the Full State, Read from a Compact Sketch",
     authors:
-      "Omin Kwon, JoongWon Shin, Minseo Kim, Kurt Keutzer, Sehoon Kim, Jae W. Lee",
+      "Omin Kwon, JoongWon Shin, Minseo Kim, Kurt Keutzer, Sehoon Kim†, Jae W. Lee†",
     venue: "Preprint 2026",
     paper: "https://arxiv.org/pdf/2609.33051",
     project: "https://omin-kwon.github.io/project/SketchSSM/",
@@ -269,7 +277,7 @@ export const publications: Publication[] = [
     year: 2022,
     title: "Squeezeformer: An Efficient Transformer for Automatic Speech Recognition",
     authors:
-      "Sehoon Kim*, Amir Gholami*, Albert Shaw†, Nicholas Lee†, Karttikeya Mangalam, Jitendra Malik, Michael W. Mahoney, Kurt Keutzer",
+      "Sehoon Kim*¹, Amir Gholami*¹, Albert Shaw*², Nicholas Lee*², Karttikeya Mangalam, Jitendra Malik, Michael W. Mahoney, Kurt Keutzer",
     venue: "NeurIPS 2022",
     paper: "https://arxiv.org/pdf/2206.00888.pdf",
     code: "https://github.com/kssteven418/Squeezeformer",

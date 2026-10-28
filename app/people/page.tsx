@@ -44,6 +44,14 @@ const students: Array<
     scholar: "https://scholar.google.com/citations?user=hwR7WVoAAAAJ",
     linkedin: "https://www.linkedin.com/in/sanglyul-cho-69b553246",
   },
+  {
+    name: "Seoyoon Yum",
+    role: "Undergraduate Student",
+    image: "https://seoyoonyum.github.io/assets/img/profile.jpg",
+    website: "https://seoyoonyum.github.io/",
+    github: "https://github.com/SeoyoonYum",
+    scholar: "https://scholar.google.com/citations?user=Ck0gPk0AAAAJ",
+  },
 ];
 
 function ProfileLinks({

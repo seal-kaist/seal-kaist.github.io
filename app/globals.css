@@ -1212,6 +1212,14 @@ a:focus-visible .link-arrow-head {
   line-height: 1.6;
 }
 
+.publication-author-marker {
+  position: relative;
+  top: -0.28em;
+  font-size: 0.66em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
 .publication-meta {
   display: flex;
   flex-direction: column;
