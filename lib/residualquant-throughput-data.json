@@ -212,5 +212,12 @@
       "batch": 8,
       "throughput": 192.2
     }
-  ]
+  ],
+  "peakRatios": {
+    "2048": 3.68,
+    "4096": 2.73,
+    "8192": 3.35,
+    "16384": 5.38
+  },
+  "peakRatiosSource": "Paper appendix Table 12 (peak throughput gains computed before the Table 11 timings were rounded)"
 }
