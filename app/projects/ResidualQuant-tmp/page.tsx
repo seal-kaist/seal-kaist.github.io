@@ -104,9 +104,13 @@ export default function ResidualQuantPage() {
             <span aria-hidden="true">📄</span> Paper <LinkArrow />
           </a>
           <a href="#concept"><span aria-hidden="true">💡</span> Explore the idea ↓</a>
-          <span className="residualquant-code-pending">
-            <FaGithub aria-hidden="true" /> Code · Coming soon
-          </span>
+          <a
+            href="https://github.com/heejunkim00/ResidualQuant"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub aria-hidden="true" /> Code <LinkArrow />
+          </a>
         </div>
       </section>
 
@@ -187,13 +191,14 @@ export default function ResidualQuantPage() {
           </p>
         </div>
         <figure className="residualquant-figure rq-terminal-video">
-          <ResidualQuantTerminalVideo base="/projects/residualquant/terminal-live-b2-b8-final-align" />
+          <ResidualQuantTerminalVideo base="/projects/residualquant/terminal-live-b2-b8-v2" />
           <figcaption>
             Ouro-1.4B · RTX 5090 · 16,384 input / 512 output tokens per request.
             BF16 batch 2: 35.57 tokens/s · ResidualQuant batch 8: 190.03 tokens/s.
             Actual xterm windows were recorded during inference and joined at 1× speed;
             both methods ran separately on the same GPU with CUDA Graph enabled.
             ResidualQuant uses prefill CPU offloading; prefill is excluded from decode timing.
+            The title card, live counters, and result card are rendered from the recorded token timestamps.
           </figcaption>
         </figure>
         <figure className="residualquant-figure residualquant-results-figure">

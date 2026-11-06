@@ -84,3 +84,22 @@ prefill 및 첫 출력은 decode 측정에서 제외됩니다. 실시간 터미�
 코드는 현재 런타임과 batch 8에 맞게 수정했습니다. 디자인 참고:
 [Linear](https://linear.app/now/how-we-redesigned-the-linear-ui),
 [Vercel Geist](https://vercel.com/geist/introduction).
+
+## v2 영상 (`terminal-live-b2-b8-v2`)
+
+`/projects/ResidualQuant-tmp/`가 사용하는 두 번째 버전입니다. 같은 원본 녹화와
+토큰 이벤트를 쓰되, 타이틀 카드, 좌우 라벨, 토큰 타임스탬프 기반 라이브 카운터,
+완료 전환, 결과 카드를 Pillow로 프레임 단위 렌더링해 ffmpeg로 합성합니다.
+터미널 픽셀과 1배속 타임라인은 원본 그대로입니다. 입력은 `join_terminal.py`와
+같고 Pillow와 ffmpeg만 필요합니다.
+
+```bash
+work/video-venv/bin/python scripts/demo/render_terminal_v2.py \
+  --takes data/residualquant-terminal/b2-b8-16k \
+  --fonts scripts/demo/fonts \
+  --output public/projects/residualquant \
+  --name terminal-live-b2-b8-v2
+```
+
+결과는 `terminal-live-b2-b8-v2`의 `.mp4`, `.webm`, `-poster.png`, `-final.png`,
+`-title.png`, `.json`입니다. 제작 환경은 Pillow 13.0.0, FFmpeg 9.0.2입니다.
