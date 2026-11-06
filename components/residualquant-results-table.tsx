@@ -17,24 +17,24 @@ function ResultRow({ row }: { row: Row }) {
 
 export function ResidualQuantResultsTable() {
   return (
-    <figure className="rq-results">
+    <figure className="rq-results rq-results-wide">
       <figcaption><strong>Downstream performance</strong><span>Accuracy (%) · higher is better</span></figcaption>
       <div className="rq-results-scroll" tabIndex={0} role="region" aria-label="Main benchmark results; scroll horizontally to compare all benchmarks">
         <table>
           <thead>
-            <tr><th rowSpan={2} scope="col">Method</th><th colSpan={4} scope="colgroup">Ouro-1.4B <small>4 loops</small></th><th colSpan={4} scope="colgroup">Huginn-3.5B <small>32 loops</small></th><th rowSpan={2} scope="col">Avg.</th></tr>
-            <tr>{['GSM8K', 'MATH500', 'HumanEval', 'MBPP', 'GSM8K', 'MATH500', 'HumanEval', 'MBPP'].map((name, index) => <th key={index} scope="col">{name}</th>)}</tr>
+            <tr><th rowSpan={2} scope="col">Method</th><th colSpan={4} scope="colgroup">Ouro-1.4B <small>4 loops</small></th><th colSpan={4} scope="colgroup">Ouro-2.6B <small>4 loops</small></th><th colSpan={4} scope="colgroup">Huginn-3.5B <small>32 loops</small></th><th rowSpan={2} scope="col">Avg.</th></tr>
+            <tr>{['GSM8K', 'MATH500', 'HumanEval', 'MBPP', 'GSM8K', 'MATH500', 'HumanEval', 'MBPP', 'GSM8K', 'MATH500', 'HumanEval', 'MBPP'].map((name, index) => <th key={index} scope="col">{name}</th>)}</tr>
           </thead>
           <tbody>
             <ResultRow row={data.baseline} />
             {data.groups.map((group) => <Fragment key={`${group.label}-${group.groupSize}`}>
-              <tr className="rq-results-group"><th colSpan={10} scope="rowgroup">{group.label}<span>g = {group.groupSize} · b<sub>eff</sub> = {group.bits}</span></th></tr>
+              <tr className="rq-results-group"><th colSpan={14} scope="rowgroup">{group.label}<span>g = {group.groupSize} · b<sub>eff</sub> = {group.bits}</span></th></tr>
               {group.rows.map((row) => <ResultRow key={row.method} row={row} />)}
             </Fragment>)}
           </tbody>
         </table>
       </div>
-      <p className="rq-results-note">Values and bold highlights reproduce the paper’s main table. Teal rows are ResidualQuant (residual quantization + OptR-H). Residual variants use the final-loop anchor and least-squares scaling. b<sub>eff</sub> = effective bits per KV value (Direct and OptR-H); mixed INT2/4 uses g = 32 for INT4. Avg. is the mean of all eight benchmark scores.</p>
+      <p className="rq-results-note">Values and bold highlights reproduce the paper’s main table. Teal rows are ResidualQuant (residual quantization + OptR-H). Residual variants use the final-loop anchor and least-squares scaling. b<sub>eff</sub> = effective bits per KV value (Direct and OptR-H); mixed INT2/4 uses g = 32 for INT4. Avg. is the unweighted mean of the twelve model–benchmark scores. Huginn-3.5B repeats each four-loop schedule eight times.</p>
     </figure>
   );
 }
