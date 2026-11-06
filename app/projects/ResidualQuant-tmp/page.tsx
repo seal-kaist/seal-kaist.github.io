@@ -114,7 +114,7 @@ export default function ResidualQuantPage() {
         <ResidualQuantProgressFigure />
         <figcaption>
           ResidualQuant recovers BF16-level accuracy with 80.7% lower logical KV
-          storage and reaches 3.27× peak decode throughput at 8k context.
+          storage and reaches 5.38× peak decode throughput at 16k context.
         </figcaption>
       </figure>
 
@@ -178,9 +178,12 @@ export default function ResidualQuantPage() {
         <div className="residualquant-copy">
           <p>
             Reducing KV memory traffic accelerates fixed-batch decoding, while
-            the smaller cache footprint also admits larger batches. In a single example run on an RTX
-            5090 at 16k context, ResidualQuant achieved 5.34× the aggregate decode
-            throughput of vLLM BF16, with batch 8 versus batch 2.
+            the smaller cache footprint also admits larger batches. On an RTX 5090,
+            ResidualQuant improves fixed-batch decode throughput by up to 3.66×
+            (16k context, batch 1) and, by supporting 4–8× larger tested batches,
+            raises peak decode throughput by up to 5.38× over BF16. In the single
+            example run recorded below at 16k context, ResidualQuant achieved 5.34×
+            the aggregate decode throughput of vLLM BF16, with batch 8 versus batch 2.
           </p>
         </div>
         <figure className="residualquant-figure rq-terminal-video">
@@ -202,10 +205,11 @@ export default function ResidualQuantPage() {
         <h2>The accuracy–memory tradeoff</h2>
         <div className="residualquant-copy">
           <p>
-            Across Ouro-1.4B and Huginn-3.5B, ResidualQuant preserves accuracy
-            across math and code benchmarks with low-bit KV caches. On Ouro-1.4B,
-            it reaches 76.0% MATH500 accuracy with 80.7% less logical KV storage,
-            compared with 75.0% for BF16 (mixed INT2/4, group size g = 32).
+            Across Ouro-1.4B, Ouro-2.6B, and Huginn-3.5B, ResidualQuant preserves
+            accuracy across math and code benchmarks with low-bit KV caches. Under
+            mixed INT2/4 with g = 32, its twelve-score average nearly matches BF16
+            (62.30 vs. 62.58) while reducing logical KV storage by 80.7%. On Ouro-1.4B,
+            it reaches 76.0% MATH500 accuracy compared with 75.0% for BF16.
           </p>
         </div>
         <ResidualQuantResultsTable />
