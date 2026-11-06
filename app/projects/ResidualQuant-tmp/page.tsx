@@ -1,11 +1,11 @@
 import { ResidualQuantTerminalVideo } from '@/components/residualquant-terminal-video';
-import { ResidualQuantThroughputFigure } from '@/components/residualquant-throughput-figure';
+import { ResidualQuantThroughputFigure } from '@/components/residualquant-tmp/residualquant-throughput-figure';
 import type { Metadata } from 'next';
 import { FaGithub } from 'react-icons/fa';
 import { LinkArrow } from '@/components/link-arrow';
 import { ResidualQuantKVHeatmap } from '@/components/residualquant-kv-heatmap';
-import { ResidualQuantProgressFigure } from '@/components/residualquant-progress-figure';
-import { ResidualQuantResultsTable } from '@/components/residualquant-results-table';
+import { ResidualQuantProgressFigure } from '@/components/residualquant-tmp/residualquant-progress-figure';
+import { ResidualQuantResultsTable } from '@/components/residualquant-tmp/residualquant-results-table';
 import { RevealSection } from '@/components/reveal-section';
 import { SiteFooter } from '@/components/site-chrome';
 import { sitePath } from '@/lib/site-path';
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: sitePath('/projects/residualquant/teaser-published.png'),
+        url: sitePath('/projects/residualquant/teaser-published-tmp.png'),
         width: 1419,
         height: 393,
         alt: 'ResidualQuant accuracy, KV storage, and throughput results',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    images: [sitePath('/projects/residualquant/teaser-published.png')],
+    images: [sitePath('/projects/residualquant/teaser-published-tmp.png')],
   },
 };
 
@@ -104,9 +104,13 @@ export default function ResidualQuantPage() {
             <span aria-hidden="true">📄</span> Paper <LinkArrow />
           </a>
           <a href="#concept"><span aria-hidden="true">💡</span> Explore the idea ↓</a>
-          <span className="residualquant-code-pending">
-            <FaGithub aria-hidden="true" /> Code · Coming soon
-          </span>
+          <a
+            href="https://github.com/heejunkim00/ResidualQuant"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub aria-hidden="true" /> Code <LinkArrow />
+          </a>
         </div>
       </section>
 
@@ -114,7 +118,7 @@ export default function ResidualQuantPage() {
         <ResidualQuantProgressFigure />
         <figcaption>
           ResidualQuant recovers BF16-level accuracy with 80.7% lower logical KV
-          storage and reaches 3.27× peak decode throughput at 8k context.
+          storage and reaches 5.38× peak decode throughput at 16k context.
         </figcaption>
       </figure>
 
@@ -178,19 +182,23 @@ export default function ResidualQuantPage() {
         <div className="residualquant-copy">
           <p>
             Reducing KV memory traffic accelerates fixed-batch decoding, while
-            the smaller cache footprint also admits larger batches. In a single example run on an RTX
-            5090 at 16k context, ResidualQuant achieved 5.34× the aggregate decode
-            throughput of vLLM BF16, with batch 8 versus batch 2.
+            the smaller cache footprint also admits larger batches. On an RTX 5090,
+            ResidualQuant improves fixed-batch decode throughput by up to 3.66×
+            (16k context, batch 1) and, by supporting 4–8× larger tested batches,
+            raises peak decode throughput by up to 5.38× over BF16. In the single
+            example run recorded below at 16k context, ResidualQuant achieved 5.34×
+            the aggregate decode throughput of vLLM BF16, with batch 8 versus batch 2.
           </p>
         </div>
         <figure className="residualquant-figure rq-terminal-video">
-          <ResidualQuantTerminalVideo base="/projects/residualquant/terminal-live-b2-b8-final-align" />
+          <ResidualQuantTerminalVideo base="/projects/residualquant/terminal-live-b2-b8-v2" />
           <figcaption>
             Ouro-1.4B · RTX 5090 · 16,384 input / 512 output tokens per request.
             BF16 batch 2: 35.57 tokens/s · ResidualQuant batch 8: 190.03 tokens/s.
             Actual xterm windows were recorded during inference and joined at 1× speed;
             both methods ran separately on the same GPU with CUDA Graph enabled.
             ResidualQuant uses prefill CPU offloading; prefill is excluded from decode timing.
+            The title card, live counters, and result card are rendered from the recorded token timestamps.
           </figcaption>
         </figure>
         <figure className="residualquant-figure residualquant-results-figure">
@@ -202,10 +210,11 @@ export default function ResidualQuantPage() {
         <h2>The accuracy–memory tradeoff</h2>
         <div className="residualquant-copy">
           <p>
-            Across Ouro-1.4B and Huginn-3.5B, ResidualQuant preserves accuracy
-            across math and code benchmarks with low-bit KV caches. On Ouro-1.4B,
-            it reaches 76.0% MATH500 accuracy with 80.7% less logical KV storage,
-            compared with 75.0% for BF16 (mixed INT2/4, group size g = 32).
+            Across Ouro-1.4B, Ouro-2.6B, and Huginn-3.5B, ResidualQuant preserves
+            accuracy across math and code benchmarks with low-bit KV caches. Under
+            mixed INT2/4 with g = 32, its twelve-score average nearly matches BF16
+            (62.30 vs. 62.58) while reducing logical KV storage by 80.7%. On Ouro-1.4B,
+            it reaches 76.0% MATH500 accuracy compared with 75.0% for BF16.
           </p>
         </div>
         <ResidualQuantResultsTable />
