@@ -1,0 +1,223 @@
+{
+  "source": "Paper appendix Table 11 (Decode throughput across GPUs), RTX 5090 columns; same measurements as the paper's batch-throughput figure",
+  "protocol": "Ouro-1.4B, RTX 5090, BF16 weights; ResidualQuant [2,2,2,4] with Last-loop references, LS scaling, shared OptR-H rotations, g=32 in every loop; 128 output tokens per request, 127 timed decode steps, mean of 3 trials after 1 warm-up; power-of-two batches only; decode CUDA graphs enabled; GPU memory utilization 0.90.",
+  "rows": [
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 62.6
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 113.4
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 224.1
+    },
+    {
+      "context": 2048,
+      "method": "bf16_fa",
+      "batch": 8,
+      "throughput": 401.5
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 89.0
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 145.6
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 272.1
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 468.6
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 775.4
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 32,
+      "throughput": 1145.4
+    },
+    {
+      "context": 2048,
+      "method": "ls_optr",
+      "batch": 64,
+      "throughput": 1479.0
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 47.3
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 86.7
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 172.3
+    },
+    {
+      "context": 4096,
+      "method": "bf16_fa",
+      "batch": 8,
+      "throughput": 286.9
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 84.9
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 135.0
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 239.6
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 385.5
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 588.8
+    },
+    {
+      "context": 4096,
+      "method": "ls_optr",
+      "batch": 32,
+      "throughput": 783.4
+    },
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 31.3
+    },
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 59.3
+    },
+    {
+      "context": 8192,
+      "method": "bf16_fa",
+      "batch": 4,
+      "throughput": 117.9
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 78.2
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 114.2
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 191.9
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 293.9
+    },
+    {
+      "context": 8192,
+      "method": "ls_optr",
+      "batch": 16,
+      "throughput": 394.3
+    },
+    {
+      "context": 16384,
+      "method": "bf16_fa",
+      "batch": 1,
+      "throughput": 18.3
+    },
+    {
+      "context": 16384,
+      "method": "bf16_fa",
+      "batch": 2,
+      "throughput": 35.7
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 1,
+      "throughput": 66.9
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 2,
+      "throughput": 91.8
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 4,
+      "throughput": 136.5
+    },
+    {
+      "context": 16384,
+      "method": "ls_optr",
+      "batch": 8,
+      "throughput": 192.2
+    }
+  ],
+  "peakRatios": {
+    "2048": 3.68,
+    "4096": 2.73,
+    "8192": 3.35,
+    "16384": 5.38
+  },
+  "peakRatiosSource": "Paper appendix Table 12 (peak throughput gains computed before the Table 11 timings were rounded)"
+}

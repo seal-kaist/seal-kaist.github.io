@@ -14,7 +14,6 @@ function ContextPanel({ context, phase }: { context: number; phase: number }) {
   const residualBatch = residual[residual.length - 1].batch;
   const baselinePeak = Math.max(...baseline.map(row => row.throughput));
   const residualPeak = Math.max(...residual.map(row => row.throughput));
-  const peakRatio = data.peakRatios[String(context) as keyof typeof data.peakRatios] ?? residualPeak / baselinePeak;
   const lastPhase = Math.log2(residualBatch);
   const complete = phase >= lastPhase;
   const batch = BATCHES[Math.max(0, phase)];
@@ -23,8 +22,8 @@ function ContextPanel({ context, phase }: { context: number; phase: number }) {
   const ty = (value: number) => 236 - value / maxY * 198;
   const ticks = BATCHES.filter(value => value <= residualBatch);
   return <div className={`rq-context-panel ${complete ? 'is-complete' : ''}`} data-context={context} data-complete={complete}>
-    <div className="rq-context-heading"><h3>{context / 1024}k context</h3><div>{complete ? <><strong>{peakRatio.toFixed(2)}×</strong><span>peak throughput</span></> : <><strong>Batch {Math.min(batch, residualBatch)}</strong><span>decode throughput</span></>}</div></div>
-    <svg viewBox="0 0 320 292" role="img" aria-label={`${context / 1024}k context: BF16 up to batch ${baselineBatch}, ResidualQuant up to batch ${residualBatch}, ${peakRatio.toFixed(2)} times peak throughput.`}>
+    <div className="rq-context-heading"><h3>{context / 1024}k context</h3><div>{complete ? <><strong>{(residualPeak / baselinePeak).toFixed(2)}×</strong><span>peak throughput</span></> : <><strong>Batch {Math.min(batch, residualBatch)}</strong><span>decode throughput</span></>}</div></div>
+    <svg viewBox="0 0 320 292" role="img" aria-label={`${context / 1024}k context: BF16 up to batch ${baselineBatch}, ResidualQuant up to batch ${residualBatch}, ${(residualPeak/baselinePeak).toFixed(2)} times peak throughput.`}>
       {[0,1,2,3,4].map(index => {
         const value = maxY / 4 * index;
         return <g key={index}><line x1="44" x2="292" y1={ty(value)} y2={ty(value)} className="rq-progress-grid" /><text x="36" y={ty(value)+4} textAnchor="end">{value}</text></g>;

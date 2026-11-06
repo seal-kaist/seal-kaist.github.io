@@ -1,0 +1,1002 @@
+{
+  "source": "Paper Table: Downstream performance (tables/main_benchmarks_reevaluation_method_rows_lowbit.tex); Avg. is the unweighted mean of the twelve model-benchmark scores",
+  "baseline": {
+    "method": "BF16",
+    "cells": [
+      {
+        "value": "79.23",
+        "bold": false
+      },
+      {
+        "value": "75.00",
+        "bold": false
+      },
+      {
+        "value": "71.95",
+        "bold": false
+      },
+      {
+        "value": "74.34",
+        "bold": false
+      },
+      {
+        "value": "86.58",
+        "bold": false
+      },
+      {
+        "value": "79.80",
+        "bold": false
+      },
+      {
+        "value": "79.27",
+        "bold": false
+      },
+      {
+        "value": "81.75",
+        "bold": false
+      },
+      {
+        "value": "43.14",
+        "bold": false
+      },
+      {
+        "value": "16.40",
+        "bold": false
+      },
+      {
+        "value": "23.78",
+        "bold": false
+      },
+      {
+        "value": "39.68",
+        "bold": false
+      },
+      {
+        "value": "62.58",
+        "bold": false
+      }
+    ]
+  },
+  "groups": [
+    {
+      "label": "Uniform INT2",
+      "groupSize": 32,
+      "bits": "2.5",
+      "rows": [
+        {
+          "method": "Direct",
+          "cells": [
+            {
+              "value": "33.66",
+              "bold": false
+            },
+            {
+              "value": "27.80",
+              "bold": false
+            },
+            {
+              "value": "41.46",
+              "bold": false
+            },
+            {
+              "value": "55.56",
+              "bold": false
+            },
+            {
+              "value": "68.54",
+              "bold": false
+            },
+            {
+              "value": "62.40",
+              "bold": false
+            },
+            {
+              "value": "65.85",
+              "bold": false
+            },
+            {
+              "value": "71.43",
+              "bold": false
+            },
+            {
+              "value": "18.95",
+              "bold": false
+            },
+            {
+              "value": "7.80",
+              "bold": false
+            },
+            {
+              "value": "20.73",
+              "bold": false
+            },
+            {
+              "value": "33.60",
+              "bold": false
+            },
+            {
+              "value": "42.32",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "OptR-H",
+          "cells": [
+            {
+              "value": "62.70",
+              "bold": false
+            },
+            {
+              "value": "55.40",
+              "bold": false
+            },
+            {
+              "value": "59.15",
+              "bold": false
+            },
+            {
+              "value": "70.90",
+              "bold": false
+            },
+            {
+              "value": "81.50",
+              "bold": false
+            },
+            {
+              "value": "72.20",
+              "bold": false
+            },
+            {
+              "value": "72.56",
+              "bold": false
+            },
+            {
+              "value": "73.28",
+              "bold": false
+            },
+            {
+              "value": "28.58",
+              "bold": false
+            },
+            {
+              "value": "10.20",
+              "bold": false
+            },
+            {
+              "value": "22.56",
+              "bold": false
+            },
+            {
+              "value": "36.51",
+              "bold": false
+            },
+            {
+              "value": "53.80",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization",
+          "cells": [
+            {
+              "value": "64.67",
+              "bold": false
+            },
+            {
+              "value": "60.60",
+              "bold": false
+            },
+            {
+              "value": "55.49",
+              "bold": false
+            },
+            {
+              "value": "66.40",
+              "bold": false
+            },
+            {
+              "value": "79.53",
+              "bold": false
+            },
+            {
+              "value": "73.60",
+              "bold": false
+            },
+            {
+              "value": "78.66",
+              "bold": true
+            },
+            {
+              "value": "76.46",
+              "bold": false
+            },
+            {
+              "value": "34.95",
+              "bold": false
+            },
+            {
+              "value": "9.80",
+              "bold": false
+            },
+            {
+              "value": "24.39",
+              "bold": true
+            },
+            {
+              "value": "36.24",
+              "bold": false
+            },
+            {
+              "value": "55.07",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization + OptR-H",
+          "cells": [
+            {
+              "value": "73.31",
+              "bold": true
+            },
+            {
+              "value": "71.60",
+              "bold": true
+            },
+            {
+              "value": "68.90",
+              "bold": true
+            },
+            {
+              "value": "71.69",
+              "bold": true
+            },
+            {
+              "value": "83.85",
+              "bold": true
+            },
+            {
+              "value": "75.20",
+              "bold": true
+            },
+            {
+              "value": "77.44",
+              "bold": false
+            },
+            {
+              "value": "80.16",
+              "bold": true
+            },
+            {
+              "value": "38.21",
+              "bold": true
+            },
+            {
+              "value": "12.60",
+              "bold": true
+            },
+            {
+              "value": "23.78",
+              "bold": false
+            },
+            {
+              "value": "38.89",
+              "bold": true
+            },
+            {
+              "value": "59.64",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Uniform INT2",
+      "groupSize": 16,
+      "bits": "3.0",
+      "rows": [
+        {
+          "method": "Direct",
+          "cells": [
+            {
+              "value": "55.95",
+              "bold": false
+            },
+            {
+              "value": "54.20",
+              "bold": false
+            },
+            {
+              "value": "62.20",
+              "bold": false
+            },
+            {
+              "value": "66.40",
+              "bold": false
+            },
+            {
+              "value": "78.77",
+              "bold": false
+            },
+            {
+              "value": "71.40",
+              "bold": false
+            },
+            {
+              "value": "75.61",
+              "bold": false
+            },
+            {
+              "value": "74.34",
+              "bold": false
+            },
+            {
+              "value": "24.94",
+              "bold": false
+            },
+            {
+              "value": "7.00",
+              "bold": false
+            },
+            {
+              "value": "21.95",
+              "bold": false
+            },
+            {
+              "value": "31.22",
+              "bold": false
+            },
+            {
+              "value": "52.00",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "OptR-H",
+          "cells": [
+            {
+              "value": "65.96",
+              "bold": false
+            },
+            {
+              "value": "64.20",
+              "bold": false
+            },
+            {
+              "value": "70.73",
+              "bold": true
+            },
+            {
+              "value": "70.90",
+              "bold": false
+            },
+            {
+              "value": "83.40",
+              "bold": false
+            },
+            {
+              "value": "75.00",
+              "bold": false
+            },
+            {
+              "value": "72.56",
+              "bold": false
+            },
+            {
+              "value": "76.72",
+              "bold": false
+            },
+            {
+              "value": "31.61",
+              "bold": false
+            },
+            {
+              "value": "10.80",
+              "bold": false
+            },
+            {
+              "value": "21.34",
+              "bold": false
+            },
+            {
+              "value": "40.74",
+              "bold": true
+            },
+            {
+              "value": "57.00",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization",
+          "cells": [
+            {
+              "value": "70.96",
+              "bold": false
+            },
+            {
+              "value": "67.80",
+              "bold": false
+            },
+            {
+              "value": "69.51",
+              "bold": false
+            },
+            {
+              "value": "70.37",
+              "bold": false
+            },
+            {
+              "value": "84.15",
+              "bold": false
+            },
+            {
+              "value": "76.60",
+              "bold": false
+            },
+            {
+              "value": "77.44",
+              "bold": true
+            },
+            {
+              "value": "77.51",
+              "bold": false
+            },
+            {
+              "value": "36.77",
+              "bold": false
+            },
+            {
+              "value": "14.40",
+              "bold": true
+            },
+            {
+              "value": "25.61",
+              "bold": false
+            },
+            {
+              "value": "37.57",
+              "bold": false
+            },
+            {
+              "value": "59.06",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization + OptR-H",
+          "cells": [
+            {
+              "value": "75.06",
+              "bold": true
+            },
+            {
+              "value": "75.20",
+              "bold": true
+            },
+            {
+              "value": "70.12",
+              "bold": false
+            },
+            {
+              "value": "71.16",
+              "bold": true
+            },
+            {
+              "value": "85.22",
+              "bold": true
+            },
+            {
+              "value": "79.00",
+              "bold": true
+            },
+            {
+              "value": "75.61",
+              "bold": false
+            },
+            {
+              "value": "81.22",
+              "bold": true
+            },
+            {
+              "value": "38.97",
+              "bold": true
+            },
+            {
+              "value": "14.40",
+              "bold": true
+            },
+            {
+              "value": "26.22",
+              "bold": true
+            },
+            {
+              "value": "39.42",
+              "bold": false
+            },
+            {
+              "value": "60.97",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Mixed INT2/4",
+      "groupSize": 32,
+      "bits": "3.0",
+      "rows": [
+        {
+          "method": "Direct",
+          "cells": [
+            {
+              "value": "48.67",
+              "bold": false
+            },
+            {
+              "value": "47.40",
+              "bold": false
+            },
+            {
+              "value": "56.71",
+              "bold": false
+            },
+            {
+              "value": "67.99",
+              "bold": false
+            },
+            {
+              "value": "76.27",
+              "bold": false
+            },
+            {
+              "value": "73.20",
+              "bold": false
+            },
+            {
+              "value": "70.12",
+              "bold": false
+            },
+            {
+              "value": "78.04",
+              "bold": false
+            },
+            {
+              "value": "30.10",
+              "bold": false
+            },
+            {
+              "value": "9.80",
+              "bold": false
+            },
+            {
+              "value": "21.95",
+              "bold": false
+            },
+            {
+              "value": "34.39",
+              "bold": false
+            },
+            {
+              "value": "51.22",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "OptR-H",
+          "cells": [
+            {
+              "value": "65.73",
+              "bold": false
+            },
+            {
+              "value": "63.00",
+              "bold": false
+            },
+            {
+              "value": "68.29",
+              "bold": false
+            },
+            {
+              "value": "70.63",
+              "bold": false
+            },
+            {
+              "value": "84.76",
+              "bold": false
+            },
+            {
+              "value": "78.20",
+              "bold": false
+            },
+            {
+              "value": "78.66",
+              "bold": false
+            },
+            {
+              "value": "78.31",
+              "bold": false
+            },
+            {
+              "value": "36.39",
+              "bold": false
+            },
+            {
+              "value": "11.00",
+              "bold": false
+            },
+            {
+              "value": "23.17",
+              "bold": false
+            },
+            {
+              "value": "39.15",
+              "bold": false
+            },
+            {
+              "value": "58.11",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization",
+          "cells": [
+            {
+              "value": "77.79",
+              "bold": true
+            },
+            {
+              "value": "73.80",
+              "bold": false
+            },
+            {
+              "value": "71.34",
+              "bold": true
+            },
+            {
+              "value": "73.02",
+              "bold": false
+            },
+            {
+              "value": "86.66",
+              "bold": true
+            },
+            {
+              "value": "80.20",
+              "bold": true
+            },
+            {
+              "value": "79.88",
+              "bold": false
+            },
+            {
+              "value": "81.75",
+              "bold": false
+            },
+            {
+              "value": "42.46",
+              "bold": false
+            },
+            {
+              "value": "14.60",
+              "bold": true
+            },
+            {
+              "value": "23.17",
+              "bold": false
+            },
+            {
+              "value": "40.74",
+              "bold": true
+            },
+            {
+              "value": "62.12",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization + OptR-H",
+          "cells": [
+            {
+              "value": "77.03",
+              "bold": false
+            },
+            {
+              "value": "76.00",
+              "bold": true
+            },
+            {
+              "value": "70.73",
+              "bold": false
+            },
+            {
+              "value": "73.81",
+              "bold": true
+            },
+            {
+              "value": "86.35",
+              "bold": false
+            },
+            {
+              "value": "79.60",
+              "bold": false
+            },
+            {
+              "value": "80.49",
+              "bold": true
+            },
+            {
+              "value": "82.28",
+              "bold": true
+            },
+            {
+              "value": "42.76",
+              "bold": true
+            },
+            {
+              "value": "14.60",
+              "bold": true
+            },
+            {
+              "value": "23.78",
+              "bold": true
+            },
+            {
+              "value": "40.21",
+              "bold": false
+            },
+            {
+              "value": "62.30",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Mixed INT2/4",
+      "groupSize": 16,
+      "bits": "3.4",
+      "rows": [
+        {
+          "method": "Direct",
+          "cells": [
+            {
+              "value": "63.15",
+              "bold": false
+            },
+            {
+              "value": "61.80",
+              "bold": false
+            },
+            {
+              "value": "66.46",
+              "bold": false
+            },
+            {
+              "value": "72.75",
+              "bold": false
+            },
+            {
+              "value": "81.96",
+              "bold": false
+            },
+            {
+              "value": "76.60",
+              "bold": false
+            },
+            {
+              "value": "73.78",
+              "bold": false
+            },
+            {
+              "value": "79.63",
+              "bold": false
+            },
+            {
+              "value": "32.83",
+              "bold": false
+            },
+            {
+              "value": "11.60",
+              "bold": false
+            },
+            {
+              "value": "23.17",
+              "bold": true
+            },
+            {
+              "value": "36.24",
+              "bold": false
+            },
+            {
+              "value": "56.66",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "OptR-H",
+          "cells": [
+            {
+              "value": "69.98",
+              "bold": false
+            },
+            {
+              "value": "67.00",
+              "bold": false
+            },
+            {
+              "value": "73.78",
+              "bold": true
+            },
+            {
+              "value": "71.16",
+              "bold": false
+            },
+            {
+              "value": "86.05",
+              "bold": false
+            },
+            {
+              "value": "78.60",
+              "bold": false
+            },
+            {
+              "value": "77.44",
+              "bold": false
+            },
+            {
+              "value": "80.16",
+              "bold": false
+            },
+            {
+              "value": "36.24",
+              "bold": false
+            },
+            {
+              "value": "10.20",
+              "bold": false
+            },
+            {
+              "value": "21.34",
+              "bold": false
+            },
+            {
+              "value": "37.83",
+              "bold": false
+            },
+            {
+              "value": "59.15",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization",
+          "cells": [
+            {
+              "value": "77.03",
+              "bold": false
+            },
+            {
+              "value": "75.00",
+              "bold": true
+            },
+            {
+              "value": "71.95",
+              "bold": false
+            },
+            {
+              "value": "74.07",
+              "bold": true
+            },
+            {
+              "value": "85.82",
+              "bold": false
+            },
+            {
+              "value": "80.40",
+              "bold": true
+            },
+            {
+              "value": "79.27",
+              "bold": true
+            },
+            {
+              "value": "80.95",
+              "bold": false
+            },
+            {
+              "value": "41.02",
+              "bold": false
+            },
+            {
+              "value": "15.40",
+              "bold": false
+            },
+            {
+              "value": "23.17",
+              "bold": true
+            },
+            {
+              "value": "41.53",
+              "bold": true
+            },
+            {
+              "value": "62.13",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "method": "Residual quantization + OptR-H",
+          "cells": [
+            {
+              "value": "77.63",
+              "bold": true
+            },
+            {
+              "value": "74.60",
+              "bold": false
+            },
+            {
+              "value": "72.56",
+              "bold": false
+            },
+            {
+              "value": "73.28",
+              "bold": false
+            },
+            {
+              "value": "87.41",
+              "bold": true
+            },
+            {
+              "value": "80.40",
+              "bold": true
+            },
+            {
+              "value": "79.27",
+              "bold": true
+            },
+            {
+              "value": "82.01",
+              "bold": true
+            },
+            {
+              "value": "42.61",
+              "bold": true
+            },
+            {
+              "value": "15.60",
+              "bold": true
+            },
+            {
+              "value": "22.56",
+              "bold": false
+            },
+            {
+              "value": "39.42",
+              "bold": false
+            },
+            {
+              "value": "62.28",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

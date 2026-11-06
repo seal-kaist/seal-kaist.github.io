@@ -1,11 +1,11 @@
 import { ResidualQuantTerminalVideo } from '@/components/residualquant-terminal-video';
-import { ResidualQuantThroughputFigure } from '@/components/residualquant-throughput-figure';
+import { ResidualQuantThroughputFigure } from '@/components/residualquant-tmp/residualquant-throughput-figure';
 import type { Metadata } from 'next';
 import { FaGithub } from 'react-icons/fa';
 import { LinkArrow } from '@/components/link-arrow';
 import { ResidualQuantKVHeatmap } from '@/components/residualquant-kv-heatmap';
-import { ResidualQuantProgressFigure } from '@/components/residualquant-progress-figure';
-import { ResidualQuantResultsTable } from '@/components/residualquant-results-table';
+import { ResidualQuantProgressFigure } from '@/components/residualquant-tmp/residualquant-progress-figure';
+import { ResidualQuantResultsTable } from '@/components/residualquant-tmp/residualquant-results-table';
 import { RevealSection } from '@/components/reveal-section';
 import { SiteFooter } from '@/components/site-chrome';
 import { sitePath } from '@/lib/site-path';
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: sitePath('/projects/residualquant/teaser-published.png'),
+        url: sitePath('/projects/residualquant/teaser-published-tmp.png'),
         width: 1419,
         height: 393,
         alt: 'ResidualQuant accuracy, KV storage, and throughput results',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    images: [sitePath('/projects/residualquant/teaser-published.png')],
+    images: [sitePath('/projects/residualquant/teaser-published-tmp.png')],
   },
 };
 
